@@ -37,9 +37,9 @@ public:
         Encrypt,        /** Encrypt unencrypted wallet */
         ToggleLock,     /** Toggle wallet lock state */
         ChangePass,     /** Change passphrase */
-        Send_AEX,       /** Send AEX */
-        Send_zAEX,      /** Send zAEX */
-        Mint_zAEX,      /** Mint zAEX */
+        Send_AEX,       /** Send WEALTH */
+        Send_zAEX,      /** Send zWEALTH */
+        Mint_zAEX,      /** Mint zWEALTH */
         BIP_38,         /** BIP38 menu */
         Multi_Sig,      /** Multi-Signature dialog */
         Sign_Message    /** Sign/verify message dialog */

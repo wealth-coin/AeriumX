@@ -442,7 +442,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>Buy AEX</string>
+      <string>Buy WEALTH</string>
      </property>
      <property name="icon">
       <iconset resource="../wealthsilo.qrc">
@@ -512,7 +512,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>AEX</string>
+      <string>WEALTH</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_5">
@@ -1704,7 +1704,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>AEX</string>
+      <string>WEALTH</string>
      </property>
     </widget>
     <widget class="QLineEdit" name="UnitsInputAEX">
@@ -1751,7 +1751,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>Sell AEX</string>
+      <string>Sell WEALTH</string>
      </property>
      <property name="icon">
       <iconset resource="../wealthsilo">
@@ -1777,7 +1777,7 @@
          </font>
         </property>
         <property name="text">
-         <string>AEX Available:</string>
+         <string>WEALTH Available:</string>
         </property>
        </widget>
       </item>
@@ -2221,7 +2221,7 @@
          </font>
         </property>
         <property name="text">
-         <string>AEX</string>
+         <string>WEALTH</string>
         </property>
        </widget>
       </item>
@@ -2762,7 +2762,7 @@
       </font>
      </property>
      <property name="text">
-      <string>AEX Balance:</string>
+      <string>WEALTH Balance:</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_12">
@@ -2813,7 +2813,7 @@
       </font>
      </property>
      <property name="text">
-      <string>AEX Available:</string>
+      <string>WEALTH Available:</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_14">
@@ -2832,7 +2832,7 @@
       </font>
      </property>
      <property name="text">
-      <string>AEX Pending:</string>
+      <string>WEALTH Pending:</string>
      </property>
     </widget>
     <widget class="QLabel" name="AEXPendingLabel">
@@ -2928,7 +2928,7 @@
       </font>
      </property>
      <property name="text">
-      <string>Bittrex AEX Deposit Address:</string>
+      <string>Bittrex WEALTH Deposit Address:</string>
      </property>
     </widget>
     <widget class="QPushButton" name="GenDepositBTN">

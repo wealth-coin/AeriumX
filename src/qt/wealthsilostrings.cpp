@@ -58,7 +58,7 @@ QT_TRANSLATE_NOOP("wealthsilo-core", ""
 QT_TRANSLATE_NOOP("wealthsilo-core", ""
 "Enable SwiftX, show confirmations for locked transactions (bool, default: %s)"),
 QT_TRANSLATE_NOOP("wealthsilo-core", ""
-"Enable automatic wallet backups triggered after each zAEX minting (0-1, "
+"Enable automatic wallet backups triggered after each zWEALTH minting (0-1, "
 "default: %u)"),
 QT_TRANSLATE_NOOP("wealthsilo-core", ""
 "Enable spork administration functionality with the appropriate private key."),
@@ -89,10 +89,10 @@ QT_TRANSLATE_NOOP("wealthsilo-core", ""
 "Execute command when the best block changes (%s in cmd is replaced by block "
 "hash)"),
 QT_TRANSLATE_NOOP("wealthsilo-core", ""
-"Fees (in AEX/Kb) smaller than this are considered zero fee for relaying "
+"Fees (in WEALTH/Kb) smaller than this are considered zero fee for relaying "
 "(default: %s)"),
 QT_TRANSLATE_NOOP("wealthsilo-core", ""
-"Fees (in AEX/Kb) smaller than this are considered zero fee for transaction "
+"Fees (in WEALTH/Kb) smaller than this are considered zero fee for transaction "
 "creation (default: %s)"),
 QT_TRANSLATE_NOOP("wealthsilo-core", ""
 "Flush database activity from memory pool to disk log every <n> megabytes "
@@ -187,10 +187,10 @@ QT_TRANSLATE_NOOP("wealthsilo-core", ""
 "Unable to locate enough Obfuscation denominated funds for this transaction."),
 QT_TRANSLATE_NOOP("wealthsilo-core", ""
 "Unable to locate enough Obfuscation non-denominated funds for this "
-"transaction that are not equal 10000 AEX."),
+"transaction that are not equal 10000 WEALTH."),
 QT_TRANSLATE_NOOP("wealthsilo-core", ""
 "Unable to locate enough funds for this transaction that are not equal 10000 "
-"AEX."),
+"WEALTH."),
 QT_TRANSLATE_NOOP("wealthsilo-core", ""
 "Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: "
 "%s)"),
@@ -305,7 +305,7 @@ QT_TRANSLATE_NOOP("wealthsilo-core", "Failed to listen on any port. Use -listen=
 QT_TRANSLATE_NOOP("wealthsilo-core", "Failed to read block index"),
 QT_TRANSLATE_NOOP("wealthsilo-core", "Failed to read block"),
 QT_TRANSLATE_NOOP("wealthsilo-core", "Failed to write block index"),
-QT_TRANSLATE_NOOP("wealthsilo-core", "Fee (in AEX/kB) to add to transactions you send (default: %s)"),
+QT_TRANSLATE_NOOP("wealthsilo-core", "Fee (in WEALTH/kB) to add to transactions you send (default: %s)"),
 QT_TRANSLATE_NOOP("wealthsilo-core", "Finalizing transaction."),
 QT_TRANSLATE_NOOP("wealthsilo-core", "Force safe mode (default: %u)"),
 QT_TRANSLATE_NOOP("wealthsilo-core", "Found enough users, signing ( waiting %s )"),

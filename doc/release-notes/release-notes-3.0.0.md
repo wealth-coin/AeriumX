@@ -43,53 +43,53 @@ frequently tested on them.
 Notable Changes
 ===============
 
-Zerocoin (zAEX) Protocol
+Zerocoin (zWEALTH) Protocol
 ---------------------
 
-At long last, the zAEX release is here and the zerocoin protocol has been fully implemented! This allows users to send transactions with 100% fungible coins and absolutely zero history or link-ability to their previous owners.
+At long last, the zWEALTH release is here and the zerocoin protocol has been fully implemented! This allows users to send transactions with 100% fungible coins and absolutely zero history or link-ability to their previous owners.
 
-The Zerocoin protocol allows user to convert (mint) their *AEX* to zerocoins, which we call *zAEX*. When zAEX are converted back to AEX there is no trail associated with the coins being sent, such as who originally minted those coins. Essentially the only thing the receiver of the zAEX transaction will see is that it came from the zerocoin protocol.
+The Zerocoin protocol allows user to convert (mint) their *WEALTH* to zerocoins, which we call *zWEALTH*. When zWEALTH are converted back to WEALTH there is no trail associated with the coins being sent, such as who originally minted those coins. Essentially the only thing the receiver of the zWEALTH transaction will see is that it came from the zerocoin protocol.
 
-### zAEX Denominations
-zAEX comes in specific denominations of 1, 5, 10, 50, 100, 500, 1000, and 5000. A denomination is a similar concept to paper currency, where you can hold a $100 bill but there is no available $99 bill for you to hold.
+### zWEALTH Denominations
+zWEALTH comes in specific denominations of 1, 5, 10, 50, 100, 500, 1000, and 5000. A denomination is a similar concept to paper currency, where you can hold a $100 bill but there is no available $99 bill for you to hold.
 
-Other implementations of the zerocoin protocol only allow for spending of one denomination/zerocoin at a time. The WealthSilo implementation of zerocoin allows users to spend any amount of zAEX they would like (with certain limitations). If a user held two denominations of 5 and they send 7.75 to a merchant, the wallet will automatically grab the two denominations of 5 and then issue 2.25 AEX in change to the spender. There is currently a limit of up to 6 individual zerocoin `coins` that can be combined into a spend, where each `coin` could be a different or similar denomination
+Other implementations of the zerocoin protocol only allow for spending of one denomination/zerocoin at a time. The WealthSilo implementation of zerocoin allows users to spend any amount of zWEALTH they would like (with certain limitations). If a user held two denominations of 5 and they send 7.75 to a merchant, the wallet will automatically grab the two denominations of 5 and then issue 2.25 WEALTH in change to the spender. There is currently a limit of up to 6 individual zerocoin `coins` that can be combined into a spend, where each `coin` could be a different or similar denomination
 
 The WealthSilo zerocoin implementation is structured in such a way that denominations aren't needed to be known by the average user.
 
 ### Fees
-zAEX transactions require more computation and disk space than typical WealthSilo transactions, and as such require a higher transaction fee in order to prevent network spam. Fees are only charged when minting zAEX, each minted denomination is charged a flat rate of 0.01 AEX. zAEX spends are not charged a transaction fee unless the change is minted into zAEX, see the *Minting Change* section for details on fees for zAEX spends with minted change.
+zWEALTH transactions require more computation and disk space than typical WealthSilo transactions, and as such require a higher transaction fee in order to prevent network spam. Fees are only charged when minting zWEALTH, each minted denomination is charged a flat rate of 0.01 WEALTH. zWEALTH spends are not charged a transaction fee unless the change is minted into zWEALTH, see the *Minting Change* section for details on fees for zWEALTH spends with minted change.
 
-### Converting AEX to zAEX (*zAEX Mint*)
-**GUI** - Conversion from AEX to zAEX can be done using the `Privacy Dialog` in the QT wallet. Enter the amount of AEX you would like to convert and click `Mint Zerocoin`.
+### Converting WEALTH to zWEALTH (*zWEALTH Mint*)
+**GUI** - Conversion from WEALTH to zWEALTH can be done using the `Privacy Dialog` in the QT wallet. Enter the amount of WEALTH you would like to convert and click `Mint Zerocoin`.
 
-**RPC** - Conversion from AEX to zAEX can be done using the `mintzerocoin` command.
+**RPC** - Conversion from WEALTH to zWEALTH can be done using the `mintzerocoin` command.
 
-**Automint** - The WealthSilo wallet is set to convert 10% of the wallets available AEX to zAEX automatically. This can be adjusted in the GUI within the Options dialog, which allows the preferred % to be adjusted as well as the ability to set the preferred zAEX denomination that will be minted. Automint is set to be triggered when additional blocks are added to the block chain and is programmed *not* to convert your coins all at once.
+**Automint** - The WealthSilo wallet is set to convert 10% of the wallets available WEALTH to zWEALTH automatically. This can be adjusted in the GUI within the Options dialog, which allows the preferred % to be adjusted as well as the ability to set the preferred zWEALTH denomination that will be minted. Automint is set to be triggered when additional blocks are added to the block chain and is programmed *not* to convert your coins all at once.
 
 Automint can be disabled by adding `enablezeromint=0` to the wallet configuration file. The preferred mint % and denomination can also be set by the configuration file using `zeromintpercentage=<n>` and `preferredDenom=<n>`.
 
-### Converting zAEX to AEX (*zAEX Spend*)
-Redeeming zAEX is done by converting it back to AEX. With the 3.0.0 software release, users are not able to send zAEX to each other directly in an atomic fashion.
+### Converting zWEALTH to WEALTH (*zWEALTH Spend*)
+Redeeming zWEALTH is done by converting it back to WEALTH. With the 3.0.0 software release, users are not able to send zWEALTH to each other directly in an atomic fashion.
 
-**GUI** - Conversion from zAEX to AEX can be done using the `Privacy Dialog` in the QT wallet. Enter a WealthSilo address that you would like to Pay To, enter the amount of AEX the receiver should be sent, click `Spend Zerocoin`.
+**GUI** - Conversion from zWEALTH to WEALTH can be done using the `Privacy Dialog` in the QT wallet. Enter a WealthSilo address that you would like to Pay To, enter the amount of WEALTH the receiver should be sent, click `Spend Zerocoin`.
 
-**RPC** - Conversion from zAEX to AEX can be done using the `spendzerocoin` command.
+**RPC** - Conversion from zWEALTH to WEALTH can be done using the `spendzerocoin` command.
 
 ### Advanced Use & Privacy Considerations
-**Security Level** - When spending zAEX, a user is prompted to enter a *Security Level* choosing from 1-100. In an indirect way, the Security Level parameter allows the user to choose how many coins to obfuscate their transaction with.
+**Security Level** - When spending zWEALTH, a user is prompted to enter a *Security Level* choosing from 1-100. In an indirect way, the Security Level parameter allows the user to choose how many coins to obfuscate their transaction with.
 
 A Security Level of 1 for example would take all of the minted coins in the blockchain before your mint was added to the blockchain, and would then add any coins that were minted within the next 10 blocks as well. A Security Level of 2 would do the same thing, except add the next 20 blocks worth of mints. A **Security Level of 100 will add the maximum amount of mints** up to the current end of the blockchain.
 
 The higher the Security Level, the more computation and time it will take to spend. Although it takes longer, a level of 100 is recommended for transactions that need maximum anonymity.
 
 
-**Minting Change** - The WealthSilo implementation of the zerocoin protocol also allows the spender to choose how to receive their leftover change from a Spend transaction. For maximum anonymity it is recommended that the spender choose to receive the change in zAEX, which prevents situations where change from a zAEX spend that is redeemed in AEX is accidentally mixed with the rest of the users AEX, thus linking transactions back to a WealthSilo address.
+**Minting Change** - The WealthSilo implementation of the zerocoin protocol also allows the spender to choose how to receive their leftover change from a Spend transaction. For maximum anonymity it is recommended that the spender choose to receive the change in zWEALTH, which prevents situations where change from a zWEALTH spend that is redeemed in WEALTH is accidentally mixed with the rest of the users WEALTH, thus linking transactions back to a WealthSilo address.
 
-Since the lowest denomination of zAEX is 1, and a fee is required to mint zAEX, in most situations a high fee will be paid to mint change. The fee is the remainder of the change that cannot be converted back to zAEX. For example this would mean a spending a denomination of 10 that yields change of 6.75 in change, would issue zAEX denominations of 5 and 1 back to the sender with the remaining 0.75 that is unmintable being contributed as a fee.
+Since the lowest denomination of zWEALTH is 1, and a fee is required to mint zWEALTH, in most situations a high fee will be paid to mint change. The fee is the remainder of the change that cannot be converted back to zWEALTH. For example this would mean a spending a denomination of 10 that yields change of 6.75 in change, would issue zWEALTH denominations of 5 and 1 back to the sender with the remaining 0.75 that is unmintable being contributed as a fee.
 
-**zAEX Control**
-Similar to the concept of Coin Control in the QT wallet, zAEX Control allows users to select exactly which zAEX mints they would like to spend. This gives a flexibility to choose which denominations can be picked for a spend that wouldn't otherwise be available.
+**zWEALTH Control**
+Similar to the concept of Coin Control in the QT wallet, zWEALTH Control allows users to select exactly which zWEALTH mints they would like to spend. This gives a flexibility to choose which denominations can be picked for a spend that wouldn't otherwise be available.
 
 
 Tor Service Integration Improvements
@@ -110,7 +110,7 @@ the code changes and accompanying discussion, both the pull request and
 git merge commit are mentioned.
 
 ### Broad Features
-- #264 `15e84e5` zAEX is here! (Fuzzbawls Mrs-X Presstab Spock WealthSilo)
+- #264 `15e84e5` zWEALTH is here! (Fuzzbawls Mrs-X Presstab Spock WealthSilo)
 
 ### P2P Protocol and Network Code
 - #242 `0ecd77f` [P2P] Improve TOR service connectivity (Fuzzbawls)

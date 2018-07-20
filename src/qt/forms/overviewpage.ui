@@ -221,7 +221,7 @@
                               </font>
                              </property>
                              <property name="text">
-                              <string>AEX Balance</string>
+                              <string>WEALTH Balance</string>
                              </property>
                             </widget>
                            </item>
@@ -312,7 +312,7 @@
                               <string>Current locked balance in watch-only addresses</string>
                              </property>
                              <property name="text">
-                              <string notr="true">0.000 000 00 AEX</string>
+                              <string notr="true">0.000 000 00 WEALTH</string>
                              </property>
                              <property name="alignment">
                               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -334,10 +334,10 @@
                               <cursorShape>IBeamCursor</cursorShape>
                              </property>
                              <property name="toolTip">
-                              <string>Locked AEX or Masternode collaterals. These are excluded from zAEX minting.</string>
+                              <string>Locked WEALTH or Masternode collaterals. These are excluded from zWEALTH minting.</string>
                              </property>
                              <property name="text">
-                              <string notr="true">0.000 000 00 AEX</string>
+                              <string notr="true">0.000 000 00 WEALTH</string>
                              </property>
                              <property name="alignment">
                               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -369,7 +369,7 @@
                               <string>Your current spendable balance</string>
                              </property>
                              <property name="text">
-                              <string notr="true">0.000 000 00 AEX</string>
+                              <string notr="true">0.000 000 00 WEALTH</string>
                              </property>
                              <property name="alignment">
                               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -382,7 +382,7 @@
                            <item row="4" column="0">
                             <widget class="QLabel" name="labelLockedBalanceText">
                              <property name="toolTip">
-                              <string>Locked AEX or Masternode collaterals. These are excluded from zAEX minting.</string>
+                              <string>Locked WEALTH or Masternode collaterals. These are excluded from zWEALTH minting.</string>
                              </property>
                              <property name="text">
                               <string>Locked:</string>
@@ -404,7 +404,7 @@
                               <string>Total of transactions that have yet to be confirmed, and do not yet count toward the spendable balance</string>
                              </property>
                              <property name="text">
-                              <string notr="true">0.000 000 00 AEX</string>
+                              <string notr="true">0.000 000 00 WEALTH</string>
                              </property>
                              <property name="alignment">
                               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -429,7 +429,7 @@
                               <string>Your current WealthSilo balance, unconfirmed and immature transactions included</string>
                              </property>
                              <property name="text">
-                              <string notr="true">0.000 000 00 AEX</string>
+                              <string notr="true">0.000 000 00 WEALTH</string>
                              </property>
                              <property name="alignment">
                               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -454,7 +454,7 @@
                               <string>Staked or masternode rewards that has not yet matured</string>
                              </property>
                              <property name="text">
-                              <string notr="true">0.000 000 00 AEX</string>
+                              <string notr="true">0.000 000 00 WEALTH</string>
                              </property>
                              <property name="alignment">
                               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -506,7 +506,7 @@
                               <string>Staked or masternode rewards in watch-only addresses that has not yet matured</string>
                              </property>
                              <property name="text">
-                              <string notr="true">0.000 000 00 AEX</string>
+                              <string notr="true">0.000 000 00 WEALTH</string>
                              </property>
                              <property name="alignment">
                               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -531,7 +531,7 @@
                               <string>Unconfirmed transactions to watch-only addresses</string>
                              </property>
                              <property name="text">
-                              <string notr="true">0.000 000 00 AEX</string>
+                              <string notr="true">0.000 000 00 WEALTH</string>
                              </property>
                              <property name="alignment">
                               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -576,7 +576,7 @@
                               <string>Current total balance in watch-only addresses</string>
                              </property>
                              <property name="text">
-                              <string notr="true">0.000 000 00 AEX</string>
+                              <string notr="true">0.000 000 00 WEALTH</string>
                              </property>
                              <property name="alignment">
                               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -601,7 +601,7 @@
                               <string>Your current balance in watch-only addresses</string>
                              </property>
                              <property name="text">
-                              <string notr="true">0.000 000 00 AEX</string>
+                              <string notr="true">0.000 000 00 WEALTH</string>
                              </property>
                              <property name="alignment">
                               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -729,7 +729,7 @@
                               </font>
                              </property>
                              <property name="text">
-                              <string>zAEX Balance</string>
+                              <string>zWEALTH Balance</string>
                              </property>
                             </widget>
                            </item>
@@ -799,7 +799,7 @@
                             <widget class="QLabel" name="labelzBalanceMatureText">
                              <property name="toolTip">
                               <string>Mature: more than 20 confirmation and more than 3 mints of the same denomination after it was minted.
-These zAEX are spendable.</string>
+These zWEALTH are spendable.</string>
                              </property>
                              <property name="text">
                               <string>Available:</string>
@@ -833,7 +833,7 @@ Immature: confirmed, but less than 3 mints of the same denomination after it was
                            <item row="4" column="0">
                             <widget class="QLabel" name="labelzBalanceText">
                              <property name="toolTip">
-                              <string>Your current zAEX balance, unconfirmed and immature zAEX included.</string>
+                              <string>Your current zWEALTH balance, unconfirmed and immature zWEALTH included.</string>
                              </property>
                              <property name="text">
                               <string>Total:</string>
@@ -852,10 +852,10 @@ Immature: confirmed, but less than 3 mints of the same denomination after it was
                               <cursorShape>IBeamCursor</cursorShape>
                              </property>
                              <property name="toolTip">
-                              <string>Your current zAEX balance, unconfirmed and immature zAEX included.</string>
+                              <string>Your current zWEALTH balance, unconfirmed and immature zWEALTH included.</string>
                              </property>
                              <property name="text">
-                              <string notr="true">0.000 000 00 AEX</string>
+                              <string notr="true">0.000 000 00 WEALTH</string>
                              </property>
                              <property name="alignment">
                               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -889,7 +889,7 @@ Immature: confirmed, but less than 3 mints of the same denomination after it was
 Immature: confirmed, but less than 3 mints of the same denomination after it was minted</string>
                              </property>
                              <property name="text">
-                              <string notr="true">0.000 000 00 AEX</string>
+                              <string notr="true">0.000 000 00 WEALTH</string>
                              </property>
                              <property name="alignment">
                               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -906,10 +906,10 @@ Immature: confirmed, but less than 3 mints of the same denomination after it was
                              </property>
                              <property name="toolTip">
                               <string>Mature: more than 20 confirmation and more than 3 mints of the same denomination after it was minted.
-These zAEX are spendable.</string>
+These zWEALTH are spendable.</string>
                              </property>
                              <property name="text">
-                              <string notr="true">0.000 000 00 AEX</string>
+                              <string notr="true">0.000 000 00 WEALTH</string>
                              </property>
                              <property name="alignment">
                               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -929,7 +929,7 @@ These zAEX are spendable.</string>
 Immature: confirmed, but less than 3 mints of the same denomination after it was minted</string>
                              </property>
                              <property name="text">
-                              <string notr="true">0.000 000 00 AEX</string>
+                              <string notr="true">0.000 000 00 WEALTH</string>
                              </property>
                              <property name="alignment">
                               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -1108,7 +1108,7 @@ Immature: confirmed, but less than 3 mints of the same denomination after it was
                               <string>Your current spendable balance</string>
                              </property>
                              <property name="text">
-                              <string notr="true">0.000 000 00 AEX</string>
+                              <string notr="true">0.000 000 00 WEALTH</string>
                              </property>
                              <property name="alignment">
                               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -1140,7 +1140,7 @@ Immature: confirmed, but less than 3 mints of the same denomination after it was
                               <string>Total Balance, including all unavailable coins.</string>
                              </property>
                              <property name="text">
-                              <string notr="true">0.000 000 00 AEX</string>
+                              <string notr="true">0.000 000 00 WEALTH</string>
                              </property>
                              <property name="alignment">
                               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>

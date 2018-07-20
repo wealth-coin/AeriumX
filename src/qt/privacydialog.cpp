@@ -31,7 +31,7 @@ PrivacyDialog::PrivacyDialog(QWidget* parent) : QDialog(parent),
     nDisplayUnit = 0; // just make sure it's not unitialized
     ui->setupUi(this);
 
-    // "Spending 999999 zAEX ought to be enough for anybody." - Bill Gates, 2017
+    // "Spending 999999 zWEALTH ought to be enough for anybody." - Bill Gates, 2017
     ui->zAEXpayAmount->setValidator( new QDoubleValidator(0.0, 21000000.0, 20, this) );
     ui->labelMintAmountValue->setValidator( new QIntValidator(0, 999999, this) );
 
@@ -109,10 +109,10 @@ PrivacyDialog::PrivacyDialog(QWidget* parent) : QDialog(parent),
     //temporary disable for maintenance
     if(GetAdjustedTime() > GetSporkValue(SPORK_16_ZEROCOIN_MAINTENANCE_MODE)) {
         ui->pushButtonMintzAEX->setEnabled(false);
-        ui->pushButtonMintzAEX->setToolTip(tr("zAEX is currently disabled due to maintenance."));
+        ui->pushButtonMintzAEX->setToolTip(tr("zWEALTH is currently disabled due to maintenance."));
 
         ui->pushButtonSpendzAEX->setEnabled(false);
-        ui->pushButtonSpendzAEX->setToolTip(tr("zAEX is currently disabled due to maintenance."));
+        ui->pushButtonSpendzAEX->setToolTip(tr("zWEALTH is currently disabled due to maintenance."));
     }
 }
 
@@ -163,7 +163,7 @@ void PrivacyDialog::on_pushButtonMintzAEX_clicked()
 
     if(GetAdjustedTime() > GetSporkValue(SPORK_16_ZEROCOIN_MAINTENANCE_MODE)) {
         QMessageBox::information(this, tr("Mint Zerocoin"),
-                                 tr("zAEX is currently undergoing maintenance."), QMessageBox::Ok,
+                                 tr("zWEALTH is currently undergoing maintenance."), QMessageBox::Ok,
                                  QMessageBox::Ok);
         return;
     }
@@ -191,7 +191,7 @@ void PrivacyDialog::on_pushButtonMintzAEX_clicked()
         return;
     }
 
-    ui->TEMintStatus->setPlainText(tr("Minting ") + ui->labelMintAmountValue->text() + " zAEX...");
+    ui->TEMintStatus->setPlainText(tr("Minting ") + ui->labelMintAmountValue->text() + " zWEALTH...");
     ui->TEMintStatus->repaint ();
 
     int64_t nTime = GetTimeMillis();
@@ -209,7 +209,7 @@ void PrivacyDialog::on_pushButtonMintzAEX_clicked()
     double fDuration = (double)(GetTimeMillis() - nTime)/1000.0;
 
     // Minting successfully finished. Show some stats for entertainment.
-    QString strStatsHeader = tr("Successfully minted ") + ui->labelMintAmountValue->text() + tr(" zAEX in ") +
+    QString strStatsHeader = tr("Successfully minted ") + ui->labelMintAmountValue->text() + tr(" zWEALTH in ") +
                              QString::number(fDuration) + tr(" sec. Used denominations:\n");
 
     // Clear amount to avoid double spending when accidentally clicking twice
@@ -274,7 +274,7 @@ void PrivacyDialog::on_pushButtonSpendzAEX_clicked()
 
     if(GetAdjustedTime() > GetSporkValue(SPORK_16_ZEROCOIN_MAINTENANCE_MODE)) {
         QMessageBox::information(this, tr("Mint Zerocoin"),
-                                 tr("zAEX is currently undergoing maintenance."), QMessageBox::Ok, QMessageBox::Ok);
+                                 tr("zWEALTH is currently undergoing maintenance."), QMessageBox::Ok, QMessageBox::Ok);
         return;
     }
 
@@ -286,11 +286,11 @@ void PrivacyDialog::on_pushButtonSpendzAEX_clicked()
             // Unlock wallet was cancelled
             return;
         }
-        // Wallet is unlocked now, sedn zAEX
+        // Wallet is unlocked now, sedn zWEALTH
         sendzAEX();
         return;
     }
-    // Wallet already unlocked or not encrypted at all, send zAEX
+    // Wallet already unlocked or not encrypted at all, send zWEALTH
     sendzAEX();
 }
 
@@ -343,14 +343,14 @@ void PrivacyDialog::sendzAEX()
         return;
     }
 
-    // Convert change to zAEX
+    // Convert change to zWEALTH
     bool fMintChange = ui->checkBoxMintChange->isChecked();
 
     // Persist minimize change setting
     fMinimizeChange = ui->checkBoxMinimizeChange->isChecked();
     settings.setValue("fMinimizeChange", fMinimizeChange);
 
-    // Warn for additional fees if amount is not an integer and change as zAEX is requested
+    // Warn for additional fees if amount is not an integer and change as zWEALTH is requested
     bool fWholeNumber = floor(dAmount) == dAmount;
     double dzFee = 0.0;
 
@@ -359,7 +359,7 @@ void PrivacyDialog::sendzAEX()
 
     if(!fWholeNumber && fMintChange){
         QString strFeeWarning = "You've entered an amount with fractional digits and want the change to be converted to Zerocoin.<br /><br /><b>";
-        strFeeWarning += QString::number(dzFee, 'f', 8) + " AEX </b>will be added to the standard transaction fees!<br />";
+        strFeeWarning += QString::number(dzFee, 'f', 8) + " WEALTH </b>will be added to the standard transaction fees!<br />";
         QMessageBox::StandardButton retval = QMessageBox::question(this, tr("Confirm additional Fees"),
             strFeeWarning,
             QMessageBox::Yes | QMessageBox::Cancel,
@@ -386,7 +386,7 @@ void PrivacyDialog::sendzAEX()
 
     // General info
     QString strQuestionString = tr("Are you sure you want to send?<br /><br />");
-    QString strAmount = "<b>" + QString::number(dAmount, 'f', 8) + " zAEX</b>";
+    QString strAmount = "<b>" + QString::number(dAmount, 'f', 8) + " zWEALTH</b>";
     QString strAddress = tr(" to address ") + QString::fromStdString(address.ToString()) + strAddressLabel + " <br />";
 
     if(ui->payTo->text().isEmpty()){
@@ -412,13 +412,13 @@ void PrivacyDialog::sendzAEX()
     ui->TEMintStatus->setPlainText(tr("Spending Zerocoin.\nComputationally expensive, might need several minutes depending on the selected Security Level and your hardware. \nPlease be patient..."));
     ui->TEMintStatus->repaint();
 
-    // use mints from zAEX selector if applicable
+    // use mints from zWEALTH selector if applicable
     vector<CZerocoinMint> vMintsSelected;
     if (!ZAEXControlDialog::listSelectedMints.empty()) {
         vMintsSelected = ZAEXControlDialog::GetSelectedMints();
     }
 
-    // Spend zAEX
+    // Spend zWEALTH
     CWalletTx wtxNew;
     CZerocoinSpendReceipt receipt;
     bool fSuccess = false;
@@ -434,7 +434,7 @@ void PrivacyDialog::sendzAEX()
     // Display errors during spend
     if (!fSuccess) {
         int nNeededSpends = receipt.GetNeededSpends(); // Number of spends we would need for this transaction
-        const int nMaxSpends = Params().Zerocoin_MaxSpendsPerTransaction(); // Maximum possible spends for one zAEX transaction
+        const int nMaxSpends = Params().Zerocoin_MaxSpendsPerTransaction(); // Maximum possible spends for one zWEALTH transaction
         if (nNeededSpends > nMaxSpends) {
             QString strStatusMessage = tr("Too much inputs (") + QString::number(nNeededSpends, 10) + tr(") needed. \nMaximum allowed: ") + QString::number(nMaxSpends, 10);
             strStatusMessage += tr("\nEither mint higher denominations (so fewer inputs are needed) or reduce the amount to spend.");
@@ -452,7 +452,7 @@ void PrivacyDialog::sendzAEX()
     }
 
     if (walletModel && walletModel->getAddressTableModel()) {
-        // If zAEX was spent successfully update the addressbook with the label
+        // If zWEALTH was spent successfully update the addressbook with the label
         std::string labelText = ui->addAsLabel->text().toStdString();
         if (!labelText.empty())
             walletModel->updateAddressBookLabels(address.Get(), labelText, "send");
@@ -460,7 +460,7 @@ void PrivacyDialog::sendzAEX()
             walletModel->updateAddressBookLabels(address.Get(), "(no label)", "send");
     }
 
-    // Clear zaex selector in case it was used
+    // Clear zwealth selector in case it was used
     ZAEXControlDialog::listSelectedMints.clear();
     ui->labelzAEXSelected_int->setText(QString("0"));
     ui->labelQuantitySelected_int->setText(QString("0"));
@@ -470,7 +470,7 @@ void PrivacyDialog::sendzAEX()
     CAmount nValueIn = 0;
     int nCount = 0;
     for (CZerocoinSpend spend : receipt.GetSpends()) {
-        strStats += tr("zAEX Spend #: ") + QString::number(nCount) + ", ";
+        strStats += tr("zWEALTH Spend #: ") + QString::number(nCount) + ", ";
         strStats += tr("denomination: ") + QString::number(spend.GetDenomination()) + ", ";
         strStats += tr("serial: ") + spend.GetSerial().ToString().c_str() + "\n";
         strStats += tr("Spend is 1 of : ") + QString::number(spend.GetMintCount()) + " mints in the accumulator\n";
@@ -479,13 +479,13 @@ void PrivacyDialog::sendzAEX()
 
     CAmount nValueOut = 0;
     for (const CTxOut& txout: wtxNew.vout) {
-        strStats += tr("value out: ") + FormatMoney(txout.nValue).c_str() + " AEX, ";
+        strStats += tr("value out: ") + FormatMoney(txout.nValue).c_str() + " WEALTH, ";
         nValueOut += txout.nValue;
 
         strStats += tr("address: ");
         CTxDestination dest;
         if(txout.scriptPubKey.IsZerocoinMint())
-            strStats += tr("zAEX Mint");
+            strStats += tr("zWEALTH Mint");
         else if(ExtractDestination(txout.scriptPubKey, dest))
             strStats += tr(CBitcoinAddress(dest).ToString().c_str());
         strStats += "\n";
@@ -648,7 +648,7 @@ void PrivacyDialog::setBalance(const CAmount& balance, const CAmount& unconfirme
 
         strDenomStats = strUnconfirmed + QString::number(mapDenomBalances.at(denom)) + " x " +
                         QString::number(nCoins) + " = <b>" +
-                        QString::number(nSumPerCoin) + " zAEX </b>";
+                        QString::number(nSumPerCoin) + " zWEALTH </b>";
 
         switch (nCoins) {
             case libzerocoin::CoinDenomination::ZQ_ONE:
@@ -686,8 +686,8 @@ void PrivacyDialog::setBalance(const CAmount& balance, const CAmount& unconfirme
         nLockedBalance = walletModel->getLockedBalance();
     }
 
-    ui->labelzAvailableAmount->setText(QString::number(zerocoinBalance/COIN) + QString(" zAEX "));
-    ui->labelzAvailableAmount_2->setText(QString::number(matureZerocoinBalance/COIN) + QString(" zAEX "));
+    ui->labelzAvailableAmount->setText(QString::number(zerocoinBalance/COIN) + QString(" zWEALTH "));
+    ui->labelzAvailableAmount_2->setText(QString::number(matureZerocoinBalance/COIN) + QString(" zWEALTH "));
     ui->labelzAEXAmountValue->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, balance - immatureBalance - nLockedBalance, false, BitcoinUnits::separatorAlways));
 
     // Display AutoMint status
@@ -704,11 +704,11 @@ void PrivacyDialog::setBalance(const CAmount& balance, const CAmount& unconfirme
     ui->label_AutoMintStatus->setText(strAutomintStatus);
 
     // Display global supply
-    ui->labelZsupplyAmount->setText(QString::number(chainActive.Tip()->GetZerocoinSupply()/COIN) + QString(" <b>zAEX </b> "));
+    ui->labelZsupplyAmount->setText(QString::number(chainActive.Tip()->GetZerocoinSupply()/COIN) + QString(" <b>zWEALTH </b> "));
     for (auto denom : libzerocoin::zerocoinDenomList) {
         int64_t nSupply = chainActive.Tip()->mapZerocoinSupply.at(denom);
         QString strSupply = QString::number(nSupply) + " x " + QString::number(denom) + " = <b>" +
-                            QString::number(nSupply*denom) + " zAEX </b> ";
+                            QString::number(nSupply*denom) + " zWEALTH </b> ";
         switch (denom) {
             case libzerocoin::CoinDenomination::ZQ_ONE:
                 ui->labelZsupplyAmount1->setText(strSupply);

@@ -20,7 +20,7 @@ BitcoinUnits::BitcoinUnits(QObject* parent) : QAbstractListModel(parent),
 QList<BitcoinUnits::Unit> BitcoinUnits::availableUnits()
 {
     QList<BitcoinUnits::Unit> unitlist;
-    unitlist.append(AEX);
+    unitlist.append(WEALTH);
     unitlist.append(mAEX);
     unitlist.append(uAEX);
     return unitlist;
@@ -29,7 +29,7 @@ QList<BitcoinUnits::Unit> BitcoinUnits::availableUnits()
 bool BitcoinUnits::valid(int unit)
 {
     switch (unit) {
-    case AEX:
+    case WEALTH:
     case mAEX:
     case uAEX:
         return true;
@@ -41,7 +41,7 @@ bool BitcoinUnits::valid(int unit)
 QString BitcoinUnits::id(int unit)
 {
     switch (unit) {
-    case AEX:
+    case WEALTH:
         return QString("wealthsilo");
     case mAEX:
         return QString("maeriumx");
@@ -56,8 +56,8 @@ QString BitcoinUnits::name(int unit)
 {
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         switch (unit) {
-        case AEX:
-            return QString("AEX");
+        case WEALTH:
+            return QString("WEALTH");
         case mAEX:
             return QString("mAEX");
         case uAEX:
@@ -67,7 +67,7 @@ QString BitcoinUnits::name(int unit)
         }
     } else {
         switch (unit) {
-        case AEX:
+        case WEALTH:
             return QString("tAEX");
         case mAEX:
             return QString("mtAEX");
@@ -83,18 +83,18 @@ QString BitcoinUnits::description(int unit)
 {
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         switch (unit) {
-        case AEX:
-            return QString("AEX");
+        case WEALTH:
+            return QString("WEALTH");
         case mAEX:
-            return QString("Milli-AEX (1 / 1" THIN_SP_UTF8 "000)");
+            return QString("Milli-WEALTH (1 / 1" THIN_SP_UTF8 "000)");
         case uAEX:
-            return QString("Micro-AEX (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+            return QString("Micro-WEALTH (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
         }
     } else {
         switch (unit) {
-        case AEX:
+        case WEALTH:
             return QString("TestAEXs");
         case mAEX:
             return QString("Milli-TestAEX (1 / 1" THIN_SP_UTF8 "000)");
@@ -109,7 +109,7 @@ QString BitcoinUnits::description(int unit)
 qint64 BitcoinUnits::factor(int unit)
 {
     switch (unit) {
-    case AEX:
+    case WEALTH:
         return 100000000;
     case mAEX:
         return 100000;
@@ -123,7 +123,7 @@ qint64 BitcoinUnits::factor(int unit)
 int BitcoinUnits::decimals(int unit)
 {
     switch (unit) {
-    case AEX:
+    case WEALTH:
         return 8;
     case mAEX:
         return 5;
