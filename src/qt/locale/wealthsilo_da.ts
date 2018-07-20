@@ -3963,10 +3963,10 @@ https://www.transifex.com/wealthsilo-project/wealthsilo-project-translations</tr
         <translation>Dette produkt anvender software udviklet i OpenSSL projektet til brug i OpenSSL værktøjssættet &lt;https://www.openssl.org/&gt; og kryptosoftware skrevet afEric Young og UPnP software skrevet af Thomas Bernard.</translation>
     </message>
     <message>
-        <source>To use aeriumxd, or the -server option to wealthsilo-qt, you must set an rpcpassword in the configuration file:
+        <source>To use wealthsilod, or the -server option to wealthsilo-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=aeriumxrpc
+rpcuser=wealthsilorpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
@@ -3974,10 +3974,10 @@ If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
 for example: alertnotify=echo %%s | mail -s "WealthSilo Alert" admin@foo.com
 </source>
-        <translation>For at bruge aeriumxd eller -server muligheden sammen med wealthsilo-qt skal der angives et rpc kodeord i konfigurationsfilen:
+        <translation>For at bruge wealthsilod eller -server muligheden sammen med wealthsilo-qt skal der angives et rpc kodeord i konfigurationsfilen:
 %s
 De anbefales at benytte følgende tilfældige kodeord
-Rpcuser=aeriumxrpc
+Rpcuser=wealthsilorpc
 rpcpasswrd=%s
 (Det er ikke nødvendigt at huske dette kodeord)
 Brugernavn og kodeord MÅ IKKE VÆRE ENS!

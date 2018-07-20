@@ -1,10 +1,10 @@
 Sample configuration files for:
 
-SystemD: aeriumxd.service
-Upstart: aeriumxd.conf
-OpenRC:  aeriumxd.openrc
-         aeriumxd.openrcconf
-CentOS:  aeriumxd.init
+SystemD: wealthsilod.service
+Upstart: wealthsilod.conf
+OpenRC:  wealthsilod.openrc
+         wealthsilod.openrcconf
+CentOS:  wealthsilod.init
 
 have been made available to assist packagers in creating node packages here.
 

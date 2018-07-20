@@ -18,7 +18,7 @@ Mandatory Update
 How to Upgrade
 ==============
 
-If you are running an older version, shut it down. Wait until it has completely shut down (which might take a few minutes for older versions), then run the installer (on Windows) or just copy over /Applications/WealthSilo-Qt (on Mac) or aeriumxd/wealthsilo-qt (on Linux).
+If you are running an older version, shut it down. Wait until it has completely shut down (which might take a few minutes for older versions), then run the installer (on Windows) or just copy over /Applications/WealthSilo-Qt (on Mac) or wealthsilod/wealthsilo-qt (on Linux).
 
 Compatibility
 ==============
@@ -50,7 +50,7 @@ overridden with the option `-rpccookiefile`.
 This is similar to Tor's CookieAuthentication: see
 https://www.torproject.org/docs/tor-manual.html.en
 
-This allows running aeriumxd without having to do any manual configuration.
+This allows running wealthsilod without having to do any manual configuration.
 
 
 *version* Change log

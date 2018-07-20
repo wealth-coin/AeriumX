@@ -177,7 +177,7 @@
     </message>
     <message>
         <source>WealthSilo will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ATRs from being stolen by malware infecting your computer.</source>
-        <translation>AeriumX는 이제 암호화 프로세스를 마치기 위해 닫힐것입니다. 지갑을 암호화하더라도 맬웨어로 인한 ATRs 의 도난당하는 것을 완벽하게 보호 할 수는 없습니다.</translation>
+        <translation>WealthSilo는 이제 암호화 프로세스를 마치기 위해 닫힐것입니다. 지갑을 암호화하더라도 맬웨어로 인한 ATRs 의 도난당하는 것을 완벽하게 보호 할 수는 없습니다.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -627,7 +627,7 @@
     </message>
     <message>
         <source>Modify configuration options for WealthSilo</source>
-        <translation>AeriumX에 대한 구성 옵션 수정</translation>
+        <translation>WealthSilo에 대한 구성 옵션 수정</translation>
     </message>
     <message>
         <source>Sign messages with your WealthSilo addresses to prove you own them</source>
@@ -1541,15 +1541,15 @@ Please check the address and try again.</source>
     </message>
     <message>
         <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening WealthSilo's configuration screen.</source>
-        <translation>난독화가 성공적으로 높게 설정되었습니다.(%1 및 2 rounds) AeriumX의 설정 화면을 열어 언제든지 다시 변경할 수 있습니다.</translation>
+        <translation>난독화가 성공적으로 높게 설정되었습니다.(%1 및 2 rounds) WealthSilo의 설정 화면을 열어 언제든지 다시 변경할 수 있습니다.</translation>
     </message>
     <message>
         <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening WealthSilo's configuration screen.</source>
-        <translation>난독화가 성공적으로 높게 설정되었습니다.(%1 및 8 rounds) AeriumX의 설정 화면을 열어 언제든지 다시 변경할 수 있습니다.</translation>
+        <translation>난독화가 성공적으로 높게 설정되었습니다.(%1 및 8 rounds) WealthSilo의 설정 화면을 열어 언제든지 다시 변경할 수 있습니다.</translation>
     </message>
     <message>
         <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening WealthSilo's configuration screen.</source>
-        <translation>난독화가 성공적으로 높게 설정되었습니다.(%1 및 16 rounds) AeriumX의 설정 화면을 열어 언제든지 다시 변경할 수 있습니다.</translation>
+        <translation>난독화가 성공적으로 높게 설정되었습니다.(%1 및 16 rounds) WealthSilo의 설정 화면을 열어 언제든지 다시 변경할 수 있습니다.</translation>
     </message>
 </context>
 <context>
@@ -1631,7 +1631,7 @@ Please check the address and try again.</source>
     </message>
     <message>
         <source>Automatically start WealthSilo after logging in to the system.</source>
-        <translation>시스템 로그인 후 AeriumX을 자동으로 시작합니다.</translation>
+        <translation>시스템 로그인 후 WealthSilo을 자동으로 시작합니다.</translation>
     </message>
     <message>
         <source>&amp;Start WealthSilo on system login</source>
@@ -1663,7 +1663,7 @@ Please check the address and try again.</source>
     </message>
     <message>
         <source>The user interface language can be set here. This setting will take effect after restarting WealthSilo.</source>
-        <translation>사용자 인터페이스 언어를 설정할 수 있습니다. 이 설정은 AeriumX을 다시 시작한 후에 적용됩니다.</translation>
+        <translation>사용자 인터페이스 언어를 설정할 수 있습니다. 이 설정은 WealthSilo을 다시 시작한 후에 적용됩니다.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
@@ -1895,7 +1895,7 @@ https://www.transifex.com/wealthsilo-project/wealthsilo-project-translations</tr
     </message>
     <message>
         <source>Cannot start wealthsilo: click-to-pay handler</source>
-        <translation>AeriumX을 시작할 수 없습니다: 결제하기 위한 클릭 처리</translation>
+        <translation>WealthSilo을 시작할 수 없습니다: 결제하기 위한 클릭 처리</translation>
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid WealthSilo address or malformed URI parameters.</source>
@@ -3829,7 +3829,7 @@ https://www.transifex.com/wealthsilo-project/wealthsilo-project-translations</tr
     </message>
     <message>
         <source>Disable all WealthSilo specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
-        <translation>AeriumX의 모든 특정 기능들을 비활성화합니다(마스터노드, 난독화, SwiftTX, Budgeting) (0-1, 기본값: %u)</translation>
+        <translation>WealthSilo의 모든 특정 기능들을 비활성화합니다(마스터노드, 난독화, SwiftTX, Budgeting) (0-1, 기본값: %u)</translation>
     </message>
     <message>
         <source>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</source>
@@ -3972,10 +3972,10 @@ https://www.transifex.com/wealthsilo-project/wealthsilo-project-translations</tr
         <translation>이 제품은 OpenSSL이 개발한 Open SSL 툴킷 &lt;https://www.openssl.org/&gt; 에서 사용하기 위한 프로젝트 소프트웨어, Eric Young이 개발한 암호화 소프트웨어, Thomas Bernard가 개발한 UPnP 소프트웨어가 포함되어 있습니다.</translation>
     </message>
     <message>
-        <source>To use aeriumxd, or the -server option to wealthsilo-qt, you must set an rpcpassword in the configuration file:
+        <source>To use wealthsilod, or the -server option to wealthsilo-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=aeriumxrpc
+rpcuser=wealthsilorpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
@@ -3983,10 +3983,10 @@ If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
 for example: alertnotify=echo %%s | mail -s "WealthSilo Alert" admin@foo.com
 </source>
-        <translation>AeriumXd 또는 WealthSilo-qt에 대한 -server 옵션 파일을 사용하려면 configuration 파일에서 rpcpassword를 설정해야 합니다:
+        <translation>WealthSilod 또는 WealthSilo-qt에 대한 -server 옵션 파일을 사용하려면 configuration 파일에서 rpcpassword를 설정해야 합니다:
 %s
 다음 무작위 암호를 사용하는 것을 추천합니다:
-rpcuser=AeriumXpc
+rpcuser=WealthSilopc
 rpcpassword=%s
 (이 비밀번호는 기억할 필요가 없습니다)
 유저 이름과 비밀번호는 반드시 달라야 합니다.

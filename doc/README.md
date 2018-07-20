@@ -13,8 +13,8 @@ The following are some helpful notes on how to run WealthSilo on your native pla
 
 Unpack the files into a directory and run:
 
-- bin/32/wealthsilo-qt (GUI, 32-bit) or bin/32/aeriumxd (headless, 32-bit)
-- bin/64/wealthsilo-qt (GUI, 64-bit) or bin/64/aeriumxd (headless, 64-bit)
+- bin/32/wealthsilo-qt (GUI, 32-bit) or bin/32/wealthsilod (headless, 32-bit)
+- bin/64/wealthsilo-qt (GUI, 64-bit) or bin/64/wealthsilod (headless, 64-bit)
 
 ### Windows
 

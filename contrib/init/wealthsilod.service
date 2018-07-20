@@ -7,13 +7,13 @@ User=wealthsilo
 Group=wealthsilo
 
 Type=forking
-PIDFile=/var/lib/aeriumxd/aeriumxd.pid
+PIDFile=/var/lib/wealthsilod/wealthsilod.pid
 
-ExecStart=/usr/bin/aeriumxd -daemon -pid=/var/lib/aeriumxd/aeriumxd.pid \
-          -conf=/etc/wealthsilo/wealthsilo.conf -datadir=/var/lib/aeriumxd
+ExecStart=/usr/bin/wealthsilod -daemon -pid=/var/lib/wealthsilod/wealthsilod.pid \
+          -conf=/etc/wealthsilo/wealthsilo.conf -datadir=/var/lib/wealthsilod
 
 ExecStop=-/usr/bin/wealthsilo-cli -conf=/etc/wealthsilo/wealthsilo.conf \
-         -datadir=/var/lib/aeriumxd stop
+         -datadir=/var/lib/wealthsilod stop
 
 Restart=always
 PrivateTmp=true

@@ -1,31 +1,31 @@
 #!/bin/bash
 #
-#  aeriumxd The WealthSilo core server.
+#  wealthsilod The WealthSilo core server.
 #
 #
 # chkconfig: 345 80 20
-# description: aeriumxd
-# processname: aeriumxd
+# description: wealthsilod
+# processname: wealthsilod
 #
 
 # Source function library.
 . /etc/init.d/functions
 
-# you can override defaults in /etc/sysconfig/aeriumxd, see below
-if [ -f /etc/sysconfig/aeriumxd ]; then
-        . /etc/sysconfig/aeriumxd
+# you can override defaults in /etc/sysconfig/wealthsilod, see below
+if [ -f /etc/sysconfig/wealthsilod ]; then
+        . /etc/sysconfig/wealthsilod
 fi
 
 RETVAL=0
 
-prog=aeriumxd
-# you can override the lockfile via BITCOIND_LOCKFILE in /etc/sysconfig/aeriumxd
-lockfile=${BITCOIND_LOCKFILE-/var/lock/subsys/aeriumxd}
+prog=wealthsilod
+# you can override the lockfile via BITCOIND_LOCKFILE in /etc/sysconfig/wealthsilod
+lockfile=${BITCOIND_LOCKFILE-/var/lock/subsys/wealthsilod}
 
-# aeriumxd defaults to /usr/bin/aeriumxd, override with BITCOIND_BIN
-bitcoind=${BITCOIND_BIN-/usr/bin/aeriumxd}
+# wealthsilod defaults to /usr/bin/wealthsilod, override with BITCOIND_BIN
+bitcoind=${BITCOIND_BIN-/usr/bin/wealthsilod}
 
-# aeriumxd opts default to -disablewallet, override with BITCOIND_OPTS
+# wealthsilod opts default to -disablewallet, override with BITCOIND_OPTS
 bitcoind_opts=${BITCOIND_OPTS}
 
 start() {

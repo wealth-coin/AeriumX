@@ -59,8 +59,8 @@ UniValue obfuscation(const UniValue& params, bool fHelp)
 
     if (fHelp || params.size() == 0)
         throw runtime_error(
-            "obfuscation <aeriumxaddress> <amount>\n"
-            "aeriumxaddress, reset, or auto (AutoDenominate)"
+            "obfuscation <wealthsiloaddress> <amount>\n"
+            "wealthsiloaddress, reset, or auto (AutoDenominate)"
             "<amount> is a real and will be rounded to the next 0.1" +
             HelpRequiringPassphrase());
 
@@ -81,8 +81,8 @@ UniValue obfuscation(const UniValue& params, bool fHelp)
 
     if (params.size() != 2)
         throw runtime_error(
-            "obfuscation <aeriumxaddress> <amount>\n"
-            "aeriumxaddress, denominate, or auto (AutoDenominate)"
+            "obfuscation <wealthsiloaddress> <amount>\n"
+            "wealthsiloaddress, denominate, or auto (AutoDenominate)"
             "<amount> is a real and will be rounded to the next 0.1" +
             HelpRequiringPassphrase());
 

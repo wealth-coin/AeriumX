@@ -44,9 +44,9 @@ QString BitcoinUnits::id(int unit)
     case WEALTH:
         return QString("wealthsilo");
     case mAEX:
-        return QString("maeriumx");
+        return QString("mwealthsilo");
     case uAEX:
-        return QString::fromUtf8("uaeriumx");
+        return QString::fromUtf8("uwealthsilo");
     default:
         return QString("???");
     }

@@ -34,7 +34,7 @@ using namespace std;
 
 //////////////////////////////////////////////////////////////////////////////
 //
-// AeriumXMiner
+// WealthSiloMiner
 //
 
 //
@@ -511,7 +511,7 @@ bool ProcessBlockFound(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
     {
         LOCK(cs_main);
         if (pblock->hashPrevBlock != chainActive.Tip()->GetBlockHash())
-            return error("AeriumXMiner : generated block is stale");
+            return error("WealthSiloMiner : generated block is stale");
     }
 
     // Remove key from key pool
@@ -529,7 +529,7 @@ bool ProcessBlockFound(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
     // Process this block the same as if we had received it from another node
     CValidationState state;
     if (!ProcessNewBlock(state, NULL, pblock))
-        return error("AeriumXMiner : ProcessNewBlock, block not accepted");
+        return error("WealthSiloMiner : ProcessNewBlock, block not accepted");
 
     for (CNode* node : vNodes) {
         node->PushInventory(CInv(MSG_BLOCK, pblock->GetHash()));
@@ -544,7 +544,7 @@ bool fGenerateBitcoins = false;
 
 void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
 {
-    LogPrintf("AeriumXMiner started\n");
+    LogPrintf("WealthSiloMiner started\n");
     SetThreadPriority(THREAD_PRIORITY_LOWEST);
     RenameThread("wealthsilo-miner");
 
@@ -619,7 +619,7 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
             continue;
         }
 
-        if(fDebug) LogPrintf("Running AeriumXMiner with %u transactions in block (%u bytes)\n", pblock->vtx.size(),
+        if(fDebug) LogPrintf("Running WealthSiloMiner with %u transactions in block (%u bytes)\n", pblock->vtx.size(),
             ::GetSerializeSize(*pblock, SER_NETWORK, PROTOCOL_VERSION));
 
         //

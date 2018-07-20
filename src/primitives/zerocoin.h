@@ -2,8 +2,8 @@
 // Copyright (c) 2017 The WealthSilo developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
-#ifndef AeriumX_ZEROCOIN_H
-#define AeriumX_ZEROCOIN_H
+#ifndef WealthSilo_ZEROCOIN_H
+#define WealthSilo_ZEROCOIN_H
 
 #include <amount.h>
 #include <limits.h>
@@ -190,4 +190,4 @@ public:
     int GetNeededSpends();
 };
 
-#endif //AeriumX_ZEROCOIN_H
+#endif //WealthSilo_ZEROCOIN_H

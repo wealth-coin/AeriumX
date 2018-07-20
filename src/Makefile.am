@@ -73,7 +73,7 @@ bin_PROGRAMS =
 TESTS =
 
 if BUILD_BITCOIND
-  bin_PROGRAMS += aeriumxd
+  bin_PROGRAMS += wealthsilod
 endif
 
 if BUILD_BITCOIN_UTILS
@@ -190,7 +190,7 @@ obj/build.h: FORCE
 	  $(abs_top_srcdir)
 libbitcoin_util_a-clientversion.$(OBJEXT): obj/build.h
 
-# server: shared between aeriumxd and wealthsilo-qt
+# server: shared between wealthsilod and wealthsilo-qt
 libbitcoin_server_a_CPPFLAGS = $(BITCOIN_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(EVENT_CFLAGS) $(EVENT_PTHREADS_CFLAGS)
 libbitcoin_server_a_SOURCES = \
   addrman.cpp \
@@ -237,7 +237,7 @@ libbitcoin_zmq_a_SOURCES = \
   zmq/zmqpublishnotifier.cpp
 endif
 
-# wallet: shared between aeriumxd and wealthsilo-qt, but only linked
+# wallet: shared between wealthsilod and wealthsilo-qt, but only linked
 # when wallet enabled
 
 libbitcoin_wallet_a_CFLAGS = -fPIC
@@ -347,7 +347,7 @@ libzerocoin_libbitcoin_zerocoin_a_SOURCES = \
   libzerocoin/Params.cpp \
   libzerocoin/SerialNumberSignatureOfKnowledge.cpp
 
-# common: shared between aeriumxd, and wealthsilo-qt and non-server tools
+# common: shared between wealthsilod, and wealthsilo-qt and non-server tools
 libbitcoin_common_a_CPPFLAGS = $(BITCOIN_INCLUDES)
 libbitcoin_common_a_SOURCES = \
   accumulators.cpp \
@@ -418,7 +418,7 @@ nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
 # bitcoind binary #
-aeriumxd_LDADD = \
+wealthsilod_LDADD = \
   $(LIBBITCOIN_SERVER) \
   $(LIBBITCOIN_COMMON) \
   $(LIBUNIVALUE) \
@@ -430,26 +430,26 @@ aeriumxd_LDADD = \
   $(LIBSECP256K1)
 
 if ENABLE_ZMQ
-aeriumxd_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
+wealthsilod_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
 endif
 
 if ENABLE_WALLET
-aeriumxd_LDADD += libbitcoin_wallet.a
+wealthsilod_LDADD += libbitcoin_wallet.a
 endif
-aeriumxd_SOURCES = aeriumxd.cpp
+wealthsilod_SOURCES = wealthsilod.cpp
 #
 
 if TARGET_WINDOWS
-aeriumxd_SOURCES += aeriumxd-res.rc
+wealthsilod_SOURCES += wealthsilod-res.rc
 endif
 
-aeriumxd_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
-aeriumxd_CPPFLAGS = $(BITCOIN_INCLUDES)
-aeriumxd_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+wealthsilod_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
+wealthsilod_CPPFLAGS = $(BITCOIN_INCLUDES)
+wealthsilod_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 
 # wealthsilo-cli binary #
-aeriumx_cli_LDADD = \
+wealthsilo_cli_LDADD = \
   $(LIBBITCOIN_CLI) \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_UTIL) \
@@ -458,14 +458,14 @@ aeriumx_cli_LDADD = \
   $(CRYPTO_LIBS) \
   $(EVENT_LIBS)
 
-aeriumx_cli_SOURCES = \
+wealthsilo_cli_SOURCES = \
   wealthsilo-cli.cpp
 
-aeriumx_cli_CPPFLAGS = $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
+wealthsilo_cli_CPPFLAGS = $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
 #
 
 # wealthsilo-tx binary #
-aeriumx_tx_LDADD = \
+wealthsilo_tx_LDADD = \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_ZEROCOIN) \
@@ -475,15 +475,15 @@ aeriumx_tx_LDADD = \
   $(BOOST_LIBS) \
   $(CRYPTO_LIBS)
 
-aeriumx_tx_SOURCES = wealthsilo-tx.cpp
-aeriumx_tx_CPPFLAGS = $(BITCOIN_INCLUDES)
+wealthsilo_tx_SOURCES = wealthsilo-tx.cpp
+wealthsilo_tx_CPPFLAGS = $(BITCOIN_INCLUDES)
 #
-aeriumx_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+wealthsilo_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-aeriumx_cli_SOURCES += wealthsilo-cli-res.rc
+wealthsilo_cli_SOURCES += wealthsilo-cli-res.rc
 endif
-aeriumx_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+wealthsilo_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if BUILD_BITCOIN_LIBS
 include_HEADERS = script/bitcoinconsensus.h

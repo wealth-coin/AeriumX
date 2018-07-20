@@ -82,7 +82,7 @@ bool AppInit(int argc, char* argv[])
             strUsage += LicenseInfo();
         } else {
             strUsage += "\n" + _("Usage:") + "\n" +
-                        "  aeriumxd [options]                     " + _("Start WealthSilo Core Daemon") + "\n";
+                        "  wealthsilod [options]                     " + _("Start WealthSilo Core Daemon") + "\n";
 
             strUsage += "\n" + HelpMessage(HMM_BITCOIND);
         }
@@ -122,7 +122,7 @@ bool AppInit(int argc, char* argv[])
                 fCommandLine = true;
 
         if (fCommandLine) {
-            fprintf(stderr, "Error: There is no RPC client functionality in aeriumxd anymore. Use the wealthsilo-cli utility instead.\n");
+            fprintf(stderr, "Error: There is no RPC client functionality in wealthsilod anymore. Use the wealthsilo-cli utility instead.\n");
             exit(1);
         }
 #ifndef WIN32
@@ -173,7 +173,7 @@ int main(int argc, char* argv[])
 {
     SetupEnvironment();
 
-    // Connect aeriumxd signal handlers
+    // Connect wealthsilod signal handlers
     noui_connect();
 
     return (AppInit(argc, argv) ? 0 : 1);

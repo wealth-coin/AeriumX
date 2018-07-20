@@ -1,25 +1,25 @@
-# /etc/conf.d/aeriumxd: config file for /etc/init.d/aeriumxd
+# /etc/conf.d/wealthsilod: config file for /etc/init.d/wealthsilod
 
 # Config file location
 #BITCOIND_CONFIGFILE="/etc/wealthsilo/wealthsilo.conf"
 
 # What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
-#BITCOIND_PIDDIR="/var/run/aeriumxd"
+#BITCOIND_PIDDIR="/var/run/wealthsilod"
 
 # What filename to give the pidfile
-#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/aeriumxd.pid"
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/wealthsilod.pid"
 
-# Where to write aeriumxd data (be mindful that the blockchain is large)
-#BITCOIND_DATADIR="/var/lib/aeriumxd"
+# Where to write wealthsilod data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/wealthsilod"
 
-# User and group to own aeriumxd process
+# User and group to own wealthsilod process
 #BITCOIND_USER="wealthsilo"
 #BITCOIND_GROUP="wealthsilo"
 
-# Path to aeriumxd executable
-#BITCOIND_BIN="/usr/bin/aeriumxd"
+# Path to wealthsilod executable
+#BITCOIND_BIN="/usr/bin/wealthsilod"
 
-# Nice value to run aeriumxd under
+# Nice value to run wealthsilod under
 #BITCOIND_NICE=0
 
 # Additional options (avoid -conf and -datadir, use flags above)

@@ -9,7 +9,7 @@
 #include <vector>
 
 /**
- * CBaseChainParams defines the base parameters (shared between wealthsilo-cli and aeriumxd)
+ * CBaseChainParams defines the base parameters (shared between wealthsilo-cli and wealthsilod)
  * of a given instance of the WealthSilo system.
  */
 class CBaseChainParams

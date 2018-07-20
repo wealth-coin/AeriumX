@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef AeriumX_ACCUMULATORS_H
-#define AeriumX_ACCUMULATORS_H
+#ifndef WealthSilo_ACCUMULATORS_H
+#define WealthSilo_ACCUMULATORS_H
 
 #include "libzerocoin/Accumulator.h"
 #include "libzerocoin/Coin.h"
@@ -27,4 +27,4 @@ uint32_t GetChecksum(const CBigNum &bnValue);
 bool InvalidCheckpointRange(int nHeight);
 bool ValidateAccumulatorCheckpoint(const CBlock& block, CBlockIndex* pindex, AccumulatorMap& mapAccumulators);
 
-#endif //AeriumX_ACCUMULATORS_H
+#endif //WealthSilo_ACCUMULATORS_H

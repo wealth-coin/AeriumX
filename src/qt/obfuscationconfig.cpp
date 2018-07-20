@@ -80,8 +80,8 @@ void ObfuscationConfig::configure(bool enabled, int coins, int rounds)
     QSettings settings;
 
     settings.setValue("nObfuscationRounds", rounds);
-    settings.setValue("nAnonymizeAeriumXAmount", coins);
+    settings.setValue("nAnonymizeWealthSiloAmount", coins);
 
     nZeromintPercentage = rounds;
-    nAnonymizeAeriumXAmount = coins;
+    nAnonymizeWealthSiloAmount = coins;
 }

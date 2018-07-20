@@ -369,7 +369,7 @@ std::string HelpMessage(HelpMessageMode mode)
     strUsage += HelpMessageOpt("-maxorphantx=<n>", strprintf(_("Keep at most <n> unconnectable transactions in memory (default: %u)"), DEFAULT_MAX_ORPHAN_TRANSACTIONS));
     strUsage += HelpMessageOpt("-par=<n>", strprintf(_("Set the number of script verification threads (%u to %d, 0 = auto, <0 = leave that many cores free, default: %d)"), -(int)boost::thread::hardware_concurrency(), MAX_SCRIPTCHECK_THREADS, DEFAULT_SCRIPTCHECK_THREADS));
 #ifndef WIN32
-    strUsage += HelpMessageOpt("-pid=<file>", strprintf(_("Specify pid file (default: %s)"), "aeriumxd.pid"));
+    strUsage += HelpMessageOpt("-pid=<file>", strprintf(_("Specify pid file (default: %s)"), "wealthsilod.pid"));
 #endif
     strUsage += HelpMessageOpt("-reindex", _("Rebuild block chain index from current blk000??.dat files") + " " + _("on startup"));
     strUsage += HelpMessageOpt("-reindexaccumulators", _("Reindex the accumulator database") + " " + _("on startup"));
@@ -527,7 +527,7 @@ std::string HelpMessage(HelpMessageMode mode)
     strUsage += HelpMessageOpt("-preferredDenom=<n>", strprintf(_("Preferred Denomination for automatically minted Zerocoin  (1/5/10/50/100/500/1000/5000), 0 for no preference. default: %u)"), 0));
     strUsage += HelpMessageOpt("-backupzaex=<n>", strprintf(_("Enable automatic wallet backups triggered after each zWEALTH minting (0-1, default: %u)"), 1));
 
-//    strUsage += "  -anonymizeaeriumxamount=<n>     " + strprintf(_("Keep N WEALTH anonymized (default: %u)"), 0) + "\n";
+//    strUsage += "  -anonymizewealthsiloamount=<n>     " + strprintf(_("Keep N WEALTH anonymized (default: %u)"), 0) + "\n";
 //    strUsage += "  -liquidityprovider=<n>       " + strprintf(_("Provide liquidity to Obfuscation by infrequently mixing coins on a continual basis (0-100, default: %u, 1=very frequent, high fees, 100=very infrequent, low fees)"), 0) + "\n";
 
     strUsage += HelpMessageGroup(_("SwiftX options:"));
@@ -1774,7 +1774,7 @@ bool AppInit2(boost::thread_group& threadGroup, CScheduler& scheduler)
     }
 
 // XX42 Remove/refactor code below. Until then provide safe defaults
-    nAnonymizeAeriumXAmount = 2;
+    nAnonymizeWealthSiloAmount = 2;
 
 //    nLiquidityProvider = GetArg("-liquidityprovider", 0); //0-100
 //    if (nLiquidityProvider != 0) {
@@ -1783,9 +1783,9 @@ bool AppInit2(boost::thread_group& threadGroup, CScheduler& scheduler)
 //        nZeromintPercentage = 99999;
 //    }
 //
-//    nAnonymizeAeriumXAmount = GetArg("-anonymizeaeriumxamount", 0);
-//    if (nAnonymizeAeriumXAmount > 999999) nAnonymizeAeriumXAmount = 999999;
-//    if (nAnonymizeAeriumXAmount < 2) nAnonymizeAeriumXAmount = 2;
+//    nAnonymizeWealthSiloAmount = GetArg("-anonymizewealthsiloamount", 0);
+//    if (nAnonymizeWealthSiloAmount > 999999) nAnonymizeWealthSiloAmount = 999999;
+//    if (nAnonymizeWealthSiloAmount < 2) nAnonymizeWealthSiloAmount = 2;
 
     fEnableSwiftTX = GetBoolArg("-enableswifttx", fEnableSwiftTX);
     nSwiftTXDepth = GetArg("-swifttxdepth", nSwiftTXDepth);
@@ -1799,7 +1799,7 @@ bool AppInit2(boost::thread_group& threadGroup, CScheduler& scheduler)
 
     LogPrintf("fLiteMode %d\n", fLiteMode);
     LogPrintf("nSwiftTXDepth %d\n", nSwiftTXDepth);
-    LogPrintf("Anonymize WealthSilo Amount %d\n", nAnonymizeAeriumXAmount);
+    LogPrintf("Anonymize WealthSilo Amount %d\n", nAnonymizeWealthSiloAmount);
     LogPrintf("Budget Mode %s\n", strBudgetMode.c_str());
 
     /* Denominations

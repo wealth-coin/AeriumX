@@ -43,11 +43,11 @@
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-        <translation>選擇要匯出AeriumX幣的位址</translation>
+        <translation>選擇要匯出WealthSilo幣的位址</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation>選擇要接收AeriumX幣的位址</translation>
+        <translation>選擇要接收WealthSilo幣的位址</translation>
     </message>
     <message>
         <source>C&amp;hoose</source>
@@ -651,7 +651,7 @@
     </message>
     <message>
         <source>Open a WealthSilo: URI or payment request</source>
-        <translation>打開AeriumX: 位址或付款請求 </translation>
+        <translation>打開WealthSilo: 位址或付款請求 </translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>

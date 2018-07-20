@@ -2,8 +2,8 @@
 // Copyright (c) 2017 The WealthSilo developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
-#ifndef AeriumX_ACCUMULATORMAP_H
-#define AeriumX_ACCUMULATORMAP_H
+#ifndef WealthSilo_ACCUMULATORMAP_H
+#define WealthSilo_ACCUMULATORMAP_H
 
 #include "libzerocoin/Accumulator.h"
 #include "libzerocoin/Coin.h"
@@ -21,4 +21,4 @@ public:
     uint256 GetCheckpoint();
     void Reset();
 };
-#endif //AeriumX_ACCUMULATORMAP_H
+#endif //WealthSilo_ACCUMULATORMAP_H

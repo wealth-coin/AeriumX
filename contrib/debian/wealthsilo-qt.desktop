@@ -7,6 +7,6 @@ Comment[tr]=WealthSilo, eşten eşe kriptografik sanal para birimi
 Exec=wealthsilo-qt %u
 Terminal=false
 Type=Application
-Icon=aeriumx128
+Icon=wealthsilo128
 MimeType=x-scheme-handler/wealthsilo;
 Categories=Office;Finance;

@@ -17,13 +17,13 @@ BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
             VALUE "CompanyName",        "WealthSilo"
-            VALUE "FileDescription",    "aeriumxd (OSS daemon/client for WealthSilo)"
+            VALUE "FileDescription",    "wealthsilod (OSS daemon/client for WealthSilo)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "aeriumxd"
+            VALUE "InternalName",       "wealthsilod"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "aeriumxd.exe"
-            VALUE "ProductName",        "aeriumxd"
+            VALUE "OriginalFilename",   "wealthsilod.exe"
+            VALUE "ProductName",        "wealthsilod"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

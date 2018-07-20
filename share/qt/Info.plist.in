@@ -40,7 +40,7 @@
       <key>CFBundleTypeRole</key>
       <string>Editor</string>
       <key>CFBundleURLName</key>
-      <string>io.wealthsilo.AeriumXPayment</string>
+      <string>io.wealthsilo.WealthSiloPayment</string>
       <key>CFBundleURLSchemes</key>
       <array>
         <string>wealthsilo</string>
@@ -65,7 +65,7 @@
         <string>application/x-wealthsilo-payment-request</string>
         <key>public.filename-extension</key>
         <array>
-          <string>aeriumxpaymentrequest</string>
+          <string>wealthsilopaymentrequest</string>
         </array>
       </dict>
     </dict>

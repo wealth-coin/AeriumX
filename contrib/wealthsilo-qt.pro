@@ -484,7 +484,7 @@ SOURCES += src/activemasternode.cpp \
            src/qt/csvmodelwriter.cpp \
            src/qt/obfuscationconfig.cpp \
            src/qt/wealthsilo.cpp \
-           src/qt/aeriumxstrings.cpp \
+           src/qt/wealthsilostrings.cpp \
            src/qt/editaddressdialog.cpp \
            src/qt/guiutil.cpp \
            src/qt/intro.cpp \
@@ -562,7 +562,7 @@ SOURCES += src/activemasternode.cpp \
            src/test/sighash_tests.cpp \
            src/test/sigopcount_tests.cpp \
            src/test/skiplist_tests.cpp \
-           src/test/test_aeriumx.cpp \
+           src/test/test_wealthsilo.cpp \
            src/test/timedata_tests.cpp \
            src/test/transaction_tests.cpp \
            src/test/uint256_tests.cpp \
@@ -653,21 +653,21 @@ SOURCES += src/activemasternode.cpp \
            src/leveldb/helpers/memenv/memenv.cc \
            src/leveldb/helpers/memenv/memenv_test.cc \
            src/secp256k1/src/java/org_bitcoin_NativeSecp256k1.c
-RESOURCES += src/qt/wealthsilo.qrc src/qt/aeriumx_locale.qrc
+RESOURCES += src/qt/wealthsilo.qrc src/qt/wealthsilo_locale.qrc
 
-TRANSLATIONS += src/qt/locale/aeriumx_bg.ts \
-                src/qt/locale/aeriumx_de.ts \
-                src/qt/locale/aeriumx_en.ts \
-                src/qt/locale/aeriumx_es.ts \
-                src/qt/locale/aeriumx_fi.ts \
-                src/qt/locale/aeriumx_fr.ts \
-                src/qt/locale/aeriumx_it.ts \
-                src/qt/locale/aeriumx_ja.ts \
-                src/qt/locale/aeriumx_pl.ts \
-                src/qt/locale/aeriumx_pt.ts \
-                src/qt/locale/aeriumx_ru.ts \
-                src/qt/locale/aeriumx_sk.ts \
-                src/qt/locale/aeriumx_sv.ts \
-                src/qt/locale/aeriumx_vi.ts \
-                src/qt/locale/aeriumx_zh_CN.ts \
-                src/qt/locale/aeriumx_zh_TW.ts
+TRANSLATIONS += src/qt/locale/wealthsilo_bg.ts \
+                src/qt/locale/wealthsilo_de.ts \
+                src/qt/locale/wealthsilo_en.ts \
+                src/qt/locale/wealthsilo_es.ts \
+                src/qt/locale/wealthsilo_fi.ts \
+                src/qt/locale/wealthsilo_fr.ts \
+                src/qt/locale/wealthsilo_it.ts \
+                src/qt/locale/wealthsilo_ja.ts \
+                src/qt/locale/wealthsilo_pl.ts \
+                src/qt/locale/wealthsilo_pt.ts \
+                src/qt/locale/wealthsilo_ru.ts \
+                src/qt/locale/wealthsilo_sk.ts \
+                src/qt/locale/wealthsilo_sv.ts \
+                src/qt/locale/wealthsilo_vi.ts \
+                src/qt/locale/wealthsilo_zh_CN.ts \
+                src/qt/locale/wealthsilo_zh_TW.ts
