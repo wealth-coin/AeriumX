@@ -59,8 +59,8 @@ public:
      */
     enum Unit {
         WEALTH,
-        mAEX,
-        uAEX
+        mWEALTH,
+        uWEALTH
     };
 
     enum SeparatorStyle {

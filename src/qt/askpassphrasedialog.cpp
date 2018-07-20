@@ -76,7 +76,7 @@ AskPassphraseDialog::AskPassphraseDialog(Mode mode, QWidget* parent, WalletModel
     }
 
     // Set checkbox "For anonymization, automint, and staking only" depending on from where we were called
-    if (context == Context::Unlock_Menu || context == Context::Mint_zAEX || context == Context::BIP_38) {
+    if (context == Context::Unlock_Menu || context == Context::Mint_zWEALTH || context == Context::BIP_38) {
         ui->anonymizationCheckBox->setChecked(true);
     }
     else {
@@ -84,7 +84,7 @@ AskPassphraseDialog::AskPassphraseDialog(Mode mode, QWidget* parent, WalletModel
     }
 
     // It doesn't make sense to show the checkbox for sending WEALTH because you wouldn't check it anyway.
-    if (context == Context::Send_AEX || context == Context::Send_zAEX) {
+    if (context == Context::Send_WEALTH || context == Context::Send_zWEALTH) {
         ui->anonymizationCheckBox->hide();
     }
 
@@ -134,7 +134,7 @@ void AskPassphraseDialog::accept()
                         "<qt>" +
                             tr("WealthSilo will close now to finish the encryption process. "
                                "Remember that encrypting your wallet cannot fully protect "
-                               "your AEXs from being stolen by malware infecting your computer.") +
+                               "your WEALTHs from being stolen by malware infecting your computer.") +
                             "<br><br><b>" +
                             tr("IMPORTANT: Any previous backups you have made of your wallet file "
                                "should be replaced with the newly generated, encrypted wallet file. "

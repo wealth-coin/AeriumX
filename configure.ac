@@ -19,9 +19,9 @@ BITCOIN_TX_NAME=wealthsilo-tx
 
 AC_CANONICAL_HOST
 
-AH_TOP([#ifndef AEX_CONFIG_H])
-AH_TOP([#define AEX_CONFIG_H])
-AH_BOTTOM([#endif //AEX_CONFIG_H])
+AH_TOP([#ifndef WEALTH_CONFIG_H])
+AH_TOP([#define WEALTH_CONFIG_H])
+AH_BOTTOM([#endif //WEALTH_CONFIG_H])
 
 dnl faketime breaks configure and is only needed for make. Disable it here.
 unset FAKETIME

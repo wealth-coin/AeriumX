@@ -374,9 +374,9 @@ bool IsTransactionInChain(uint256 txId, int& nHeightTx);
 bool IsBlockHashInChain(const uint256& hashBlock);
 void PopulateInvalidOutPointMap();
 bool ValidOutPoint(const COutPoint out, int nHeight);
-void RecalculateZAEXSpent();
-void RecalculateZAEXMinted();
-bool RecalculateAEXSupply(int nHeightStart);
+void RecalculateZWEALTHSpent();
+void RecalculateZWEALTHMinted();
+bool RecalculateWEALTHSupply(int nHeightStart);
 bool ReindexAccumulators(list<uint256>& listMissingCheckpoints, string& strError);
 
 

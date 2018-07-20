@@ -85,7 +85,7 @@ bool fAlerts = DEFAULT_ALERTS;
 unsigned int nStakeMinAge = 60 * 60 * 8;
 int64_t nReserveBalance = 0;
 
-/** Fees smaller than this (in uaex) are considered zero fee (for relaying and mining)
+/** Fees smaller than this (in uwealth) are considered zero fee (for relaying and mining)
  * We are ~100 times smaller then bitcoin now (2015-06-23), set minRelayTxFee only 10 times higher
  * so it's still 10 times lower comparing to bitcoin.
  */
@@ -2808,7 +2808,7 @@ void ThreadScriptCheck()
     scriptcheckqueue.Thread();
 }
 
-void RecalculateZAEXMinted()
+void RecalculateZWEALTHMinted()
 {
     CBlockIndex *pindex = chainActive[Params().Zerocoin_StartHeight()];
     int nHeightEnd = chainActive.Height();
@@ -2835,7 +2835,7 @@ void RecalculateZAEXMinted()
     }
 }
 
-void RecalculateZAEXSpent()
+void RecalculateZWEALTHSpent()
 {
     CBlockIndex* pindex = chainActive[Params().Zerocoin_StartHeight()];
     while (true) {
@@ -2871,7 +2871,7 @@ void RecalculateZAEXSpent()
     }
 }
 
-bool RecalculateAEXSupply(int nHeightStart)
+bool RecalculateWEALTHSupply(int nHeightStart)
 {
     if (nHeightStart > chainActive.Height())
         return false;
@@ -2997,7 +2997,7 @@ bool ReindexAccumulators(list<uint256>& listMissingCheckpoints, string& strError
     return true;
 }
 
-bool UpdateZAEXSupply(const CBlock& block, CBlockIndex* pindex)
+bool UpdateZWEALTHSupply(const CBlock& block, CBlockIndex* pindex)
 {
     std::list<CZerocoinMint> listMints;
     bool fFilterInvalid = pindex->nHeight >= Params().Zerocoin_Block_RecalculateAccumulators();
@@ -3197,13 +3197,13 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
 
     //A one-time event where money supply counts were off and recalculated on a certain block.
     if (pindex->nHeight == Params().Zerocoin_Block_RecalculateAccumulators() + 1) {
-        RecalculateZAEXMinted();
-        RecalculateZAEXSpent();
-        RecalculateAEXSupply(Params().Zerocoin_StartHeight());
+        RecalculateZWEALTHMinted();
+        RecalculateZWEALTHSpent();
+        RecalculateWEALTHSupply(Params().Zerocoin_StartHeight());
     }
 
     //Track zWEALTH money supply in the block index
-    if (!UpdateZAEXSupply(block, pindex))
+    if (!UpdateZWEALTHSupply(block, pindex))
         return state.DoS(100, error("%s: Failed to calculate new zWEALTH supply for block=%s height=%d", __func__,
                                     block.GetHash().GetHex(), pindex->nHeight), REJECT_INVALID);
 
@@ -3212,7 +3212,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     pindex->nMoneySupply = nMoneySupplyPrev + nValueOut - nValueIn;
     pindex->nMint = pindex->nMoneySupply - nMoneySupplyPrev + nFees;
 
-//    LogPrintf("XX69----------> ConnectBlock(): nValueOut: %s, nValueIn: %s, nFees: %s, nMint: %s zAEXSpent: %s\n",
+//    LogPrintf("XX69----------> ConnectBlock(): nValueOut: %s, nValueIn: %s, nFees: %s, nMint: %s zWEALTHSpent: %s\n",
 //              FormatMoney(nValueOut), FormatMoney(nValueIn),
 //              FormatMoney(nFees), FormatMoney(pindex->nMint), FormatMoney(nAmountZerocoinSpent));
 

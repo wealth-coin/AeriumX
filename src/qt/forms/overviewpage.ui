@@ -226,7 +226,7 @@
                             </widget>
                            </item>
                            <item>
-                            <widget class="QLabel" name="labelAEXPercent">
+                            <widget class="QLabel" name="labelWEALTHPercent">
                              <property name="text">
                               <string notr="true">0 %</string>
                              </property>
@@ -734,7 +734,7 @@
                             </widget>
                            </item>
                            <item>
-                            <widget class="QLabel" name="labelzAEXPercent">
+                            <widget class="QLabel" name="labelzWEALTHPercent">
                              <property name="text">
                               <string notr="true">0 %</string>
                              </property>

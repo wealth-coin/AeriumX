@@ -21,8 +21,8 @@ QList<BitcoinUnits::Unit> BitcoinUnits::availableUnits()
 {
     QList<BitcoinUnits::Unit> unitlist;
     unitlist.append(WEALTH);
-    unitlist.append(mAEX);
-    unitlist.append(uAEX);
+    unitlist.append(mWEALTH);
+    unitlist.append(uWEALTH);
     return unitlist;
 }
 
@@ -30,8 +30,8 @@ bool BitcoinUnits::valid(int unit)
 {
     switch (unit) {
     case WEALTH:
-    case mAEX:
-    case uAEX:
+    case mWEALTH:
+    case uWEALTH:
         return true;
     default:
         return false;
@@ -43,9 +43,9 @@ QString BitcoinUnits::id(int unit)
     switch (unit) {
     case WEALTH:
         return QString("wealthsilo");
-    case mAEX:
+    case mWEALTH:
         return QString("mwealthsilo");
-    case uAEX:
+    case uWEALTH:
         return QString::fromUtf8("uwealthsilo");
     default:
         return QString("???");
@@ -58,21 +58,21 @@ QString BitcoinUnits::name(int unit)
         switch (unit) {
         case WEALTH:
             return QString("WEALTH");
-        case mAEX:
-            return QString("mAEX");
-        case uAEX:
-            return QString::fromUtf8("μAEX");
+        case mWEALTH:
+            return QString("mWEALTH");
+        case uWEALTH:
+            return QString::fromUtf8("μWEALTH");
         default:
             return QString("???");
         }
     } else {
         switch (unit) {
         case WEALTH:
-            return QString("tAEX");
-        case mAEX:
-            return QString("mtAEX");
-        case uAEX:
-            return QString::fromUtf8("μtAEX");
+            return QString("tWEALTH");
+        case mWEALTH:
+            return QString("mtWEALTH");
+        case uWEALTH:
+            return QString::fromUtf8("μtWEALTH");
         default:
             return QString("???");
         }
@@ -85,9 +85,9 @@ QString BitcoinUnits::description(int unit)
         switch (unit) {
         case WEALTH:
             return QString("WEALTH");
-        case mAEX:
+        case mWEALTH:
             return QString("Milli-WEALTH (1 / 1" THIN_SP_UTF8 "000)");
-        case uAEX:
+        case uWEALTH:
             return QString("Micro-WEALTH (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
@@ -95,11 +95,11 @@ QString BitcoinUnits::description(int unit)
     } else {
         switch (unit) {
         case WEALTH:
-            return QString("TestAEXs");
-        case mAEX:
-            return QString("Milli-TestAEX (1 / 1" THIN_SP_UTF8 "000)");
-        case uAEX:
-            return QString("Micro-TestAEX (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+            return QString("TestWEALTHs");
+        case mWEALTH:
+            return QString("Milli-TestWEALTH (1 / 1" THIN_SP_UTF8 "000)");
+        case uWEALTH:
+            return QString("Micro-TestWEALTH (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
         }
@@ -111,9 +111,9 @@ qint64 BitcoinUnits::factor(int unit)
     switch (unit) {
     case WEALTH:
         return 100000000;
-    case mAEX:
+    case mWEALTH:
         return 100000;
-    case uAEX:
+    case uWEALTH:
         return 100;
     default:
         return 100000000;
@@ -125,9 +125,9 @@ int BitcoinUnits::decimals(int unit)
     switch (unit) {
     case WEALTH:
         return 8;
-    case mAEX:
+    case mWEALTH:
         return 5;
-    case uAEX:
+    case uWEALTH:
         return 2;
     default:
         return 0;

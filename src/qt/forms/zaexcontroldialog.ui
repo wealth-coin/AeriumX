@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>ZAEXControlDialog</class>
- <widget class="QDialog" name="ZAEXControlDialog">
+ <class>ZWEALTHControlDialog</class>
+ <widget class="QDialog" name="ZWEALTHControlDialog">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -57,14 +57,14 @@
         </widget>
        </item>
        <item row="1" column="0">
-        <widget class="QLabel" name="labelZAEX">
+        <widget class="QLabel" name="labelZWEALTH">
          <property name="text">
           <string>zWEALTH</string>
          </property>
         </widget>
        </item>
        <item row="1" column="1">
-        <widget class="QLabel" name="labelZAEX_int">
+        <widget class="QLabel" name="labelZWEALTH_int">
          <property name="text">
           <string>0</string>
          </property>
@@ -193,7 +193,7 @@
   <connection>
    <sender>buttonBox</sender>
    <signal>accepted()</signal>
-   <receiver>ZAEXControlDialog</receiver>
+   <receiver>ZWEALTHControlDialog</receiver>
    <slot>accept()</slot>
    <hints>
     <hint type="sourcelabel">
@@ -209,7 +209,7 @@
   <connection>
    <sender>buttonBox</sender>
    <signal>rejected()</signal>
-   <receiver>ZAEXControlDialog</receiver>
+   <receiver>ZWEALTHControlDialog</receiver>
    <slot>reject()</slot>
    <hints>
     <hint type="sourcelabel">

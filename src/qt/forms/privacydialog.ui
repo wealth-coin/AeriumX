@@ -172,7 +172,7 @@
                       <item>
                        <layout class="QHBoxLayout" name="horizontalLayout_3">
                         <item>
-                         <widget class="QLabel" name="labelzAEXActions">
+                         <widget class="QLabel" name="labelzWEALTHActions">
                           <property name="font">
                            <font>
                             <pointsize>12</pointsize>
@@ -189,7 +189,7 @@
                          </widget>
                         </item>
                         <item>
-                         <widget class="QLabel" name="labelzAEXSyncStatus">
+                         <widget class="QLabel" name="labelzWEALTHSyncStatus">
                           <property name="toolTip">
                            <string>The displayed information may be out of date. Your wallet automatically synchronizes with the wealthsilo network after a connection is established, but this process has not completed yet.</string>
                           </property>
@@ -244,7 +244,7 @@
                       <item>
                        <layout class="QHBoxLayout" name="horizontalLayout_4">
                         <item>
-                         <widget class="QPushButton" name="pushButtonMintzAEX">
+                         <widget class="QPushButton" name="pushButtonMintzWEALTH">
                           <property name="minimumSize">
                            <size>
                             <width>131</width>
@@ -276,14 +276,14 @@
                          </widget>
                         </item>
                         <item>
-                         <widget class="QLabel" name="labelzAEX_2">
+                         <widget class="QLabel" name="labelzWEALTH_2">
                           <property name="text">
                            <string>zWEALTH</string>
                           </property>
                          </widget>
                         </item>
                         <item>
-                         <widget class="QLabel" name="labelzAEXAmountText">
+                         <widget class="QLabel" name="labelzWEALTHAmountText">
                           <property name="toolTip">
                            <string>Available for minting are coins which are confirmed and not locked or Masternode collaterals.</string>
                           </property>
@@ -296,7 +296,7 @@
                          </widget>
                         </item>
                         <item>
-                         <widget class="QLabel" name="labelzAEXAmountValue">
+                         <widget class="QLabel" name="labelzWEALTHAmountValue">
                           <property name="font">
                            <font>
                             <weight>75</weight>
@@ -603,21 +603,21 @@
                          <number>0</number>
                         </property>
                         <item>
-                         <widget class="QPushButton" name="pushButtonZAEXControl">
+                         <widget class="QPushButton" name="pushButtonZWEALTHControl">
                           <property name="text">
                            <string>zWEALTH Control</string>
                           </property>
                          </widget>
                         </item>
                         <item>
-                         <widget class="QLabel" name="labelzAEXSelected">
+                         <widget class="QLabel" name="labelzWEALTHSelected">
                           <property name="text">
                            <string>zWEALTH Selected:</string>
                           </property>
                          </widget>
                         </item>
                         <item>
-                         <widget class="QLabel" name="labelzAEXSelected_int">
+                         <widget class="QLabel" name="labelzWEALTHSelected_int">
                           <property name="text">
                            <string>0</string>
                           </property>
@@ -671,7 +671,7 @@
                       <item>
                        <layout class="QHBoxLayout" name="horizontalLayout_6">
                         <item>
-                         <widget class="QPushButton" name="pushButtonSpendzAEX">
+                         <widget class="QPushButton" name="pushButtonSpendzWEALTH">
                           <property name="minimumSize">
                            <size>
                             <width>131</width>
@@ -687,7 +687,7 @@
                          </widget>
                         </item>
                         <item>
-                         <widget class="QLabel" name="labelzAEXBalanceText">
+                         <widget class="QLabel" name="labelzWEALTHBalanceText">
                           <property name="toolTip">
                            <string>Available (mature and spendable) zWEALTH for spending</string>
                           </property>
@@ -913,15 +913,15 @@ zWEALTH are mature when they have more than 20 confirmations AND more than 2 min
                            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
                           </property>
                           <property name="buddy">
-                           <cstring>zAEXpayAmount</cstring>
+                           <cstring>zWEALTHpayAmount</cstring>
                           </property>
                          </widget>
                         </item>
                         <item>
-                         <widget class="QLineEdit" name="zAEXpayAmount"/>
+                         <widget class="QLineEdit" name="zWEALTHpayAmount"/>
                         </item>
                         <item>
-                         <widget class="QLabel" name="labelzAEX">
+                         <widget class="QLabel" name="labelzWEALTH">
                           <property name="minimumSize">
                            <size>
                             <width>55</width>
@@ -1008,7 +1008,7 @@ zWEALTH are mature when they have more than 20 confirmations AND more than 2 min
                       <item>
                        <layout class="QHBoxLayout" name="horizontalLayout_21">
                         <item>
-                         <widget class="QLabel" name="labelzAEXStats">
+                         <widget class="QLabel" name="labelzWEALTHStats">
                           <property name="font">
                            <font>
                             <pointsize>12</pointsize>

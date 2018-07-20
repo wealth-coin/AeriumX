@@ -1,8 +1,8 @@
 /* src/config/WealthSilo-config.h.in.  Generated from configure.ac by autoheader.  */
 
-#ifndef AEX_CONFIG_H
+#ifndef WEALTH_CONFIG_H
 
-#define AEX_CONFIG_H
+#define WEALTH_CONFIG_H
 
 /* Define if building universal (internal helper macro) */
 #undef AC_APPLE_UNIVERSAL_BUILD
@@ -336,4 +336,4 @@
 /* Define for large files, on AIX-style hosts. */
 #undef _LARGE_FILES
 
-#endif //AEX_CONFIG_H
+#endif //WEALTH_CONFIG_H

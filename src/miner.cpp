@@ -208,8 +208,8 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
                     nTotalIn = tx.GetZerocoinSpent();
 
                     //Give a high priority to zerocoinspends to get into the next block
-                    //Priority = (age^6+100000)*amount - gives higher priority to zAEXs that have been in mempool long
-                    //and higher priority to zAEXs that are large in value
+                    //Priority = (age^6+100000)*amount - gives higher priority to zWEALTHs that have been in mempool long
+                    //and higher priority to zWEALTHs that are large in value
                     int64_t nTimeSeen = GetAdjustedTime();
                     double nConfs = 100000;
 

@@ -14,7 +14,7 @@
 #include "sendcoinsentry.h"
 #include "walletmodel.h"
 #include "coincontrol.h"
-#include "zaexcontroldialog.h"
+#include "zwealthcontroldialog.h"
 #include "spork.h"
 #include "askpassphrasedialog.h"
 
@@ -32,13 +32,13 @@ PrivacyDialog::PrivacyDialog(QWidget* parent) : QDialog(parent),
     ui->setupUi(this);
 
     // "Spending 999999 zWEALTH ought to be enough for anybody." - Bill Gates, 2017
-    ui->zAEXpayAmount->setValidator( new QDoubleValidator(0.0, 21000000.0, 20, this) );
+    ui->zWEALTHpayAmount->setValidator( new QDoubleValidator(0.0, 21000000.0, 20, this) );
     ui->labelMintAmountValue->setValidator( new QIntValidator(0, 999999, this) );
 
     // Default texts for (mini-) coincontrol
     ui->labelCoinControlQuantity->setText (tr("Coins automatically selected"));
     ui->labelCoinControlAmount->setText (tr("Coins automatically selected"));
-    ui->labelzAEXSyncStatus->setText("(" + tr("out of sync") + ")");
+    ui->labelzWEALTHSyncStatus->setText("(" + tr("out of sync") + ")");
 
     // Sunken frame for minting messages
     ui->TEMintStatus->setFrameStyle(QFrame::StyledPanel | QFrame::Sunken);
@@ -108,11 +108,11 @@ PrivacyDialog::PrivacyDialog(QWidget* parent) : QDialog(parent),
 
     //temporary disable for maintenance
     if(GetAdjustedTime() > GetSporkValue(SPORK_16_ZEROCOIN_MAINTENANCE_MODE)) {
-        ui->pushButtonMintzAEX->setEnabled(false);
-        ui->pushButtonMintzAEX->setToolTip(tr("zWEALTH is currently disabled due to maintenance."));
+        ui->pushButtonMintzWEALTH->setEnabled(false);
+        ui->pushButtonMintzWEALTH->setToolTip(tr("zWEALTH is currently disabled due to maintenance."));
 
-        ui->pushButtonSpendzAEX->setEnabled(false);
-        ui->pushButtonSpendzAEX->setToolTip(tr("zWEALTH is currently disabled due to maintenance."));
+        ui->pushButtonSpendzWEALTH->setEnabled(false);
+        ui->pushButtonSpendzWEALTH->setToolTip(tr("zWEALTH is currently disabled due to maintenance."));
     }
 }
 
@@ -152,11 +152,11 @@ void PrivacyDialog::on_addressBookButton_clicked()
     dlg.setModel(walletModel->getAddressTableModel());
     if (dlg.exec()) {
         ui->payTo->setText(dlg.getReturnValue());
-        ui->zAEXpayAmount->setFocus();
+        ui->zWEALTHpayAmount->setFocus();
     }
 }
 
-void PrivacyDialog::on_pushButtonMintzAEX_clicked()
+void PrivacyDialog::on_pushButtonMintzWEALTH_clicked()
 {
     if (!walletModel || !walletModel->getOptionsModel())
         return;
@@ -174,7 +174,7 @@ void PrivacyDialog::on_pushButtonMintzAEX_clicked()
     // Request unlock if wallet was locked or unlocked for mixing:
     WalletModel::EncryptionStatus encStatus = walletModel->getEncryptionStatus();
     if (encStatus == walletModel->Locked) {
-        WalletModel::UnlockContext ctx(walletModel->requestUnlock(AskPassphraseDialog::Context::Mint_zAEX, true));
+        WalletModel::UnlockContext ctx(walletModel->requestUnlock(AskPassphraseDialog::Context::Mint_zWEALTH, true));
         if (!ctx.isValid()) {
             // Unlock wallet was cancelled
             ui->TEMintStatus->setPlainText(tr("Error: Your wallet is locked. Please enter the wallet passphrase first."));
@@ -266,7 +266,7 @@ void PrivacyDialog::on_pushButtonSpentReset_clicked()
     return;
 }
 
-void PrivacyDialog::on_pushButtonSpendzAEX_clicked()
+void PrivacyDialog::on_pushButtonSpendzWEALTH_clicked()
 {
 
     if (!walletModel || !walletModel->getOptionsModel() || !pwalletMain)
@@ -281,32 +281,32 @@ void PrivacyDialog::on_pushButtonSpendzAEX_clicked()
     // Request unlock if wallet was locked or unlocked for mixing:
     WalletModel::EncryptionStatus encStatus = walletModel->getEncryptionStatus();
     if (encStatus == walletModel->Locked || encStatus == walletModel->UnlockedForAnonymizationOnly) {
-        WalletModel::UnlockContext ctx(walletModel->requestUnlock(AskPassphraseDialog::Context::Send_zAEX, true));
+        WalletModel::UnlockContext ctx(walletModel->requestUnlock(AskPassphraseDialog::Context::Send_zWEALTH, true));
         if (!ctx.isValid()) {
             // Unlock wallet was cancelled
             return;
         }
         // Wallet is unlocked now, sedn zWEALTH
-        sendzAEX();
+        sendzWEALTH();
         return;
     }
     // Wallet already unlocked or not encrypted at all, send zWEALTH
-    sendzAEX();
+    sendzWEALTH();
 }
 
-void PrivacyDialog::on_pushButtonZAEXControl_clicked()
+void PrivacyDialog::on_pushButtonZWEALTHControl_clicked()
 {
     if (!walletModel || !walletModel->getOptionsModel())
         return;
 
-    ZAEXControlDialog* zAEXControl = new ZAEXControlDialog(this);
-    zAEXControl->setModel(walletModel);
-    zAEXControl->exec();
+    ZWEALTHControlDialog* zWEALTHControl = new ZWEALTHControlDialog(this);
+    zWEALTHControl->setModel(walletModel);
+    zWEALTHControl->exec();
 }
 
-void PrivacyDialog::setZAEXControlLabels(int64_t nAmount, int nQuantity)
+void PrivacyDialog::setZWEALTHControlLabels(int64_t nAmount, int nQuantity)
 {
-    ui->labelzAEXSelected_int->setText(QString::number(nAmount));
+    ui->labelzWEALTHSelected_int->setText(QString::number(nAmount));
     ui->labelQuantitySelected_int->setText(QString::number(nQuantity));
 }
 
@@ -315,7 +315,7 @@ static inline int64_t roundint64(double d)
     return (int64_t)(d > 0 ? d + 0.5 : d - 0.5);
 }
 
-void PrivacyDialog::sendzAEX()
+void PrivacyDialog::sendzWEALTH()
 {
     QSettings settings;
 
@@ -333,13 +333,13 @@ void PrivacyDialog::sendzAEX()
     }
 
     // Double is allowed now
-    double dAmount = ui->zAEXpayAmount->text().toDouble();
+    double dAmount = ui->zWEALTHpayAmount->text().toDouble();
     CAmount nAmount = roundint64(dAmount* COIN);
 
     // Check amount validity
     if (!MoneyRange(nAmount) || nAmount <= 0.0) {
         QMessageBox::warning(this, tr("Spend Zerocoin"), tr("Invalid Send Amount"), QMessageBox::Ok, QMessageBox::Ok);
-        ui->zAEXpayAmount->setFocus();
+        ui->zWEALTHpayAmount->setFocus();
         return;
     }
 
@@ -367,7 +367,7 @@ void PrivacyDialog::sendzAEX()
 
         if (retval != QMessageBox::Yes) {
             // Sending canceled
-            ui->zAEXpayAmount->setFocus();
+            ui->zWEALTHpayAmount->setFocus();
             return;
         }
     }
@@ -414,8 +414,8 @@ void PrivacyDialog::sendzAEX()
 
     // use mints from zWEALTH selector if applicable
     vector<CZerocoinMint> vMintsSelected;
-    if (!ZAEXControlDialog::listSelectedMints.empty()) {
-        vMintsSelected = ZAEXControlDialog::GetSelectedMints();
+    if (!ZWEALTHControlDialog::listSelectedMints.empty()) {
+        vMintsSelected = ZWEALTHControlDialog::GetSelectedMints();
     }
 
     // Spend zWEALTH
@@ -445,7 +445,7 @@ void PrivacyDialog::sendzAEX()
             QMessageBox::warning(this, tr("Spend Zerocoin"), receipt.GetStatusMessage().c_str(), QMessageBox::Ok, QMessageBox::Ok);
             ui->TEMintStatus->setPlainText(tr("Spend Zerocoin failed with status = ") +QString::number(receipt.GetStatus(), 10) + "\n" + "Message: " + QString::fromStdString(receipt.GetStatusMessage()));
         }
-        ui->zAEXpayAmount->setFocus();
+        ui->zWEALTHpayAmount->setFocus();
         ui->TEMintStatus->repaint();
         ui->TEMintStatus->verticalScrollBar()->setValue(ui->TEMintStatus->verticalScrollBar()->maximum()); // Automatically scroll to end of text
         return;
@@ -461,8 +461,8 @@ void PrivacyDialog::sendzAEX()
     }
 
     // Clear zwealth selector in case it was used
-    ZAEXControlDialog::listSelectedMints.clear();
-    ui->labelzAEXSelected_int->setText(QString("0"));
+    ZWEALTHControlDialog::listSelectedMints.clear();
+    ui->labelzWEALTHSelected_int->setText(QString("0"));
     ui->labelQuantitySelected_int->setText(QString("0"));
 
     // Some statistics for entertainment
@@ -500,7 +500,7 @@ void PrivacyDialog::sendzAEX()
     strReturn += strStats;
 
     // Clear amount to avoid double spending when accidentally clicking twice
-    ui->zAEXpayAmount->setText ("0");
+    ui->zWEALTHpayAmount->setText ("0");
 
     ui->TEMintStatus->setPlainText(strReturn);
     ui->TEMintStatus->repaint();
@@ -688,7 +688,7 @@ void PrivacyDialog::setBalance(const CAmount& balance, const CAmount& unconfirme
 
     ui->labelzAvailableAmount->setText(QString::number(zerocoinBalance/COIN) + QString(" zWEALTH "));
     ui->labelzAvailableAmount_2->setText(QString::number(matureZerocoinBalance/COIN) + QString(" zWEALTH "));
-    ui->labelzAEXAmountValue->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, balance - immatureBalance - nLockedBalance, false, BitcoinUnits::separatorAlways));
+    ui->labelzWEALTHAmountValue->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, balance - immatureBalance - nLockedBalance, false, BitcoinUnits::separatorAlways));
 
     // Display AutoMint status
     QString strAutomintStatus = tr("AutoMint Status:");
@@ -754,7 +754,7 @@ void PrivacyDialog::updateDisplayUnit()
 
 void PrivacyDialog::showOutOfSyncWarning(bool fShow)
 {
-    ui->labelzAEXSyncStatus->setVisible(fShow);
+    ui->labelzWEALTHSyncStatus->setVisible(fShow);
 }
 
 void PrivacyDialog::keyPressEvent(QKeyEvent* event)

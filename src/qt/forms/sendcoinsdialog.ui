@@ -1190,7 +1190,7 @@
                       <item>
                        <widget class="QRadioButton" name="radioCustomPerKilobyte">
                         <property name="toolTip">
-                         <string>If the custom fee is set to 1000 uAEXs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uAEXs in fee,&lt;br /&gt;while &quot;at least&quot; pays 1000 uAEXs. For transactions bigger than a kilobyte both pay by kilobyte.</string>
+                         <string>If the custom fee is set to 1000 uWEALTHs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uWEALTHs in fee,&lt;br /&gt;while &quot;at least&quot; pays 1000 uWEALTHs. For transactions bigger than a kilobyte both pay by kilobyte.</string>
                         </property>
                         <property name="text">
                          <string>per kilobyte</string>
@@ -1206,7 +1206,7 @@
                       <item>
                        <widget class="QRadioButton" name="radioCustomAtLeast">
                         <property name="toolTip">
-                         <string>If the custom fee is set to 1000 uAEXs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uAEXs in fee,&lt;br /&gt;while &quot;total at least&quot; pays 1000 uAEXs. For transactions bigger than a kilobyte both pay by kilobyte.</string>
+                         <string>If the custom fee is set to 1000 uWEALTHs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uWEALTHs in fee,&lt;br /&gt;while &quot;total at least&quot; pays 1000 uWEALTHs. For transactions bigger than a kilobyte both pay by kilobyte.</string>
                         </property>
                         <property name="text">
                          <string>total at least</string>
@@ -1733,7 +1733,7 @@
              </spacer>
             </item>
             <item>
-             <widget class="QCheckBox" name="checkzAEX">
+             <widget class="QCheckBox" name="checkzWEALTH">
               <property name="enabled">
                <bool>false</bool>
               </property>

@@ -181,7 +181,7 @@
       <string>Asks</string>
      </property>
     </widget>
-    <widget class="QLabel" name="AEXSupply">
+    <widget class="QLabel" name="WEALTHSupply">
      <property name="geometry">
       <rect>
        <x>540</x>
@@ -197,7 +197,7 @@
       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
      </property>
     </widget>
-    <widget class="QLabel" name="AEXDemand">
+    <widget class="QLabel" name="WEALTHDemand">
      <property name="geometry">
       <rect>
        <x>160</x>
@@ -432,7 +432,7 @@
     <attribute name="title">
      <string>Buy</string>
     </attribute>
-    <widget class="QPushButton" name="BuyAEX">
+    <widget class="QPushButton" name="BuyWEALTH">
      <property name="geometry">
       <rect>
        <x>30</x>
@@ -1707,7 +1707,7 @@
       <string>WEALTH</string>
      </property>
     </widget>
-    <widget class="QLineEdit" name="UnitsInputAEX">
+    <widget class="QLineEdit" name="UnitsInputWEALTH">
      <property name="geometry">
       <rect>
        <x>310</x>
@@ -1741,7 +1741,7 @@
       </font>
      </property>
     </widget>
-    <widget class="QPushButton" name="SellAEXBTN">
+    <widget class="QPushButton" name="SellWEALTHBTN">
      <property name="geometry">
       <rect>
        <x>30</x>
@@ -1782,7 +1782,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QLabel" name="AEXAvailableLabel">
+       <widget class="QLabel" name="WEALTHAvailableLabel">
         <property name="palette">
          <palette>
           <active>
@@ -2213,7 +2213,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QLabel" name="labelAEX">
+       <widget class="QLabel" name="labelWEALTH">
         <property name="font">
          <font>
           <weight>75</weight>
@@ -2733,7 +2733,7 @@
       <string>TextLabel</string>
      </property>
     </widget>
-    <widget class="QLabel" name="AEXBalanceLabel">
+    <widget class="QLabel" name="WEALTHBalanceLabel">
      <property name="geometry">
       <rect>
        <x>150</x>
@@ -2784,7 +2784,7 @@
       <string>BTC Balance:</string>
      </property>
     </widget>
-    <widget class="QLabel" name="AEXAvailableLabel_2">
+    <widget class="QLabel" name="WEALTHAvailableLabel_2">
      <property name="geometry">
       <rect>
        <x>150</x>
@@ -2835,7 +2835,7 @@
       <string>WEALTH Pending:</string>
      </property>
     </widget>
-    <widget class="QLabel" name="AEXPendingLabel">
+    <widget class="QLabel" name="WEALTHPendingLabel">
      <property name="geometry">
       <rect>
        <x>150</x>

@@ -88,22 +88,22 @@ enum AvailableCoinsType {
 
 // Possible states for zWEALTH send
 enum ZerocoinSpendStatus {
-    ZAEX_SPEND_OKAY = 0,                            // No error
-    ZAEX_SPEND_ERROR = 1,                           // Unspecified class of errors, more details are (hopefully) in the returning text
-    ZAEX_WALLET_LOCKED = 2,                         // Wallet was locked
-    ZAEX_COMMIT_FAILED = 3,                         // Commit failed, reset status
-    ZAEX_ERASE_SPENDS_FAILED = 4,                   // Erasing spends during reset failed
-    ZAEX_ERASE_NEW_MINTS_FAILED = 5,                // Erasing new mints during reset failed
-    ZAEX_TRX_FUNDS_PROBLEMS = 6,                    // Everything related to available funds
-    ZAEX_TRX_CREATE = 7,                            // Everything related to create the transaction
-    ZAEX_TRX_CHANGE = 8,                            // Everything related to transaction change
-    ZAEX_TXMINT_GENERAL = 9,                        // General errors in MintToTxIn
-    ZAEX_INVALID_COIN = 10,                         // Selected mint coin is not valid
-    ZAEX_FAILED_ACCUMULATOR_INITIALIZATION = 11,    // Failed to initialize witness
-    ZAEX_INVALID_WITNESS = 12,                      // Spend coin transaction did not verify
-    ZAEX_BAD_SERIALIZATION = 13,                    // Transaction verification failed
-    ZAEX_SPENT_USED_ZAEX = 14,                      // Coin has already been spend
-    ZAEX_TX_TOO_LARGE = 15                          // The transaction is larger than the max tx size
+    ZWEALTH_SPEND_OKAY = 0,                            // No error
+    ZWEALTH_SPEND_ERROR = 1,                           // Unspecified class of errors, more details are (hopefully) in the returning text
+    ZWEALTH_WALLET_LOCKED = 2,                         // Wallet was locked
+    ZWEALTH_COMMIT_FAILED = 3,                         // Commit failed, reset status
+    ZWEALTH_ERASE_SPENDS_FAILED = 4,                   // Erasing spends during reset failed
+    ZWEALTH_ERASE_NEW_MINTS_FAILED = 5,                // Erasing new mints during reset failed
+    ZWEALTH_TRX_FUNDS_PROBLEMS = 6,                    // Everything related to available funds
+    ZWEALTH_TRX_CREATE = 7,                            // Everything related to create the transaction
+    ZWEALTH_TRX_CHANGE = 8,                            // Everything related to transaction change
+    ZWEALTH_TXMINT_GENERAL = 9,                        // General errors in MintToTxIn
+    ZWEALTH_INVALID_COIN = 10,                         // Selected mint coin is not valid
+    ZWEALTH_FAILED_ACCUMULATOR_INITIALIZATION = 11,    // Failed to initialize witness
+    ZWEALTH_INVALID_WITNESS = 12,                      // Spend coin transaction did not verify
+    ZWEALTH_BAD_SERIALIZATION = 13,                    // Transaction verification failed
+    ZWEALTH_SPENT_USED_ZWEALTH = 14,                      // Coin has already been spend
+    ZWEALTH_TX_TOO_LARGE = 15                          // The transaction is larger than the max tx size
 };
 
 struct CompactTallyItem {
@@ -208,7 +208,7 @@ public:
     std::string ResetMintZerocoin(bool fExtendedSearch);
     std::string ResetSpentZerocoin();
     void ReconsiderZerocoins(std::list<CZerocoinMint>& listMintsRestored);
-    void ZAEXBackupWallet();
+    void ZWEALTHBackupWallet();
 
     /** Zerocin entry changed.
     * @note called with lock cs_wallet held.
@@ -316,7 +316,7 @@ public:
         return fEnableZeromint;
     }
 
-    void setZAEXAutoBackups(bool fEnabled)
+    void setZWEALTHAutoBackups(bool fEnabled)
     {
         fBackupMints = fEnabled;
     }

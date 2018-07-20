@@ -8,7 +8,7 @@
 # Does the following:
 #   a) creates 3 nodes, with an empty chain (no blocks).
 #   b) node0 mines a block
-#   c) node1 mines 32 blocks, so now node 0 has 60001aex, node 1 has 4250aex, node2 has none.
+#   c) node1 mines 32 blocks, so now node 0 has 60001wealth, node 1 has 4250wealth, node2 has none.
 #   d) node0 sends 601 wealth to node2, in two transactions (301 wealth, then 300 wealth).
 #   e) node0 mines a block, collects the fee on the second transaction
 #   f) node1 mines 16 blocks, to mature node0's just-mined block

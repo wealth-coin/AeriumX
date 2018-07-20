@@ -4,20 +4,20 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "zaexcontroldialog.h"
-#include "ui_zaexcontroldialog.h"
+#include "zwealthcontroldialog.h"
+#include "ui_zwealthcontroldialog.h"
 
 #include "main.h"
 #include "walletmodel.h"
 
 using namespace std;
 
-std::list<std::string> ZAEXControlDialog::listSelectedMints;
-std::list<CZerocoinMint> ZAEXControlDialog::listMints;
+std::list<std::string> ZWEALTHControlDialog::listSelectedMints;
+std::list<CZerocoinMint> ZWEALTHControlDialog::listMints;
 
-ZAEXControlDialog::ZAEXControlDialog(QWidget *parent) :
+ZWEALTHControlDialog::ZWEALTHControlDialog(QWidget *parent) :
     QDialog(parent),
-    ui(new Ui::ZAEXControlDialog),
+    ui(new Ui::ZWEALTHControlDialog),
     model(0)
 {
     ui->setupUi(this);
@@ -31,19 +31,19 @@ ZAEXControlDialog::ZAEXControlDialog(QWidget *parent) :
     connect(ui->pushButtonAll, SIGNAL(clicked()), this, SLOT(ButtonAllClicked()));
 }
 
-ZAEXControlDialog::~ZAEXControlDialog()
+ZWEALTHControlDialog::~ZWEALTHControlDialog()
 {
     delete ui;
 }
 
-void ZAEXControlDialog::setModel(WalletModel *model)
+void ZWEALTHControlDialog::setModel(WalletModel *model)
 {
     this->model = model;
     updateList();
 }
 
 //Update the tree widget
-void ZAEXControlDialog::updateList()
+void ZWEALTHControlDialog::updateList()
 {
     // need to prevent the slot from being called each time something is changed
     ui->treeWidget->blockSignals(true);
@@ -135,7 +135,7 @@ void ZAEXControlDialog::updateList()
 }
 
 // Update the list when a checkbox is clicked
-void ZAEXControlDialog::updateSelection(QTreeWidgetItem* item, int column)
+void ZWEALTHControlDialog::updateSelection(QTreeWidgetItem* item, int column)
 {
     // only want updates from non top level items that are available to spend
     if (item->parent() && column == COLUMN_CHECKBOX && !item->isDisabled()){
@@ -158,7 +158,7 @@ void ZAEXControlDialog::updateSelection(QTreeWidgetItem* item, int column)
 }
 
 // Update the Quantity and Amount display
-void ZAEXControlDialog::updateLabels()
+void ZWEALTHControlDialog::updateLabels()
 {
     int64_t nAmount = 0;
     for (const CZerocoinMint mint : listMints) {
@@ -168,14 +168,14 @@ void ZAEXControlDialog::updateLabels()
     }
 
     //update this dialog's labels
-    ui->labelZAEX_int->setText(QString::number(nAmount));
+    ui->labelZWEALTH_int->setText(QString::number(nAmount));
     ui->labelQuantity_int->setText(QString::number(listSelectedMints.size()));
 
     //update PrivacyDialog labels
-    privacyDialog->setZAEXControlLabels(nAmount, listSelectedMints.size());
+    privacyDialog->setZWEALTHControlLabels(nAmount, listSelectedMints.size());
 }
 
-std::vector<CZerocoinMint> ZAEXControlDialog::GetSelectedMints()
+std::vector<CZerocoinMint> ZWEALTHControlDialog::GetSelectedMints()
 {
     std::vector<CZerocoinMint> listReturn;
     for (const CZerocoinMint mint : listMints) {
@@ -188,7 +188,7 @@ std::vector<CZerocoinMint> ZAEXControlDialog::GetSelectedMints()
 }
 
 // select or deselect all of the mints
-void ZAEXControlDialog::ButtonAllClicked()
+void ZWEALTHControlDialog::ButtonAllClicked()
 {
     ui->treeWidget->blockSignals(true);
     Qt::CheckState state = Qt::Checked;

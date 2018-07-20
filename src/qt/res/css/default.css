@@ -785,13 +785,13 @@ QWidget#PrivacyDialog QLabel {
 border:0px solid #000;
 }
 
-QWidget#PrivacyDialog QLabel#zAEXLabel {
+QWidget#PrivacyDialog QLabel#zWEALTHLabel {
 font-family:tahoma, verdana, arial, sans-serif; font-size:14px;
 color:#ffffff;
 background-color:#1a5b91;
 }
 
-QWidget#PrivacyDialog QLabel#oAEXLabel {
+QWidget#PrivacyDialog QLabel#oWEALTHLabel {
 font-family:tahoma, verdana, arial, sans-serif; font-size:14px;
 color:#ffffff;
 background-color:#1a5b91;

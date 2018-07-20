@@ -12,10 +12,10 @@
 
 	<!-- nice shadow with alpha 0.35 -->
 	<filter id="dropShadowAlpha">
-		<feColorMaexix result="maexixOut" in="SourceAlpha" type="saturate"
+		<feColorMwealthix result="mwealthixOut" in="SourceAlpha" type="saturate"
 	      values="0.1" />
-		<feGaussianBlur in="maexixOut" result="blur-out" stdDeviation="6" />
-		<feColorMaexix in="blur-out" result="color-out" type="maexix"
+		<feGaussianBlur in="mwealthixOut" result="blur-out" stdDeviation="6" />
+		<feColorMwealthix in="blur-out" result="color-out" type="mwealthix"
 		      values="0 0 0 0   0
 		              0 0 0 0   0 
 		              0 0 0 0   0 
