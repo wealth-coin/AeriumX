@@ -266,6 +266,6 @@
     <name>ZATRControlDialog</name>
     </context>
 <context>
-    <name>aeriumx-core</name>
+    <name>wealthsilo-core</name>
     </context>
 </TS>

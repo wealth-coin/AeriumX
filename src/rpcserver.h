@@ -127,7 +127,7 @@ public:
 };
 
 /**
- * AeriumX RPC command dispatcher.
+ * WealthSilo RPC command dispatcher.
  */
 class CRPCTable
 {

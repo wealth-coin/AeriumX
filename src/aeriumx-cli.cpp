@@ -34,7 +34,7 @@ std::string HelpMessageCli()
     string strUsage;
     strUsage += HelpMessageGroup(_("Options:"));
     strUsage += HelpMessageOpt("-?", _("This help message"));
-    strUsage += HelpMessageOpt("-conf=<file>", strprintf(_("Specify configuration file (default: %s)"), "aeriumx.conf"));
+    strUsage += HelpMessageOpt("-conf=<file>", strprintf(_("Specify configuration file (default: %s)"), "wealthsilo.conf"));
     strUsage += HelpMessageOpt("-datadir=<dir>", _("Specify data directory"));
     strUsage += HelpMessageOpt("-testnet", _("Use the test network"));
     strUsage += HelpMessageOpt("-regtest", _("Enter regression test mode, which uses a special chain in which blocks can be "
@@ -73,12 +73,12 @@ static bool AppInitRPC(int argc, char* argv[])
     //
     ParseParameters(argc, argv);
     if (argc < 2 || mapArgs.count("-?") || mapArgs.count("-help") || mapArgs.count("-version")) {
-        std::string strUsage = _("AeriumX Core RPC client version") + " " + FormatFullVersion() + "\n";
+        std::string strUsage = _("WealthSilo Core RPC client version") + " " + FormatFullVersion() + "\n";
         if (!mapArgs.count("-version")) {
             strUsage += "\n" + _("Usage:") + "\n" +
-                        "  aeriumx-cli [options] <command> [params]  " + _("Send command to AeriumX Core") + "\n" +
-                        "  aeriumx-cli [options] help                " + _("List commands") + "\n" +
-                        "  aeriumx-cli [options] help <command>      " + _("Get help for a command") + "\n";
+                        "  wealthsilo-cli [options] <command> [params]  " + _("Send command to WealthSilo Core") + "\n" +
+                        "  wealthsilo-cli [options] help                " + _("List commands") + "\n" +
+                        "  wealthsilo-cli [options] help <command>      " + _("Get help for a command") + "\n";
 
             strUsage += "\n" + HelpMessageCli();
         }

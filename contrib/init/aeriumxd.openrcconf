@@ -1,7 +1,7 @@
 # /etc/conf.d/aeriumxd: config file for /etc/init.d/aeriumxd
 
 # Config file location
-#BITCOIND_CONFIGFILE="/etc/aeriumx/aeriumx.conf"
+#BITCOIND_CONFIGFILE="/etc/wealthsilo/wealthsilo.conf"
 
 # What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
 #BITCOIND_PIDDIR="/var/run/aeriumxd"
@@ -13,8 +13,8 @@
 #BITCOIND_DATADIR="/var/lib/aeriumxd"
 
 # User and group to own aeriumxd process
-#BITCOIND_USER="aeriumx"
-#BITCOIND_GROUP="aeriumx"
+#BITCOIND_USER="wealthsilo"
+#BITCOIND_GROUP="wealthsilo"
 
 # Path to aeriumxd executable
 #BITCOIND_BIN="/usr/bin/aeriumxd"

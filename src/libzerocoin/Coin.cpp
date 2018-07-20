@@ -11,7 +11,7 @@
  **/
 
 // Copyright (c) 2017 The PIVX developers	
-// Copyright (c) 2017 The AeriumX developers
+// Copyright (c) 2017 The WealthSilo developers
 #include <stdexcept>
 #include <iostream>
 #include "Coin.h"

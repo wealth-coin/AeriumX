@@ -62,12 +62,12 @@
         <translation>Vastaanottavat osoitteet</translation>
     </message>
     <message>
-        <source>These are your AeriumX addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Nämä ovat sinun AeriumX osoitteesi maksujen lähetystä varten. Tarkista aina määrä ja vastaanottava osoite ennen kolikoiden lähettämistä.</translation>
+        <source>These are your WealthSilo addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Nämä ovat sinun WealthSilo osoitteesi maksujen lähetystä varten. Tarkista aina määrä ja vastaanottava osoite ennen kolikoiden lähettämistä.</translation>
     </message>
     <message>
-        <source>These are your AeriumX addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Nämä ovat sinun AeriumX osoitteesi maksujen vastaanottamista varten. On suositeltavaa käyttää uutta vastaanottavaa osoitetta jokaiselle uudelle rahansiirrolle.</translation>
+        <source>These are your WealthSilo addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Nämä ovat sinun WealthSilo osoitteesi maksujen vastaanottamista varten. On suositeltavaa käyttää uutta vastaanottavaa osoitetta jokaiselle uudelle rahansiirrolle.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -172,8 +172,8 @@
         <translation>Vahvista lompakon salaus</translation>
     </message>
     <message>
-        <source>AeriumX will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ATRs from being stolen by malware infecting your computer.</source>
-        <translation>AeriumX sulkeutuu salausprosessin ajaksi. Muista, että lompakon salaus ei voi täysin suojella ATRien varkaudelta, jos tietokoneesi sisältää haittaohjelmia.</translation>
+        <source>WealthSilo will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ATRs from being stolen by malware infecting your computer.</source>
+        <translation>WealthSilo sulkeutuu salausprosessin ajaksi. Muista, että lompakon salaus ei voi täysin suojella ATRien varkaudelta, jos tietokoneesi sisältää haittaohjelmia.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -235,8 +235,8 @@
         <translation>&amp;BIP 38 Salaus</translation>
     </message>
     <message>
-        <source>Enter a AeriumX Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Syötä AeriumX osoite, jonnka tahtoisit salata käyttäen BIP 38.
+        <source>Enter a WealthSilo Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Syötä WealthSilo osoite, jonnka tahtoisit salata käyttäen BIP 38.
 Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityisavaimen.</translation>
     </message>
     <message>
@@ -244,8 +244,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Osoite:</translation>
     </message>
     <message>
-        <source>The AeriumX address to sign the message with</source>
-        <translation>AeriumX osoite, jolla viesti allekirjoitetaan</translation>
+        <source>The WealthSilo address to sign the message with</source>
+        <translation>WealthSilo osoite, jolla viesti allekirjoitetaan</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -276,8 +276,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Kopioi nykyinen allekirjoitus järjestelmän leikepöydälle</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this AeriumX address</source>
-        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän AeriumX osoitteen</translation>
+        <source>Sign the message to prove you own this WealthSilo address</source>
+        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän WealthSilo osoitteen</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -300,12 +300,12 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Syötä BIP 38 salattu yksityisavain. Syötä salausavain laatikkoon. Paina Avaa Salaus tuottaaksesi yksityisavaimen. Kun avain on dekryptattu, painamalla "Import osoite" lisää tämän yksityisavaimen lompakkoon.</translation>
     </message>
     <message>
-        <source>The AeriumX address the message was signed with</source>
-        <translation>AeriumX osoite, jolla viesti allekirjoitettiin</translation>
+        <source>The WealthSilo address the message was signed with</source>
+        <translation>WealthSilo osoite, jolla viesti allekirjoitettiin</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified AeriumX address</source>
-        <translation>Vahvista että viesti on allekirjoitettu kyseessä olevalla AeriumX osoitteella.</translation>
+        <source>Verify the message to ensure it was signed with the specified WealthSilo address</source>
+        <translation>Vahvista että viesti on allekirjoitettu kyseessä olevalla WealthSilo osoitteella.</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -591,16 +591,16 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>&amp;Apua</translation>
     </message>
     <message>
-        <source>AeriumX Core</source>
-        <translation>AeriumX Ydin</translation>
+        <source>WealthSilo Core</source>
+        <translation>WealthSilo Ydin</translation>
     </message>
     <message>
-        <source>Send coins to a AeriumX address</source>
-        <translation>Lähetä kolikkoja AeriumX osoitteeseen</translation>
+        <source>Send coins to a WealthSilo address</source>
+        <translation>Lähetä kolikkoja WealthSilo osoitteeseen</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and aeriumx: URIs)</source>
-        <translation>Pyydä maksuja (Generoi QR koodeja ja aeriumx: URIja)</translation>
+        <source>Request payments (generates QR codes and wealthsilo: URIs)</source>
+        <translation>Pyydä maksuja (Generoi QR koodeja ja wealthsilo: URIja)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -611,24 +611,24 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Selaa masternodeja</translation>
     </message>
     <message>
-        <source>&amp;About AeriumX Core</source>
-        <translation>AeriumX Core &amp;ytimestä</translation>
+        <source>&amp;About WealthSilo Core</source>
+        <translation>WealthSilo Core &amp;ytimestä</translation>
     </message>
     <message>
-        <source>Show information about AeriumX Core</source>
-        <translation>Näytä tietoja AeriumX Ytimestä</translation>
+        <source>Show information about WealthSilo Core</source>
+        <translation>Näytä tietoja WealthSilo Ytimestä</translation>
     </message>
     <message>
-        <source>Modify configuration options for AeriumX</source>
-        <translation>Muokkaa konfiguraatio vaihtoehtoja AeriumX:lle</translation>
+        <source>Modify configuration options for WealthSilo</source>
+        <translation>Muokkaa konfiguraatio vaihtoehtoja WealthSilo:lle</translation>
     </message>
     <message>
-        <source>Sign messages with your AeriumX addresses to prove you own them</source>
+        <source>Sign messages with your WealthSilo addresses to prove you own them</source>
         <translation>Allekirjoita viestejä todistaaksesi, että omistat ne.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified AeriumX addresses</source>
-        <translation>Vahvista viestit varmistaaksesi, että ne allekirjoitettiin tietyllä AeriumX osoiteella.</translation>
+        <source>Verify messages to ensure they were signed with specified WealthSilo addresses</source>
+        <translation>Vahvista viestit varmistaaksesi, että ne allekirjoitettiin tietyllä WealthSilo osoiteella.</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -659,8 +659,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Avaa Masternode konfiguraatiotiedosto</translation>
     </message>
     <message>
-        <source>Open a AeriumX: URI or payment request</source>
-        <translation>Avaa AeriumX: URI tai pyydä maksua</translation>
+        <source>Open a WealthSilo: URI or payment request</source>
+        <translation>Avaa WealthSilo: URI tai pyydä maksua</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -671,12 +671,12 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Lohkon tutkija näkymä</translation>
     </message>
     <message>
-        <source>Show the AeriumX Core help message to get a list with possible AeriumX command-line options</source>
-        <translation>Näytä AeriumX Ydin apuviesti saadaksesi lista mahdollisista AeriumX komentolinja komennoista.</translation>
+        <source>Show the WealthSilo Core help message to get a list with possible WealthSilo command-line options</source>
+        <translation>Näytä WealthSilo Ydin apuviesti saadaksesi lista mahdollisista WealthSilo komentolinja komennoista.</translation>
     </message>
     <message>
-        <source>AeriumX Core client</source>
-        <translation>AeriumX Ydin asiakasohjelma</translation>
+        <source>WealthSilo Core client</source>
+        <translation>WealthSilo Ydin asiakasohjelma</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -934,8 +934,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>AeriumX Core</source>
-        <translation>AeriumX Ydin</translation>
+        <source>WealthSilo Core</source>
+        <translation>WealthSilo Ydin</translation>
     </message>
     <message>
         <source>Usage:</source>
@@ -953,12 +953,12 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Tervetuloa</translation>
     </message>
     <message>
-        <source>Welcome to AeriumX Core.</source>
-        <translation>Tervetuloa AeriumX Ytimeen.</translation>
+        <source>Welcome to WealthSilo Core.</source>
+        <translation>Tervetuloa WealthSilo Ytimeen.</translation>
     </message>
     <message>
-        <source>AeriumX Core</source>
-        <translation>AeriumX Ydin</translation>
+        <source>WealthSilo Core</source>
+        <translation>WealthSilo Ydin</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1136,11 +1136,11 @@ Please check the address and try again.</source>
     </message>
     <message>
         <source>Use 2 separate masternodes to mix funds up to 10000 ATR</source>
-        <translation>Käytä 2 erillistä masternodea sekoittaaksesi enintään 10000 AeriumX</translation>
+        <translation>Käytä 2 erillistä masternodea sekoittaaksesi enintään 10000 WealthSilo</translation>
     </message>
     <message>
         <source>Use 8 separate masternodes to mix funds up to 10000 ATR</source>
-        <translation>Käytä 8 erillistä masternodea sekoittaaksesi enintään 10000 AeriumX</translation>
+        <translation>Käytä 8 erillistä masternodea sekoittaaksesi enintään 10000 WealthSilo</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
@@ -1148,11 +1148,11 @@ Please check the address and try again.</source>
     </message>
     <message>
         <source>This option is the quickest and will cost about ~0.025 ATR to anonymize 10000 ATR</source>
-        <translation>Tämä vaihtoehto on nopein ja maksaa noin ~0.025 ATR anonymoidaksesi 10000 AeriumX</translation>
+        <translation>Tämä vaihtoehto on nopein ja maksaa noin ~0.025 ATR anonymoidaksesi 10000 WealthSilo</translation>
     </message>
     <message>
         <source>This option is moderately fast and will cost about 0.05 ATR to anonymize 10000 ATR</source>
-        <translation>Tämä vaihtoehto on suhteellisen nopea ja maksaa 0.05 AeriumX anonymoidaksesi 10000 AeriumX</translation>
+        <translation>Tämä vaihtoehto on suhteellisen nopea ja maksaa 0.05 WealthSilo anonymoidaksesi 10000 WealthSilo</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
@@ -1160,7 +1160,7 @@ Please check the address and try again.</source>
     </message>
     <message>
         <source>0.1 ATR per 10000 ATR you anonymize.</source>
-        <translation>0.1 per 10000 AeriumX, jotka anonymisoit.</translation>
+        <translation>0.1 per 10000 WealthSilo, jotka anonymisoit.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1209,12 +1209,12 @@ Please check the address and try again.</source>
         <translation>Ekspertti</translation>
     </message>
     <message>
-        <source>Automatically start AeriumX after logging in to the system.</source>
-        <translation>Automaattisesti käynnistä AeriumX kun kirjaudut sisään.</translation>
+        <source>Automatically start WealthSilo after logging in to the system.</source>
+        <translation>Automaattisesti käynnistä WealthSilo kun kirjaudut sisään.</translation>
     </message>
     <message>
-        <source>&amp;Start AeriumX on system login</source>
-        <translation>&amp;Aloita AeriumX järjestelmän kirjautumisessa</translation>
+        <source>&amp;Start WealthSilo on system login</source>
+        <translation>&amp;Aloita WealthSilo järjestelmän kirjautumisessa</translation>
     </message>
     <message>
         <source>Enable coin &amp;control features</source>
@@ -1233,12 +1233,12 @@ Please check the address and try again.</source>
         <translation>&amp;Verkko</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting AeriumX.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting WealthSilo.</source>
         <translation>Käyttöliittymän kielen voi säätää täällä. Tämä asetus tulee voimaan uudelleenkäynnistettyäsi lompakon.</translation>
     </message>
     <message>
-        <source>Connect to the AeriumX network through a SOCKS5 proxy.</source>
-        <translation>Yhdistä AeriumX verkkoon SOCKS5 proxyn kautta</translation>
+        <source>Connect to the WealthSilo network through a SOCKS5 proxy.</source>
+        <translation>Yhdistä WealthSilo verkkoon SOCKS5 proxyn kautta</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1542,8 +1542,8 @@ Please check the address and try again.</source>
         <translation>Lohko ketju</translation>
     </message>
     <message>
-        <source>Open the AeriumX debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Avaa AeriumX debug loki nykyisestä sijainnista. Tämä voi kestää muutaman sekunnin suurille lokeille</translation>
+        <source>Open the WealthSilo debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Avaa WealthSilo debug loki nykyisestä sijainnista. Tämä voi kestää muutaman sekunnin suurille lokeille</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -1654,8 +1654,8 @@ Please check the address and try again.</source>
         <translation>Ulos:</translation>
     </message>
     <message>
-        <source>Welcome to the AeriumX RPC console.</source>
-        <translation>Tervetuloa AeriumX RPC konsoliin.</translation>
+        <source>Welcome to the WealthSilo RPC console.</source>
+        <translation>Tervetuloa WealthSilo RPC konsoliin.</translation>
     </message>
     <message>
         <source>never</source>
@@ -1697,12 +1697,12 @@ Please check the address and try again.</source>
         <translation>Vaihtoehtoinen nimike uudelle vastaanottavalle osoitteelle</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the AeriumX network.</source>
-        <translation>Vaihtoehtoinen viesti joka liitetään maksupyyntöön, joka näytetään kun pyyntö avataan. Huomio: Viestiä ei lähetetä maksun mukana AeriumX verkolle.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the WealthSilo network.</source>
+        <translation>Vaihtoehtoinen viesti joka liitetään maksupyyntöön, joka näytetään kun pyyntö avataan. Huomio: Viestiä ei lähetetä maksun mukana WealthSilo verkolle.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the AeriumX network.</source>
-        <translation>Vaihtoehtoinen viesti, joka liitetään maksupyyntöö, joka näytetään kun pyyntö avataan. &lt;br&gt; Huomio: Tätä viestiä ei lähetetä maksun mukana AeriumX  verkolle.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the WealthSilo network.</source>
+        <translation>Vaihtoehtoinen viesti, joka liitetään maksupyyntöö, joka näytetään kun pyyntö avataan. &lt;br&gt; Huomio: Tätä viestiä ei lähetetä maksun mukana WealthSilo  verkolle.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -1982,8 +1982,8 @@ Please check the address and try again.</source>
         <translation>käyttää</translation>
     </message>
     <message>
-        <source>Warning: Invalid AeriumX address</source>
-        <translation>Varoitus: Virheellinen AeriumX osoite</translation>
+        <source>Warning: Invalid WealthSilo address</source>
+        <translation>Varoitus: Virheellinen WealthSilo osoite</translation>
     </message>
     <message>
         <source>Are you sure you want to send?</source>
@@ -2029,8 +2029,8 @@ Please check the address and try again.</source>
         <translation>Tämä on normaali maksu.</translation>
     </message>
     <message>
-        <source>The AeriumX address to send the payment to</source>
-        <translation>AeriumX osoite johon maksu lähetetään</translation>
+        <source>The WealthSilo address to send the payment to</source>
+        <translation>WealthSilo osoite johon maksu lähetetään</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2072,8 +2072,8 @@ Please check the address and try again.</source>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>AeriumX Core is shutting down...</source>
-        <translation>AeriumX core sammuu...</translation>
+        <source>WealthSilo Core is shutting down...</source>
+        <translation>WealthSilo core sammuu...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -2091,8 +2091,8 @@ Please check the address and try again.</source>
         <translation>Voit allekirjoittaa viestejä osoitteillasi todistaaksesi, että omistat ne. Ole varovainen ettet allekirjoita mitään kummallista, sillä kalasteluyritykset saattavat yrittää huijata sinut luovuttamaan tietoja. Allekirjoita vain täysin yksityiskohtaisia sanomia, jotka hyväksyt.</translation>
     </message>
     <message>
-        <source>The AeriumX address to sign the message with</source>
-        <translation>AeriumX osoite, jolla viesti allekirjoitetaan</translation>
+        <source>The WealthSilo address to sign the message with</source>
+        <translation>WealthSilo osoite, jolla viesti allekirjoitetaan</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2123,16 +2123,16 @@ Please check the address and try again.</source>
         <translation>Kopioi nykyinen allekirjoitus järjestelmän leikepöydälle</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this AeriumX address</source>
-        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän AeriumX osoitteen</translation>
+        <source>Sign the message to prove you own this WealthSilo address</source>
+        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän WealthSilo osoitteen</translation>
     </message>
     <message>
-        <source>The AeriumX address the message was signed with</source>
-        <translation>AeriumX osoite, jolla viesti allekirjoitettiin</translation>
+        <source>The WealthSilo address the message was signed with</source>
+        <translation>WealthSilo osoite, jolla viesti allekirjoitettiin</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified AeriumX address</source>
-        <translation>Vahvista että viesti on allekirjoitettu kyseessä olevalla AeriumX osoitteella.</translation>
+        <source>Verify the message to ensure it was signed with the specified WealthSilo address</source>
+        <translation>Vahvista että viesti on allekirjoitettu kyseessä olevalla WealthSilo osoitteella.</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2214,8 +2214,8 @@ Please check the address and try again.</source>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>AeriumX Core</source>
-        <translation>AeriumX Ydin</translation>
+        <source>WealthSilo Core</source>
+        <translation>WealthSilo Ydin</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -2230,8 +2230,8 @@ Please check the address and try again.</source>
         <translation>Dash Core kehittäjät</translation>
     </message>
     <message>
-        <source>The AeriumX Core developers</source>
-        <translation>AeriumX core kehittäjät</translation>
+        <source>The WealthSilo Core developers</source>
+        <translation>WealthSilo core kehittäjät</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -2541,7 +2541,7 @@ Please check the address and try again.</source>
     </message>
     </context>
 <context>
-    <name>aeriumx-core</name>
+    <name>wealthsilo-core</name>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
         <translation>Varoitus: Verkko ei näytä olevan samaa mieltä! Jotkin mainaajat saattavat kokea ongelmia.</translation>
@@ -2591,8 +2591,8 @@ Please check the address and try again.</source>
         <translation>Virhe ladattaessa wallet.dat tiedostoa: Lompakko korruptoitunut</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of AeriumX Core</source>
-        <translation>Virhe ladattaessa wallet.dat tiedostoa: Lompakko vaatii uudemman version AeriumX Coresta</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of WealthSilo Core</source>
+        <translation>Virhe ladattaessa wallet.dat tiedostoa: Lompakko vaatii uudemman version WealthSilo Coresta</translation>
     </message>
     <message>
         <source>Error reading from database, shutting down.</source>

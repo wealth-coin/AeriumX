@@ -927,12 +927,12 @@ QDialog#HelpMessageDialog QScrollBar:vertical, QDialog#HelpMessageDialog QScroll
 border:0;
 }
 
-/* About aeriumx Dialog */
-QDialog#AboutDialog QLabel#label, QDialog#AboutDialog QLabel#copyrightLabel, QDialog#AboutDialog QLabel#label_2 { /* About aeriumx Contents */
+/* About wealthsilo Dialog */
+QDialog#AboutDialog QLabel#label, QDialog#AboutDialog QLabel#copyrightLabel, QDialog#AboutDialog QLabel#label_2 { /* About wealthsilo Contents */
 margin-left:10px;
 }
 
-QDialog#AboutDialog QLabel#label_2 { /* Margin for About aeriumx text */
+QDialog#AboutDialog QLabel#label_2 { /* Margin for About wealthsilo text */
 margin-right:10px;
 }
 
@@ -964,7 +964,7 @@ background-repeat: no-repeat;
 /*background=image?!*/
 }
 
-QWidget .QFrame#frame_Header { /* Header with Page-Title and aeriumx-image - modified to 1px = hidden */
+QWidget .QFrame#frame_Header { /* Header with Page-Title and wealthsilo-image - modified to 1px = hidden */
 min-width:20px;
 max-height:1px;
 background-color:transparent;

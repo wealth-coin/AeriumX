@@ -62,12 +62,12 @@
         <translation>Indirizzi di ricezione</translation>
     </message>
     <message>
-        <source>These are your AeriumX addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Questi sono gli indirizzi AeriumX per l'invio di pagamenti. Controlla sempre l'importo e l'indirizzo di ricezione prima di inviare valuta.</translation>
+        <source>These are your WealthSilo addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Questi sono gli indirizzi WealthSilo per l'invio di pagamenti. Controlla sempre l'importo e l'indirizzo di ricezione prima di inviare valuta.</translation>
     </message>
     <message>
-        <source>These are your AeriumX addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Questi sono gli indirizzi AeriumX per la ricezione di pagamenti. Si raccomanda di utilizzare un indirizzo diverso per ogni transazione.</translation>
+        <source>These are your WealthSilo addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Questi sono gli indirizzi WealthSilo per la ricezione di pagamenti. Si raccomanda di utilizzare un indirizzo diverso per ogni transazione.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,8 +176,8 @@
         <translation>Conferma cifratura portafoglio</translation>
     </message>
     <message>
-        <source>AeriumX will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ATRs from being stolen by malware infecting your computer.</source>
-        <translation>AeriumX verrà ora chiuso per completare il processo di cifratura. Ricorda che crittografare il tuo portafoglio non protegge completamente i tuoi ATR dal furto da parte di software malevoli che potrebbero infettare il tuo computer.</translation>
+        <source>WealthSilo will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ATRs from being stolen by malware infecting your computer.</source>
+        <translation>WealthSilo verrà ora chiuso per completare il processo di cifratura. Ricorda che crittografare il tuo portafoglio non protegge completamente i tuoi ATR dal furto da parte di software malevoli che potrebbero infettare il tuo computer.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -239,16 +239,16 @@
         <translation>&amp;BIP 38 Criptato</translation>
     </message>
     <message>
-        <source>Enter a AeriumX Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Inserisci un indirizzo AeriumX che desideri crittografare utilizzando BIP 38. Inserisci una passphrase nella casella centrale. Premi Cripta per calcolare la chiave privata crittografata.</translation>
+        <source>Enter a WealthSilo Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Inserisci un indirizzo WealthSilo che desideri crittografare utilizzando BIP 38. Inserisci una passphrase nella casella centrale. Premi Cripta per calcolare la chiave privata crittografata.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Indirizzo:</translation>
     </message>
     <message>
-        <source>The AeriumX address to sign the message with</source>
-        <translation>L'indirizzo AeriumX per firmare il messaggio con</translation>
+        <source>The WealthSilo address to sign the message with</source>
+        <translation>L'indirizzo WealthSilo per firmare il messaggio con</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -279,8 +279,8 @@
         <translation>Copiare la firma corrente negli Appunti di sistema</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this AeriumX address</source>
-        <translation>Firmare il messaggio per dimostrare di possedere questo indirizzo AeriumX</translation>
+        <source>Sign the message to prove you own this WealthSilo address</source>
+        <translation>Firmare il messaggio per dimostrare di possedere questo indirizzo WealthSilo</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -303,12 +303,12 @@
         <translation>Immettere la chiave privata codificata BIP 38. Inserire la passphrase nella casella centrale. Fare clic su Decripta Chiave per calcolare la chiave privata. Dopo che la chiave viene decrittata, cliccando su "Importa indirizzo" verrà aggiunta questa chiave privata al portafoglio.</translation>
     </message>
     <message>
-        <source>The AeriumX address the message was signed with</source>
-        <translation>L'indirizzo AeriumX con cui è stato firmato il messaggio</translation>
+        <source>The WealthSilo address the message was signed with</source>
+        <translation>L'indirizzo WealthSilo con cui è stato firmato il messaggio</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified AeriumX address</source>
-        <translation>Verificare il messaggio per assicurarsi che sia stato firmato con l'indirizzo AeriumX specificato </translation>
+        <source>Verify the message to ensure it was signed with the specified WealthSilo address</source>
+        <translation>Verificare il messaggio per assicurarsi che sia stato firmato con l'indirizzo WealthSilo specificato </translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -590,16 +590,16 @@
         <translation>Schede degli strumenti</translation>
     </message>
     <message>
-        <source>AeriumX Core</source>
-        <translation>AeriumX Core</translation>
+        <source>WealthSilo Core</source>
+        <translation>WealthSilo Core</translation>
     </message>
     <message>
-        <source>Send coins to a AeriumX address</source>
-        <translation>Invia monete all' indirizzo AeriumX</translation>
+        <source>Send coins to a WealthSilo address</source>
+        <translation>Invia monete all' indirizzo WealthSilo</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and aeriumx: URIs)</source>
-        <translation>Richiedi pagamenti (genera codici QR e aeriumx: URIs)</translation>
+        <source>Request payments (generates QR codes and wealthsilo: URIs)</source>
+        <translation>Richiedi pagamenti (genera codici QR e wealthsilo: URIs)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -610,24 +610,24 @@
         <translation>Esplora i masternodes</translation>
     </message>
     <message>
-        <source>&amp;About AeriumX Core</source>
-        <translation>&amp;Informazioni AeriumX Core</translation>
+        <source>&amp;About WealthSilo Core</source>
+        <translation>&amp;Informazioni WealthSilo Core</translation>
     </message>
     <message>
-        <source>Show information about AeriumX Core</source>
-        <translation>Visualizza informazioni su AeriumX Core</translation>
+        <source>Show information about WealthSilo Core</source>
+        <translation>Visualizza informazioni su WealthSilo Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for AeriumX</source>
-        <translation>Modifica le opzioni di configurazione per AeriumX</translation>
+        <source>Modify configuration options for WealthSilo</source>
+        <translation>Modifica le opzioni di configurazione per WealthSilo</translation>
     </message>
     <message>
-        <source>Sign messages with your AeriumX addresses to prove you own them</source>
-        <translation>Firma i messaggi con i tuoi indirizzi AeriumX per dimostrare di essere il proprietario </translation>
+        <source>Sign messages with your WealthSilo addresses to prove you own them</source>
+        <translation>Firma i messaggi con i tuoi indirizzi WealthSilo per dimostrare di essere il proprietario </translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified AeriumX addresses</source>
-        <translation>Verifica i messaggi per assicurarsi che siano stati firmati con indirizzi AeriumX specifici</translation>
+        <source>Verify messages to ensure they were signed with specified WealthSilo addresses</source>
+        <translation>Verifica i messaggi per assicurarsi che siano stati firmati con indirizzi WealthSilo specifici</translation>
     </message>
     <message>
         <source>Encrypt and decrypt private keys using a passphrase</source>
@@ -638,16 +638,16 @@
         <translation>Impostazioni MultiSend</translation>
     </message>
     <message>
-        <source>Open a AeriumX: URI or payment request</source>
-        <translation>Apri un AeriumX: URI o richiesta di pagamento</translation>
+        <source>Open a WealthSilo: URI or payment request</source>
+        <translation>Apri un WealthSilo: URI o richiesta di pagamento</translation>
     </message>
     <message>
         <source>Block explorer window</source>
         <translation>Finestra Block Explorer</translation>
     </message>
     <message>
-        <source>Show the AeriumX Core help message to get a list with possible AeriumX command-line options</source>
-        <translation>Mostra il messaggio di aiuto AeriumX Core per ottenere un elenco con le possibili opzioni di riga di comando AeriumX</translation>
+        <source>Show the WealthSilo Core help message to get a list with possible WealthSilo command-line options</source>
+        <translation>Mostra il messaggio di aiuto WealthSilo Core per ottenere un elenco con le possibili opzioni di riga di comando WealthSilo</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -753,8 +753,8 @@ MultiSend: %1</translation>
         <translation>Cerca</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (aeriumx.conf).</source>
-        <translation>Non tutte le transazioni verranno visualizzate. Per vedere tutte le transazioni è necessario aggiungere txindex=1 nel file di configurazione (aeriumx.conf)</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (wealthsilo.conf).</source>
+        <translation>Non tutte le transazioni verranno visualizzate. Per vedere tutte le transazioni è necessario aggiungere txindex=1 nel file di configurazione (wealthsilo.conf)</translation>
     </message>
 </context>
 <context>
@@ -888,8 +888,8 @@ MultiSend: %1</translation>
         <translation>versione</translation>
     </message>
     <message>
-        <source>AeriumX Core</source>
-        <translation>AeriumX Core</translation>
+        <source>WealthSilo Core</source>
+        <translation>WealthSilo Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
@@ -915,8 +915,8 @@ MultiSend: %1</translation>
         <translation>Benvenuto</translation>
     </message>
     <message>
-        <source>AeriumX Core</source>
-        <translation>AeriumX Core</translation>
+        <source>WealthSilo Core</source>
+        <translation>WealthSilo Core</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1144,8 +1144,8 @@ MultiSend: %1</translation>
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The AeriumX address to sign the message with</source>
-        <translation>L'indirizzo AeriumX per firmare il messaggio con</translation>
+        <source>The WealthSilo address to sign the message with</source>
+        <translation>L'indirizzo WealthSilo per firmare il messaggio con</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1168,16 +1168,16 @@ MultiSend: %1</translation>
         <translation>Copiare la firma corrente negli Appunti di sistema</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this AeriumX address</source>
-        <translation>Firmare il messaggio per dimostrare di possedere questo indirizzo AeriumX</translation>
+        <source>Sign the message to prove you own this WealthSilo address</source>
+        <translation>Firmare il messaggio per dimostrare di possedere questo indirizzo WealthSilo</translation>
     </message>
     <message>
-        <source>The AeriumX address the message was signed with</source>
-        <translation>L'indirizzo AeriumX con cui è stato firmato il messaggio</translation>
+        <source>The WealthSilo address the message was signed with</source>
+        <translation>L'indirizzo WealthSilo con cui è stato firmato il messaggio</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified AeriumX address</source>
-        <translation>Verificare il messaggio per assicurarsi che sia stato firmato con l'indirizzo AeriumX specificato </translation>
+        <source>Verify the message to ensure it was signed with the specified WealthSilo address</source>
+        <translation>Verificare il messaggio per assicurarsi che sia stato firmato con l'indirizzo WealthSilo specificato </translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -1215,8 +1215,8 @@ MultiSend: %1</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>AeriumX Core</source>
-        <translation>AeriumX Core</translation>
+        <source>WealthSilo Core</source>
+        <translation>WealthSilo Core</translation>
     </message>
     </context>
 <context>
@@ -1314,7 +1314,7 @@ MultiSend: %1</translation>
     <name>ZATRControlDialog</name>
     </context>
 <context>
-    <name>aeriumx-core</name>
+    <name>wealthsilo-core</name>
     <message>
         <source>Error</source>
         <translation>Errore</translation>

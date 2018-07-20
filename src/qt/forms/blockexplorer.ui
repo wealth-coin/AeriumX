@@ -168,7 +168,7 @@
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources>
-  <include location="../aeriumx.qrc"/>
+  <include location="../wealthsilo.qrc"/>
  </resources>
  <connections/>
 </ui>

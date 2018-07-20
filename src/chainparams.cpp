@@ -111,15 +111,15 @@ public:
         pchMessageStart[3] = 0xe9;
         vAlertPubKey = ParseHex("02acda05fc4c1a40fc1ddab042d4dd3b22c4e5a8a191399060764d172973651edc");
         nDefaultPort = 35407;
-        bnProofOfWorkLimit = ~uint256(0) >> 20; // AeriumX starting difficulty is 1 / 2^12
+        bnProofOfWorkLimit = ~uint256(0) >> 20; // WealthSilo starting difficulty is 1 / 2^12
         nSubsidyHalvingInterval = 210000;
         nMaxReorganizationDepth = 100;
         nEnforceBlockUpgradeMajority = 750;
         nRejectBlockOutdatedMajority = 950;
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 0;
-        nTargetTimespan = 1 * 60; // AeriumX: 1 day
-        nTargetSpacing = 1 * 60;  // AeriumX: 1 minute
+        nTargetTimespan = 1 * 60; // WealthSilo: 1 day
+        nTargetSpacing = 1 * 60;  // WealthSilo: 1 minute
         nMaturity = 10;
         nMasternodeCountDrift = 20;
         nMaxMoneyOut = 100000000 * COIN;
@@ -145,7 +145,7 @@ public:
          *     CTxOut(nValue=50.00000000, scriptPubKey=0xA9037BAC7050C479B121CF)
          *   vMerkleTree: e0028e
          */
-        const char* pszTimestamp = "AeriumX Network Official Release";
+        const char* pszTimestamp = "WealthSilo Network Official Release";
         CMutableTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -239,8 +239,8 @@ public:
         nRejectBlockOutdatedMajority = 75;
         nToCheckBlockUpgradeMajority = 100;
         nMinerThreads = 0;
-        nTargetTimespan = 1 * 60; // AeriumX: 1 day
-        nTargetSpacing = 1 * 60;  // AeriumX: 1 minute
+        nTargetTimespan = 1 * 60; // WealthSilo: 1 day
+        nTargetSpacing = 1 * 60;  // WealthSilo: 1 minute
         nLastPOWBlock = 200;
         nMaturity = 15;
         nMasternodeCountDrift = 4;
@@ -264,14 +264,14 @@ public:
         vFixedSeeds.clear();
         vSeeds.clear();
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 139); // Testnet aeriumx addresses start with 'x' or 'y'
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 19);  // Testnet aeriumx script addresses start with '8' or '9'
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 139); // Testnet wealthsilo addresses start with 'x' or 'y'
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 19);  // Testnet wealthsilo script addresses start with '8' or '9'
         base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 239);     // Testnet private keys start with '9' or 'c' (Bitcoin defaults)
-        // Testnet aeriumx BIP32 pubkeys start with 'DRKV'
+        // Testnet wealthsilo BIP32 pubkeys start with 'DRKV'
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x3a)(0x80)(0x61)(0xa0).convert_to_container<std::vector<unsigned char> >();
-        // Testnet aeriumx BIP32 prvkeys start with 'DRKP'
+        // Testnet wealthsilo BIP32 prvkeys start with 'DRKP'
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x3a)(0x80)(0x58)(0x37).convert_to_container<std::vector<unsigned char> >();
-        // Testnet aeriumx BIP44 coin type is '1' (All coin's testnet default)
+        // Testnet wealthsilo BIP44 coin type is '1' (All coin's testnet default)
         base58Prefixes[EXT_COIN_TYPE] = boost::assign::list_of(0x80)(0x00)(0x00)(0x01).convert_to_container<std::vector<unsigned char> >();
 
         //convertSeed6(vFixedSeeds, pnSeed6_test, ARRAYLEN(pnSeed6_test));
@@ -317,8 +317,8 @@ public:
         nRejectBlockOutdatedMajority = 950;
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 1;
-        nTargetTimespan = 24 * 60 * 60; // AeriumX: 1 day
-        nTargetSpacing = 1 * 60;        // AeriumX: 1 minutes
+        nTargetTimespan = 24 * 60 * 60; // WealthSilo: 1 day
+        nTargetSpacing = 1 * 60;        // WealthSilo: 1 minutes
         bnProofOfWorkLimit = ~uint256(0) >> 1;
         genesis.nTime = 1454124731;
         genesis.nBits = 0x207fffff;

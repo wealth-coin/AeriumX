@@ -7,7 +7,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/aeriumx-config.h"
+#include "config/wealthsilo-config.h"
 #endif
 
 #include "util.h"
@@ -106,7 +106,7 @@ std::string to_internal(const std::string&);
 
 using namespace std;
 
-// AeriumX only features
+// WealthSilo only features
 // Masternode
 bool fMasterNode = false;
 string strMasterNodePrivKey = "";
@@ -238,8 +238,8 @@ bool LogAcceptCategory(const char* category)
             const vector<string>& categories = mapMultiArgs["-debug"];
             ptrCategory.reset(new set<string>(categories.begin(), categories.end()));
             // thread_specific_ptr automatically deletes the set when the thread ends.
-            // "aeriumx" is a composite category enabling all AeriumX-related debug output
-            if (ptrCategory->count(string("aeriumx"))) {
+            // "wealthsilo" is a composite category enabling all WealthSilo-related debug output
+            if (ptrCategory->count(string("wealthsilo"))) {
                 ptrCategory->insert(string("obfuscation"));
                 ptrCategory->insert(string("swiftx"));
                 ptrCategory->insert(string("masternode"));
@@ -404,7 +404,7 @@ static std::string FormatException(std::exception* pex, const char* pszThread)
     char pszModule[MAX_PATH] = "";
     GetModuleFileNameA(NULL, pszModule, sizeof(pszModule));
 #else
-    const char* pszModule = "aeriumx";
+    const char* pszModule = "wealthsilo";
 #endif
     if (pex)
         return strprintf(
@@ -425,13 +425,13 @@ void PrintExceptionContinue(std::exception* pex, const char* pszThread)
 boost::filesystem::path GetDefaultDataDir()
 {
     namespace fs = boost::filesystem;
-// Windows < Vista: C:\Documents and Settings\Username\Application Data\AeriumX
-// Windows >= Vista: C:\Users\Username\AppData\Roaming\AeriumX
-// Mac: ~/Library/Application Support/AeriumX
-// Unix: ~/.aeriumx
+// Windows < Vista: C:\Documents and Settings\Username\Application Data\WealthSilo
+// Windows >= Vista: C:\Users\Username\AppData\Roaming\WealthSilo
+// Mac: ~/Library/Application Support/WealthSilo
+// Unix: ~/.wealthsilo
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "AeriumX";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "WealthSilo";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -443,10 +443,10 @@ boost::filesystem::path GetDefaultDataDir()
     // Mac
     pathRet /= "Library/Application Support";
     TryCreateDirectory(pathRet);
-    return pathRet / "AeriumX";
+    return pathRet / "WealthSilo";
 #else
     // Unix
-    return pathRet / ".aeriumx";
+    return pathRet / ".wealthsilo";
 #endif
 #endif
 }
@@ -493,7 +493,7 @@ void ClearDatadirCache()
 
 boost::filesystem::path GetConfigFile()
 {
-    boost::filesystem::path pathConfigFile(GetArg("-conf", "aeriumx.conf"));
+    boost::filesystem::path pathConfigFile(GetArg("-conf", "wealthsilo.conf"));
     if (!pathConfigFile.is_complete())
         pathConfigFile = GetDataDir(false) / pathConfigFile;
 
@@ -512,7 +512,7 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
 {
     boost::filesystem::ifstream streamConfig(GetConfigFile());
     if (!streamConfig.good()) {
-        // Create empty aeriumx.conf if it does not exist
+        // Create empty wealthsilo.conf if it does not exist
         FILE* configFile = fopen(GetConfigFile().string().c_str(), "a");
         if (configFile != NULL)
             fclose(configFile);
@@ -523,7 +523,7 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
     setOptions.insert("*");
 
     for (boost::program_options::detail::config_file_iterator it(streamConfig, setOptions), end; it != end; ++it) {
-        // Don't overwrite existing settings so command line settings override aeriumx.conf
+        // Don't overwrite existing settings so command line settings override wealthsilo.conf
         string strKey = string("-") + it->string_key;
         string strValue = it->value[0];
         InterpretNegativeSetting(strKey, strValue);

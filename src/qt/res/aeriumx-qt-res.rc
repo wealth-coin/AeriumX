@@ -19,14 +19,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "AeriumX"
-            VALUE "FileDescription",    "AeriumX Core (OSS GUI client for AeriumX)"
+            VALUE "CompanyName",        "WealthSilo"
+            VALUE "FileDescription",    "WealthSilo Core (OSS GUI client for WealthSilo)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "aeriumx-qt"
+            VALUE "InternalName",       "wealthsilo-qt"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "aeriumx-qt.exe"
-            VALUE "ProductName",        "AeriumX Core"
+            VALUE "OriginalFilename",   "wealthsilo-qt.exe"
+            VALUE "ProductName",        "WealthSilo Core"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

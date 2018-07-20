@@ -4,7 +4,7 @@
  * @brief      Denomination functions for the Zerocoin library.
  *
  * @copyright  Copyright 2017 PIVX Developers		
- * @copyright  Copyright 2017 AeriumX Developers
+ * @copyright  Copyright 2017 WealthSilo Developers
  * @license    This project is released under the MIT license.
  **/
 // Copyright (c) 2015-2017 The PIVX developers	

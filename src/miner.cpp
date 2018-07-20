@@ -546,7 +546,7 @@ void BitcoinMiner(CWallet* pwallet, bool fProofOfStake)
 {
     LogPrintf("AeriumXMiner started\n");
     SetThreadPriority(THREAD_PRIORITY_LOWEST);
-    RenameThread("aeriumx-miner");
+    RenameThread("wealthsilo-miner");
 
     // Each thread has its own key and counter
     CReserveKey reservekey(pwallet);

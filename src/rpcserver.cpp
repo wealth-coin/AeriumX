@@ -264,11 +264,11 @@ UniValue stop(const UniValue& params, bool fHelp)
     if (fHelp || params.size() > 1)
         throw runtime_error(
             "stop\n"
-            "\nStop AeriumX server.");
+            "\nStop WealthSilo server.");
     // Event loop will exit after current HTTP requests have been handled, so
     // this reply will get back to the client.
     StartShutdown();
-    return "AeriumX server stopping";
+    return "WealthSilo server stopping";
 }
 
 
@@ -352,36 +352,36 @@ static const CRPCCommand vRPCCommands[] =
         {"hidden", "reconsiderblock", &reconsiderblock, true, true, false},
         {"hidden", "setmocktime", &setmocktime, true, false, false},
 
-        /* AeriumX features */
-        {"aeriumx", "masternode", &masternode, true, true, false},
-        {"aeriumx", "listmasternodes", &listmasternodes, true, true, false},
-        {"aeriumx", "getmasternodecount", &getmasternodecount, true, true, false},
-        {"aeriumx", "masternodeconnect", &masternodeconnect, true, true, false},
-        {"aeriumx", "masternodecurrent", &masternodecurrent, true, true, false},
-        {"aeriumx", "masternodedebug", &masternodedebug, true, true, false},
-        {"aeriumx", "startmasternode", &startmasternode, true, true, false},
-        {"aeriumx", "createmasternodekey", &createmasternodekey, true, true, false},
-        {"aeriumx", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
-        {"aeriumx", "listmasternodeconf", &listmasternodeconf, true, true, false},
-        {"aeriumx", "getmasternodestatus", &getmasternodestatus, true, true, false},
-        {"aeriumx", "getmasternodewinners", &getmasternodewinners, true, true, false},
-        {"aeriumx", "getmasternodescores", &getmasternodescores, true, true, false},
-        {"aeriumx", "mnbudget", &mnbudget, true, true, false},
-        {"aeriumx", "preparebudget", &preparebudget, true, true, false},
-        {"aeriumx", "submitbudget", &submitbudget, true, true, false},
-        {"aeriumx", "mnbudgetvote", &mnbudgetvote, true, true, false},
-        {"aeriumx", "getbudgetvotes", &getbudgetvotes, true, true, false},
-        {"aeriumx", "getnextsuperblock", &getnextsuperblock, true, true, false},
-        {"aeriumx", "getbudgetprojection", &getbudgetprojection, true, true, false},
-        {"aeriumx", "getbudgetinfo", &getbudgetinfo, true, true, false},
-        {"aeriumx", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
-        {"aeriumx", "mnfinalbudget", &mnfinalbudget, true, true, false},
-        {"aeriumx", "checkbudgets", &checkbudgets, true, true, false},
-        {"aeriumx", "mnsync", &mnsync, true, true, false},
-        {"aeriumx", "spork", &spork, true, true, false},
-        {"aeriumx", "getpoolinfo", &getpoolinfo, true, true, false},
+        /* WealthSilo features */
+        {"wealthsilo", "masternode", &masternode, true, true, false},
+        {"wealthsilo", "listmasternodes", &listmasternodes, true, true, false},
+        {"wealthsilo", "getmasternodecount", &getmasternodecount, true, true, false},
+        {"wealthsilo", "masternodeconnect", &masternodeconnect, true, true, false},
+        {"wealthsilo", "masternodecurrent", &masternodecurrent, true, true, false},
+        {"wealthsilo", "masternodedebug", &masternodedebug, true, true, false},
+        {"wealthsilo", "startmasternode", &startmasternode, true, true, false},
+        {"wealthsilo", "createmasternodekey", &createmasternodekey, true, true, false},
+        {"wealthsilo", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
+        {"wealthsilo", "listmasternodeconf", &listmasternodeconf, true, true, false},
+        {"wealthsilo", "getmasternodestatus", &getmasternodestatus, true, true, false},
+        {"wealthsilo", "getmasternodewinners", &getmasternodewinners, true, true, false},
+        {"wealthsilo", "getmasternodescores", &getmasternodescores, true, true, false},
+        {"wealthsilo", "mnbudget", &mnbudget, true, true, false},
+        {"wealthsilo", "preparebudget", &preparebudget, true, true, false},
+        {"wealthsilo", "submitbudget", &submitbudget, true, true, false},
+        {"wealthsilo", "mnbudgetvote", &mnbudgetvote, true, true, false},
+        {"wealthsilo", "getbudgetvotes", &getbudgetvotes, true, true, false},
+        {"wealthsilo", "getnextsuperblock", &getnextsuperblock, true, true, false},
+        {"wealthsilo", "getbudgetprojection", &getbudgetprojection, true, true, false},
+        {"wealthsilo", "getbudgetinfo", &getbudgetinfo, true, true, false},
+        {"wealthsilo", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
+        {"wealthsilo", "mnfinalbudget", &mnfinalbudget, true, true, false},
+        {"wealthsilo", "checkbudgets", &checkbudgets, true, true, false},
+        {"wealthsilo", "mnsync", &mnsync, true, true, false},
+        {"wealthsilo", "spork", &spork, true, true, false},
+        {"wealthsilo", "getpoolinfo", &getpoolinfo, true, true, false},
 #ifdef ENABLE_WALLET
-        {"aeriumx", "obfuscation", &obfuscation, false, false, true}, /* not threadSafe because of SendMoney */
+        {"wealthsilo", "obfuscation", &obfuscation, false, false, true}, /* not threadSafe because of SendMoney */
 
         /* Wallet */
         {"wallet", "addmultisigaddress", &addmultisigaddress, true, false, true},
@@ -608,7 +608,7 @@ std::vector<std::string> CRPCTable::listCommands() const
 
 std::string HelpExampleCli(string methodname, string args)
 {
-    return "> aeriumx-cli " + methodname + " " + args + "\n";
+    return "> wealthsilo-cli " + methodname + " " + args + "\n";
 }
 
 std::string HelpExampleRpc(string methodname, string args)

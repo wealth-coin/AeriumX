@@ -6,7 +6,7 @@
 #define BITCOIN_CLIENTVERSION_H
 
 #if defined(HAVE_CONFIG_H)
-#include "config/aeriumx-config.h"
+#include "config/wealthsilo-config.h"
 #else
 
 /**
@@ -14,7 +14,7 @@
  */
 
 // Don't modify version number here!!! Modify at below!!!
-//! These need to be macros, as clientversion.cpp's and aeriumx*-res.rc's voodoo requires it
+//! These need to be macros, as clientversion.cpp's and wealthsilo*-res.rc's voodoo requires it
 #define CLIENT_VERSION_MAJOR 1
 #define CLIENT_VERSION_MINOR 0
 #define CLIENT_VERSION_REVISION 0
@@ -52,7 +52,7 @@
 #define DO_STRINGIZE(X) #X
 
 //! Copyright string used in Windows .rc files
-#define COPYRIGHT_STR "2009-" STRINGIZE(COPYRIGHT_YEAR) " The Bitcoin Core Developers, 2014-" STRINGIZE(COPYRIGHT_YEAR) " The Dash Core Developers, 2015-" STRINGIZE(COPYRIGHT_YEAR) " The AeriumX Core Developers"
+#define COPYRIGHT_STR "2009-" STRINGIZE(COPYRIGHT_YEAR) " The Bitcoin Core Developers, 2014-" STRINGIZE(COPYRIGHT_YEAR) " The Dash Core Developers, 2015-" STRINGIZE(COPYRIGHT_YEAR) " The WealthSilo Core Developers"
 
 /**
  * aeriumxd-res.rc includes this file, but it cannot cope with real c++ code.

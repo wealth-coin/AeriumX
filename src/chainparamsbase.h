@@ -9,8 +9,8 @@
 #include <vector>
 
 /**
- * CBaseChainParams defines the base parameters (shared between aeriumx-cli and aeriumxd)
- * of a given instance of the AeriumX system.
+ * CBaseChainParams defines the base parameters (shared between wealthsilo-cli and aeriumxd)
+ * of a given instance of the WealthSilo system.
  */
 class CBaseChainParams
 {

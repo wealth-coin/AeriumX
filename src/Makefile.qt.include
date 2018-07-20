@@ -1,7 +1,7 @@
-bin_PROGRAMS += qt/aeriumx-qt
+bin_PROGRAMS += qt/wealthsilo-qt
 EXTRA_LIBRARIES += qt/libbitcoinqt.a
 
-# aeriumx qt core #
+# wealthsilo qt core #
 QT_TS = \
   qt/locale/aeriumx_bg.ts \
   qt/locale/aeriumx_ca.ts \
@@ -116,14 +116,14 @@ BITCOIN_MM = \
   qt/macnotificationhandler.mm
 
 QT_MOC = \
-  qt/aeriumx.moc \
+  qt/wealthsilo.moc \
   qt/bitcoinamountfield.moc \
   qt/intro.moc \
   qt/overviewpage.moc \
   qt/rpcconsole.moc
 
 QT_QRC_CPP = qt/qrc_aeriumx.cpp
-QT_QRC = qt/aeriumx.qrc
+QT_QRC = qt/wealthsilo.qrc
 QT_QRC_LOCALE_CPP = qt/qrc_aeriumx_locale.cpp
 QT_QRC_LOCALE = qt/aeriumx_locale.qrc
 
@@ -347,7 +347,7 @@ RES_CSS = \
 
 RES_MOVIES = $(wildcard $(srcdir)/qt/res/movies/spinner-*.png)
 
-BITCOIN_RC = qt/res/aeriumx-qt-res.rc
+BITCOIN_RC = qt/res/wealthsilo-qt-res.rc
 
 BITCOIN_QT_INCLUDES = -I$(builddir)/qt -I$(srcdir)/qt -I$(srcdir)/qt/forms \
   -I$(builddir)/qt/forms
@@ -374,11 +374,11 @@ $(qt_libbitcoinqt_a_OBJECTS) $(qt_aeriumx_qt_OBJECTS) : | $(QT_MOC)
 $(QT_MOC): $(PROTOBUF_H)
 $(QT_MOC_CPP): $(PROTOBUF_H)
 
-# aeriumx-qt binary #
+# wealthsilo-qt binary #
 qt_aeriumx_qt_CPPFLAGS = $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
   $(QT_INCLUDES) $(PROTOBUF_CFLAGS) $(QR_CFLAGS)
 
-qt_aeriumx_qt_SOURCES = qt/aeriumx.cpp
+qt_aeriumx_qt_SOURCES = qt/wealthsilo.cpp
 if TARGET_DARWIN
   qt_aeriumx_qt_SOURCES += $(BITCOIN_MM)
 endif
@@ -419,7 +419,7 @@ $(QT_QRC_LOCALE_CPP): $(QT_QRC_LOCALE) $(QT_QM)
 
 $(QT_QRC_CPP): $(QT_QRC) $(QT_FORMS_H) $(RES_ICONS) $(RES_IMAGES) $(RES_CSS) $(RES_MOVIES) $(PROTOBUF_H)
 	@test -f $(RCC)
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name aeriumx $< | \
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name wealthsilo $< | \
 	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
 
 CLEAN_QT = $(nodist_qt_libbitcoinqt_a_SOURCES) $(QT_QM) $(QT_FORMS_H) qt/*.gcda qt/*.gcno
@@ -427,9 +427,9 @@ CLEAN_QT = $(nodist_qt_libbitcoinqt_a_SOURCES) $(QT_QM) $(QT_FORMS_H) qt/*.gcda 
 CLEANFILES += $(CLEAN_QT)
 
 aeriumx_qt_clean: FORCE
-	rm -f $(CLEAN_QT) $(qt_libbitcoinqt_a_OBJECTS) $(qt_aeriumx_qt_OBJECTS) qt/aeriumx-qt$(EXEEXT) $(LIBBITCOINQT)
+	rm -f $(CLEAN_QT) $(qt_libbitcoinqt_a_OBJECTS) $(qt_aeriumx_qt_OBJECTS) qt/wealthsilo-qt$(EXEEXT) $(LIBBITCOINQT)
 
-aeriumx_qt : qt/aeriumx-qt$(EXEEXT)
+aeriumx_qt : qt/wealthsilo-qt$(EXEEXT)
 
 ui_%.h: %.ui
 	@test -f $(UIC)

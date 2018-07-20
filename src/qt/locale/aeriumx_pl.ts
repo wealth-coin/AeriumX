@@ -227,8 +227,8 @@
         <translation>Zakodowany klucz:</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this AeriumX address</source>
-        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres AeriumX jest w twoim posiadaniu</translation>
+        <source>Sign the message to prove you own this WealthSilo address</source>
+        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres WealthSilo jest w twoim posiadaniu</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -518,16 +518,16 @@
         <translation>&amp;Pomoc</translation>
     </message>
     <message>
-        <source>AeriumX Core</source>
-        <translation>&amp;Rdzeń AeriumX</translation>
+        <source>WealthSilo Core</source>
+        <translation>&amp;Rdzeń WealthSilo</translation>
     </message>
     <message>
-        <source>Send coins to a AeriumX address</source>
-        <translation>Wyślij monety do adresu AeriumX</translation>
+        <source>Send coins to a WealthSilo address</source>
+        <translation>Wyślij monety do adresu WealthSilo</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and aeriumx: URIs)</source>
-        <translation>Zarządaj płatności (generuje kod QR i aeriumx:URI)</translation>
+        <source>Request payments (generates QR codes and wealthsilo: URIs)</source>
+        <translation>Zarządaj płatności (generuje kod QR i wealthsilo:URI)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -538,24 +538,24 @@
         <translation>Przeglądaj masternodes</translation>
     </message>
     <message>
-        <source>&amp;About AeriumX Core</source>
+        <source>&amp;About WealthSilo Core</source>
         <translation>&amp;O rdzeniu bitcoina</translation>
     </message>
     <message>
-        <source>Show information about AeriumX Core</source>
+        <source>Show information about WealthSilo Core</source>
         <translation>Pokaż informacje o rdzeniu bitcoina</translation>
     </message>
     <message>
-        <source>Modify configuration options for AeriumX</source>
-        <translation>Modyfikuj opcje konfiguracji AeriumX</translation>
+        <source>Modify configuration options for WealthSilo</source>
+        <translation>Modyfikuj opcje konfiguracji WealthSilo</translation>
     </message>
     <message>
-        <source>Sign messages with your AeriumX addresses to prove you own them</source>
-        <translation>Zatwierdź wiadomość z twoimi adresami AeriumX, by udowodnić, że jesteś w ich posiadaniu</translation>
+        <source>Sign messages with your WealthSilo addresses to prove you own them</source>
+        <translation>Zatwierdź wiadomość z twoimi adresami WealthSilo, by udowodnić, że jesteś w ich posiadaniu</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified AeriumX addresses</source>
-        <translation>Zweryfikuj wiadomości by upewnić się, że zostały zatwierdzone z podanego adresu AeriumX</translation>
+        <source>Verify messages to ensure they were signed with specified WealthSilo addresses</source>
+        <translation>Zweryfikuj wiadomości by upewnić się, że zostały zatwierdzone z podanego adresu WealthSilo</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -582,8 +582,8 @@
         <translation>Otwórz &amp;Plik konfiguracji Masternode</translation>
     </message>
     <message>
-        <source>Open a AeriumX: URI or payment request</source>
-        <translation>Otwórz AeriumX: URI i żądanie zapłaty</translation>
+        <source>Open a WealthSilo: URI or payment request</source>
+        <translation>Otwórz WealthSilo: URI i żądanie zapłaty</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -594,12 +594,12 @@
         <translation>Okno eksplorera bloków</translation>
     </message>
     <message>
-        <source>Show the AeriumX Core help message to get a list with possible AeriumX command-line options</source>
-        <translation>Pokaż wiadomość pomocy rdzenia AeriumX, aby dostać listę możliwych opcji AeriumX command-line</translation>
+        <source>Show the WealthSilo Core help message to get a list with possible WealthSilo command-line options</source>
+        <translation>Pokaż wiadomość pomocy rdzenia WealthSilo, aby dostać listę możliwych opcji WealthSilo command-line</translation>
     </message>
     <message>
-        <source>AeriumX Core client</source>
-        <translation>Rdzeń AeriumX klient</translation>
+        <source>WealthSilo Core client</source>
+        <translation>Rdzeń WealthSilo klient</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -912,8 +912,8 @@ MultiWysyłlka: %1</translation>
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>AeriumX Core</source>
-        <translation>&amp;Rdzeń AeriumX</translation>
+        <source>WealthSilo Core</source>
+        <translation>&amp;Rdzeń WealthSilo</translation>
     </message>
     </context>
 <context>
@@ -927,8 +927,8 @@ MultiWysyłlka: %1</translation>
         <translation>Użyj niestandardowej ścieżki danych</translation>
     </message>
     <message>
-        <source>AeriumX Core</source>
-        <translation>&amp;Rdzeń AeriumX</translation>
+        <source>WealthSilo Core</source>
+        <translation>&amp;Rdzeń WealthSilo</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1188,12 +1188,12 @@ Proszę sprawdzić adres i spróbować ponownie</translation>
         <translation>Zezwól na przychodzące połączenia</translation>
     </message>
     <message>
-        <source>Automatically start AeriumX after logging in to the system.</source>
-        <translation>Automatycznie uruchom AeriumX po zalogowaniu do systemu</translation>
+        <source>Automatically start WealthSilo after logging in to the system.</source>
+        <translation>Automatycznie uruchom WealthSilo po zalogowaniu do systemu</translation>
     </message>
     <message>
-        <source>&amp;Start AeriumX on system login</source>
-        <translation>&amp;Uruchom AeriumX podczas logowania do systemu</translation>
+        <source>&amp;Start WealthSilo on system login</source>
+        <translation>&amp;Uruchom WealthSilo podczas logowania do systemu</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1212,18 +1212,18 @@ Proszę sprawdzić adres i spróbować ponownie</translation>
         <translation>&amp;Sieć</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting AeriumX.</source>
-        <translation>Język interfejsu użytkownika może być wybrany tutaj. Ustawienia ulegną zmianie po restarcie AeriumX</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting WealthSilo.</source>
+        <translation>Język interfejsu użytkownika może być wybrany tutaj. Ustawienia ulegną zmianie po restarcie WealthSilo</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/aeriumx-project/aeriumx-project-translations</source>
+https://www.transifex.com/wealthsilo-project/wealthsilo-project-translations</source>
         <translation>Brakuje języka bądź nieukończona pełnego tłumaczenia? Pomóż w tłumaczeniu tutaj:
-https://www.transifex.com/aeriumx-project/aeriumx-project-translations </translation>
+https://www.transifex.com/wealthsilo-project/wealthsilo-project-translations </translation>
     </message>
     <message>
-        <source>Connect to the AeriumX network through a SOCKS5 proxy.</source>
-        <translation>Połącz z siecią AeriumX poprzez SOCKS5 proxy.</translation>
+        <source>Connect to the WealthSilo network through a SOCKS5 proxy.</source>
+        <translation>Połącz z siecią WealthSilo poprzez SOCKS5 proxy.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1461,8 +1461,8 @@ https://www.transifex.com/aeriumx-project/aeriumx-project-translations </transla
         <translation>Liczba</translation>
     </message>
     <message>
-        <source>Enter a AeriumX address (e.g. %1)</source>
-        <translation>Wprowadź adres AeriumX (np. %1)</translation>
+        <source>Enter a WealthSilo address (e.g. %1)</source>
+        <translation>Wprowadź adres WealthSilo (np. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1900,8 +1900,8 @@ https://www.transifex.com/aeriumx-project/aeriumx-project-translations </transla
         <translation>Alt+P</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this AeriumX address</source>
-        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres AeriumX jest w twoim posiadaniu</translation>
+        <source>Sign the message to prove you own this WealthSilo address</source>
+        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres WealthSilo jest w twoim posiadaniu</translation>
     </message>
     <message>
         <source>Clear &amp;All</source>
@@ -1935,8 +1935,8 @@ https://www.transifex.com/aeriumx-project/aeriumx-project-translations </transla
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>AeriumX Core</source>
-        <translation>&amp;Rdzeń AeriumX</translation>
+        <source>WealthSilo Core</source>
+        <translation>&amp;Rdzeń WealthSilo</translation>
     </message>
     </context>
 <context>
@@ -2034,7 +2034,7 @@ https://www.transifex.com/aeriumx-project/aeriumx-project-translations </transla
     </message>
     </context>
 <context>
-    <name>aeriumx-core</name>
+    <name>wealthsilo-core</name>
     <message>
         <source>Error</source>
         <translation>Błąd</translation>

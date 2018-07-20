@@ -354,12 +354,12 @@
         <translation>A&amp;juda</translation>
     </message>
     <message>
-        <source>AeriumX Core</source>
-        <translation>AeriumX Core</translation>
+        <source>WealthSilo Core</source>
+        <translation>WealthSilo Core</translation>
     </message>
     <message>
-        <source>&amp;About AeriumX Core</source>
-        <translation>&amp;Sobre AeriumX Core</translation>
+        <source>&amp;About WealthSilo Core</source>
+        <translation>&amp;Sobre WealthSilo Core</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -552,12 +552,12 @@
         <translation>versió</translation>
     </message>
     <message>
-        <source>AeriumX Core</source>
-        <translation>AeriumX Core</translation>
+        <source>WealthSilo Core</source>
+        <translation>WealthSilo Core</translation>
     </message>
     <message>
-        <source>About AeriumX Core</source>
-        <translation>Sobre AeriumX Core</translation>
+        <source>About WealthSilo Core</source>
+        <translation>Sobre WealthSilo Core</translation>
     </message>
     <message>
         <source>Usage:</source>
@@ -575,12 +575,12 @@
         <translation>Benvingut</translation>
     </message>
     <message>
-        <source>Welcome to AeriumX Core.</source>
-        <translation>Benvingut a AeriumX Core.</translation>
+        <source>Welcome to WealthSilo Core.</source>
+        <translation>Benvingut a WealthSilo Core.</translation>
     </message>
     <message>
-        <source>AeriumX Core</source>
-        <translation>AeriumX Core</translation>
+        <source>WealthSilo Core</source>
+        <translation>WealthSilo Core</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1147,8 +1147,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>AeriumX Core</source>
-        <translation>AeriumX Core</translation>
+        <source>WealthSilo Core</source>
+        <translation>WealthSilo Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -1310,7 +1310,7 @@
     <name>ZATRControlDialog</name>
     </context>
 <context>
-    <name>aeriumx-core</name>
+    <name>wealthsilo-core</name>
     <message>
         <source>Error</source>
         <translation>Error</translation>

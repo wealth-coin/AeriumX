@@ -13,7 +13,7 @@ can be found in the contrib/init folder.
 1. Service User
 ---------------------------------
 
-All three startup configurations assume the existence of a "aeriumx" user
+All three startup configurations assume the existence of a "wealthsilo" user
 and group.  They must be created before attempting to use these scripts.
 
 2. Configuration
@@ -35,10 +35,10 @@ generate one from the shell yourself like this:
 
 bash -c 'tr -dc a-zA-Z0-9 < /dev/urandom | head -c32 && echo'
 
-Once you have a password in hand, set rpcpassword= in /etc/aeriumx/aeriumx.conf
+Once you have a password in hand, set rpcpassword= in /etc/wealthsilo/wealthsilo.conf
 
 For an example configuration file that describes the configuration settings,
-see contrib/debian/examples/aeriumx.conf.
+see contrib/debian/examples/wealthsilo.conf.
 
 3. Paths
 ---------------------------------
@@ -46,15 +46,15 @@ see contrib/debian/examples/aeriumx.conf.
 All three configurations assume several paths that might need to be adjusted.
 
 Binary:              /usr/bin/aeriumxd
-Configuration file:  /etc/aeriumx/aeriumx.conf
+Configuration file:  /etc/wealthsilo/wealthsilo.conf
 Data directory:      /var/lib/aeriumxd
 PID file:            /var/run/aeriumxd/aeriumxd.pid (OpenRC and Upstart)
                      /var/lib/aeriumxd/aeriumxd.pid (systemd)
 
 The configuration file, PID directory (if applicable) and data directory
-should all be owned by the aeriumx user and group.  It is advised for security
+should all be owned by the wealthsilo user and group.  It is advised for security
 reasons to make the configuration file and data directory only readable by the
-aeriumx user and group.  Access to aeriumx-cli and other aeriumxd rpc clients
+wealthsilo user and group.  Access to wealthsilo-cli and other aeriumxd rpc clients
 can then be controlled by group membership.
 
 4. Installing Service Configuration

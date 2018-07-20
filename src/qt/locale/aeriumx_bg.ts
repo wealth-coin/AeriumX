@@ -62,12 +62,12 @@
         <translation>Получаващ адрес</translation>
     </message>
     <message>
-        <source>These are your AeriumX addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Това са вашите AeriumX адреси за изпращане на плащания. Винаги проверявайте количеството и адреса на получателя, преди да изпратите монети.</translation>
+        <source>These are your WealthSilo addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Това са вашите WealthSilo адреси за изпращане на плащания. Винаги проверявайте количеството и адреса на получателя, преди да изпратите монети.</translation>
     </message>
     <message>
-        <source>These are your AeriumX addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Това са вашите AeriumX адреси за получаване на плащания. Препоръчително е да използвате нови адреси за получаване за всяка транзакция.</translation>
+        <source>These are your WealthSilo addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Това са вашите WealthSilo адреси за получаване на плащания. Препоръчително е да използвате нови адреси за получаване за всяка транзакция.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -168,8 +168,8 @@
         <translation>Потвърдете криптирането на портфейла</translation>
     </message>
     <message>
-        <source>AeriumX will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ATRs from being stolen by malware infecting your computer.</source>
-        <translation>AeriumX сега ще се затвори, за да довърши процеса на криптиране. Запомнете, че криптирането на вашия портфейл не може напълно да защити вашия AeriumX от това, да бъде откраднат от злонамерен софутуер, инфектирал вашия компютър.</translation>
+        <source>WealthSilo will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ATRs from being stolen by malware infecting your computer.</source>
+        <translation>WealthSilo сега ще се затвори, за да довърши процеса на криптиране. Запомнете, че криптирането на вашия портфейл не може напълно да защити вашия WealthSilo от това, да бъде откраднат от злонамерен софутуер, инфектирал вашия компютър.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -231,16 +231,16 @@
         <translation>&amp;BIP 38 криптиране</translation>
     </message>
     <message>
-        <source>Enter a AeriumX Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Въведете AeriumX адрес, който искате да криптиране с BIP 38. Въведете парола в средното поле. Натиснете 'криптирай', за да се изчисли криптирания частен ключ.</translation>
+        <source>Enter a WealthSilo Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Въведете WealthSilo адрес, който искате да криптиране с BIP 38. Въведете парола в средното поле. Натиснете 'криптирай', за да се изчисли криптирания частен ключ.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Адрес:</translation>
     </message>
     <message>
-        <source>The AeriumX address to sign the message with</source>
-        <translation>AeriumX адреса, с който да подпишете съобщението</translation>
+        <source>The WealthSilo address to sign the message with</source>
+        <translation>WealthSilo адреса, с който да подпишете съобщението</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -271,8 +271,8 @@
         <translation>Копирай сегашния подпис в системния буфер</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this AeriumX address</source>
-        <translation>Подпишете съобщението, за да докажете, че притежавате този AeriumX адрес</translation>
+        <source>Sign the message to prove you own this WealthSilo address</source>
+        <translation>Подпишете съобщението, за да докажете, че притежавате този WealthSilo адрес</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -432,8 +432,8 @@
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The AeriumX address to sign the message with</source>
-        <translation>AeriumX адреса, с който да подпишете съобщението</translation>
+        <source>The WealthSilo address to sign the message with</source>
+        <translation>WealthSilo адреса, с който да подпишете съобщението</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -456,8 +456,8 @@
         <translation>Копирай сегашния подпис в системния буфер</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this AeriumX address</source>
-        <translation>Подпишете съобщението, за да докажете, че притежавате този AeriumX адрес</translation>
+        <source>Sign the message to prove you own this WealthSilo address</source>
+        <translation>Подпишете съобщението, за да докажете, че притежавате този WealthSilo адрес</translation>
     </message>
     </context>
 <context>
@@ -522,6 +522,6 @@
     <name>ZATRControlDialog</name>
     </context>
 <context>
-    <name>aeriumx-core</name>
+    <name>wealthsilo-core</name>
     </context>
 </TS>

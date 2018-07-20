@@ -43,11 +43,11 @@
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-        <translation>Wählen Sie die Adresse aus, an die Sie AeriumX überweisen möchten</translation>
+        <translation>Wählen Sie die Adresse aus, an die Sie WealthSilo überweisen möchten</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation>Wählen Sie die Adresse aus, über die Sie AeriumX empfangen wollen</translation>
+        <translation>Wählen Sie die Adresse aus, über die Sie WealthSilo empfangen wollen</translation>
     </message>
     <message>
         <source>C&amp;hoose</source>
@@ -62,12 +62,12 @@
         <translation>Empfangsadressen</translation>
     </message>
     <message>
-        <source>These are your AeriumX addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Dies sind ihre AeriumX-Adressen zum Tätigen von Überweisungen. Bitte prüfen Sie den Betrag und die Empfangsadresse, bevor Sie AeriumX überweisen.</translation>
+        <source>These are your WealthSilo addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Dies sind ihre WealthSilo-Adressen zum Tätigen von Überweisungen. Bitte prüfen Sie den Betrag und die Empfangsadresse, bevor Sie WealthSilo überweisen.</translation>
     </message>
     <message>
-        <source>These are your AeriumX addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Dies sind ihre AeriumX-Adressen zum Empfangen von Zahlungen. Es wird empfohlen für jede Transaktion eine neue Empfangsadresse zu verwenden.</translation>
+        <source>These are your WealthSilo addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Dies sind ihre WealthSilo-Adressen zum Empfangen von Zahlungen. Es wird empfohlen für jede Transaktion eine neue Empfangsadresse zu verwenden.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,7 +176,7 @@
         <translation>Wallet-Verschlüsselung bestätigen</translation>
     </message>
     <message>
-        <source>AeriumX will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ATRs from being stolen by malware infecting your computer.</source>
+        <source>WealthSilo will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ATRs from being stolen by malware infecting your computer.</source>
         <translation>Die Anwendungs wird nun geschlossen um die Verschlüsselung abzuschließen. Bitte beachten Sie, dass auch Verschlüsselung nicht nicht vollständig vor Diebstahl ihrer ATRs durch Schadsoftware schützt, die ihren Computer befällt.</translation>
     </message>
     <message>
@@ -239,16 +239,16 @@
         <translation>&amp;BIP 38 Verschlüsselung</translation>
     </message>
     <message>
-        <source>Enter a AeriumX Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Gib eine AeriumX Adresse ein welche mit BIP 38 verschlüsselt werden soll. Gib ein Passwort in die mittleren Box ein. Drücke auf verschlüsseln, um den privaten schlüssel zu errechenen.</translation>
+        <source>Enter a WealthSilo Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Gib eine WealthSilo Adresse ein welche mit BIP 38 verschlüsselt werden soll. Gib ein Passwort in die mittleren Box ein. Drücke auf verschlüsseln, um den privaten schlüssel zu errechenen.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Adresse:</translation>
     </message>
     <message>
-        <source>The AeriumX address to sign the message with</source>
-        <translation>AeriumX Adresse mit welcher die Nachricht signiert werden soll</translation>
+        <source>The WealthSilo address to sign the message with</source>
+        <translation>WealthSilo Adresse mit welcher die Nachricht signiert werden soll</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -279,8 +279,8 @@
         <translation>Kopiert die aktuelle Signatur in den Zwischenspeicher</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this AeriumX address</source>
-        <translation>Signiere die Nachricht um zu Beweisen, dass du diese AeriumX Adresse besitzt</translation>
+        <source>Sign the message to prove you own this WealthSilo address</source>
+        <translation>Signiere die Nachricht um zu Beweisen, dass du diese WealthSilo Adresse besitzt</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -303,12 +303,12 @@
         <translation>Geben Sie den BIP 38 verschlüsselten privaten Schlüssel ein. Geben Sie die Passphrase im mittleren Feld ein. Klicken Sie auf Entschlüsselung, um den privaten Schlüssel zu berechnen. Nachdem der Schlüssel entschlüsselt wurde, klicken Sie auf 'Adresse importieren', fügen Sie diesen privaten Schlüssel der Wallet hinzu.</translation>
     </message>
     <message>
-        <source>The AeriumX address the message was signed with</source>
-        <translation>Die AeriumX Adresse mit welcher die Nachricht signiert wurde.</translation>
+        <source>The WealthSilo address the message was signed with</source>
+        <translation>Die WealthSilo Adresse mit welcher die Nachricht signiert wurde.</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified AeriumX address</source>
-        <translation>Überprüfen Sie die Nachricht, um sicherzustellen, dass sie mit der angegebenen AeriumX-Adresse signiert wurde.</translation>
+        <source>Verify the message to ensure it was signed with the specified WealthSilo address</source>
+        <translation>Überprüfen Sie die Nachricht, um sicherzustellen, dass sie mit der angegebenen WealthSilo-Adresse signiert wurde.</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -602,16 +602,16 @@
         <translation>Registerkartenleiste</translation>
     </message>
     <message>
-        <source>AeriumX Core</source>
-        <translation>AeriumX Core</translation>
+        <source>WealthSilo Core</source>
+        <translation>WealthSilo Core</translation>
     </message>
     <message>
-        <source>Send coins to a AeriumX address</source>
-        <translation>An eine AeriumX-Adresse überweisen</translation>
+        <source>Send coins to a WealthSilo address</source>
+        <translation>An eine WealthSilo-Adresse überweisen</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and aeriumx: URIs)</source>
-        <translation>Zahlung anfordern (QR-Code Generierung und aeriumx: URIs)</translation>
+        <source>Request payments (generates QR codes and wealthsilo: URIs)</source>
+        <translation>Zahlung anfordern (QR-Code Generierung und wealthsilo: URIs)</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -630,24 +630,24 @@
         <translation>Masternodes durchsuchen</translation>
     </message>
     <message>
-        <source>&amp;About AeriumX Core</source>
-        <translation>Über.AeriumX Core</translation>
+        <source>&amp;About WealthSilo Core</source>
+        <translation>Über.WealthSilo Core</translation>
     </message>
     <message>
-        <source>Show information about AeriumX Core</source>
-        <translation>Zeigt Informationen über AeriumX Core</translation>
+        <source>Show information about WealthSilo Core</source>
+        <translation>Zeigt Informationen über WealthSilo Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for AeriumX</source>
-        <translation>Konfiguration von AeriumX verändern</translation>
+        <source>Modify configuration options for WealthSilo</source>
+        <translation>Konfiguration von WealthSilo verändern</translation>
     </message>
     <message>
-        <source>Sign messages with your AeriumX addresses to prove you own them</source>
-        <translation>Unterschreibt eine Nachricht mit Ihrer AeriumX-Adresse und beweist, dass sie Ihnen gehört</translation>
+        <source>Sign messages with your WealthSilo addresses to prove you own them</source>
+        <translation>Unterschreibt eine Nachricht mit Ihrer WealthSilo-Adresse und beweist, dass sie Ihnen gehört</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified AeriumX addresses</source>
-        <translation>Überprüft eine Nachricht um zu prüfen ob diese mit einer bestimmten AeriumX-Adresse signiert wurde</translation>
+        <source>Verify messages to ensure they were signed with specified WealthSilo addresses</source>
+        <translation>Überprüft eine Nachricht um zu prüfen ob diese mit einer bestimmten WealthSilo-Adresse signiert wurde</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -674,8 +674,8 @@
         <translation>Öffne Masternode Einstellungsdatei</translation>
     </message>
     <message>
-        <source>Open a AeriumX: URI or payment request</source>
-        <translation>Öffne eine AeriumX: URI or Zahlungsanfrage</translation>
+        <source>Open a WealthSilo: URI or payment request</source>
+        <translation>Öffne eine WealthSilo: URI or Zahlungsanfrage</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -686,16 +686,16 @@
         <translation>Blockchain Betrachter Fenster</translation>
     </message>
     <message>
-        <source>Show the AeriumX Core help message to get a list with possible AeriumX command-line options</source>
-        <translation>Zeige die AeriumX-Core Hilfe, um mögliche AeriumX Kommando-Zeilen-Optionen anzuzeigen</translation>
+        <source>Show the WealthSilo Core help message to get a list with possible WealthSilo command-line options</source>
+        <translation>Zeige die WealthSilo-Core Hilfe, um mögliche WealthSilo Kommando-Zeilen-Optionen anzuzeigen</translation>
     </message>
     <message>
-        <source>AeriumX Core client</source>
-        <translation>AeriumX Core Client</translation>
+        <source>WealthSilo Core client</source>
+        <translation>WealthSilo Core Client</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to AeriumX network</source>
-        <translation><numerusform>%n aktive Verbindung zum AeriumX Netzwerk</numerusform><numerusform>%n aktive Verbindungen zum AeriumX Netzwerk</numerusform></translation>
+        <source>%n active connection(s) to WealthSilo network</source>
+        <translation><numerusform>%n aktive Verbindung zum WealthSilo Netzwerk</numerusform><numerusform>%n aktive Verbindungen zum WealthSilo Netzwerk</numerusform></translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -848,8 +848,8 @@ Adresse: %4</translation>
         <translation>TextEtikett</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (aeriumx.conf).</source>
-        <translation>Nicht alle Transaktionen können anzezeigt werden. Um alle Transaktionen zu sehen, müssen sie die Option  "txindex=1" in der "aeriumx.conf" Konfigurationsdatei hinzufügen.</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (wealthsilo.conf).</source>
+        <translation>Nicht alle Transaktionen können anzezeigt werden. Um alle Transaktionen zu sehen, müssen sie die Option  "txindex=1" in der "wealthsilo.conf" Konfigurationsdatei hinzufügen.</translation>
     </message>
 </context>
 <context>
@@ -1137,8 +1137,8 @@ Adresse: %4</translation>
         <translation>Zahlungsadresse bearbeiten</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid AeriumX address.</source>
-        <translation>Die eingegebene Adresse "%1" ist keine gültige AeriumX-Adresse.</translation>
+        <source>The entered address "%1" is not a valid WealthSilo address.</source>
+        <translation>Die eingegebene Adresse "%1" ist keine gültige WealthSilo-Adresse.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1183,16 +1183,16 @@ Adresse: %4</translation>
         <translation>Version</translation>
     </message>
     <message>
-        <source>AeriumX Core</source>
-        <translation>AeriumX Core</translation>
+        <source>WealthSilo Core</source>
+        <translation>WealthSilo Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-Bit)</translation>
     </message>
     <message>
-        <source>About AeriumX Core</source>
-        <translation>Über AeriumX Core</translation>
+        <source>About WealthSilo Core</source>
+        <translation>Über WealthSilo Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1238,16 +1238,16 @@ Adresse: %4</translation>
         <translation>Willkommen</translation>
     </message>
     <message>
-        <source>Welcome to AeriumX Core.</source>
-        <translation>Willkommen zu AeriumX Core.</translation>
+        <source>Welcome to WealthSilo Core.</source>
+        <translation>Willkommen zu WealthSilo Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where AeriumX Core will store its data.</source>
-        <translation>Da dies das erste Mal ist, dass Sie AeriumX Core starten, legen Sie jetzt bitte fest, an welchem Ort die Daten gespeichert werden sollen.</translation>
+        <source>As this is the first time the program is launched, you can choose where WealthSilo Core will store its data.</source>
+        <translation>Da dies das erste Mal ist, dass Sie WealthSilo Core starten, legen Sie jetzt bitte fest, an welchem Ort die Daten gespeichert werden sollen.</translation>
     </message>
     <message>
-        <source>AeriumX Core will download and store a copy of the AeriumX block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>AeriumX Core wird die Blockchain laden und lokal speichern. Dafür sind mindestens %1GB freier Speicherplatz erforderlich. Der Speicherbedarf wird mit der Zeit anwachsen. Die Wallet wird ebenfalls in diesem Verzeichnis gespeichert.</translation>
+        <source>WealthSilo Core will download and store a copy of the WealthSilo block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>WealthSilo Core wird die Blockchain laden und lokal speichern. Dafür sind mindestens %1GB freier Speicherplatz erforderlich. Der Speicherbedarf wird mit der Zeit anwachsen. Die Wallet wird ebenfalls in diesem Verzeichnis gespeichert.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1258,8 +1258,8 @@ Adresse: %4</translation>
         <translation>Ein benutzerdefiniertes Datenverzeichnis verwenden:</translation>
     </message>
     <message>
-        <source>AeriumX Core</source>
-        <translation>AeriumX Core</translation>
+        <source>WealthSilo Core</source>
+        <translation>WealthSilo Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1396,12 +1396,12 @@ Adresse: %4</translation>
         <translation>Zieladresse eingeben</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other AeriumX addresses after it matures.
-To Add: enter percentage to give and AeriumX address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other WealthSilo addresses after it matures.
+To Add: enter percentage to give and WealthSilo address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>MultiSend ermöglicht es automatisch bis zu 100% Ihrer Stake- oder Masternode-Belohnung zu einer Liste von anderen AeriumX-Adressen zu senden.
-Zum hinzufügen: Gebe den Prozentsätze ein, um die AeriumX-Adressen des MultiSend-Vektor hinzuzufügen.
+        <translation>MultiSend ermöglicht es automatisch bis zu 100% Ihrer Stake- oder Masternode-Belohnung zu einer Liste von anderen WealthSilo-Adressen zu senden.
+Zum hinzufügen: Gebe den Prozentsätze ein, um die WealthSilo-Adressen des MultiSend-Vektor hinzuzufügen.
 Zum entfernen: Gebe die zu löschende Adresse ein und drücke löschen.
 MultiSend wird nicht aktiviert bis Sie auf Aktivieren geklickt haben.</translation>
     </message>
@@ -1571,15 +1571,15 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
         <translation>Verschleierungskonfiguration</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening AeriumX's configuration screen.</source>
+        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening WealthSilo's configuration screen.</source>
         <translation>Verschleierung erfolgreich auf normal gesetzt (%1 und 2 Runden). Sie können dies jederzeit in den AeriumXs Konfigurationen ändern.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening AeriumX's configuration screen.</source>
+        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening WealthSilo's configuration screen.</source>
         <translation>Verschleierung erfolgreich auf hohen gesetzt (%1 und 8 Runden). Sie können dies jederzeit in den AeriumXs Konfigurationen ändern.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening AeriumX's configuration screen.</source>
+        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening WealthSilo's configuration screen.</source>
         <translation>Verschleierung erfolgreich auf maximal gesetzt (%1 und 16 Runden). Sie können dies jederzeit in den AeriumXs Konfigurationen ändern.</translation>
     </message>
 </context>
@@ -1641,8 +1641,8 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
         <translation>Wenn Sie das Ausgeben von unbestätigten Wechselgeld deaktivieren, so kann das Wechselgeld von einer Transaktion &lt;br/&gt;nicht verwendet werden, bis mindestens eine Bestätigung vorliegt.&lt;br/&gt;Dies hat auch Auswirkungen auf ihre Bilanzberechnung.</translation>
     </message>
     <message>
-        <source>Automatically open the AeriumX client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automatisches öffnen des AeriumX-Client-Port im Router. Dies funktioniert nur, wenn ihr Router UPnP unterstützt und es eingeschaltet ist.</translation>
+        <source>Automatically open the WealthSilo client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automatisches öffnen des WealthSilo-Client-Port im Router. Dies funktioniert nur, wenn ihr Router UPnP unterstützt und es eingeschaltet ist.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1661,12 +1661,12 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
         <translation>Experte</translation>
     </message>
     <message>
-        <source>Automatically start AeriumX after logging in to the system.</source>
-        <translation>AeriumX automatisch nach dem Login starten.</translation>
+        <source>Automatically start WealthSilo after logging in to the system.</source>
+        <translation>WealthSilo automatisch nach dem Login starten.</translation>
     </message>
     <message>
-        <source>&amp;Start AeriumX on system login</source>
-        <translation>AeriumX automatisch beim System Login &amp;starten.</translation>
+        <source>&amp;Start WealthSilo on system login</source>
+        <translation>WealthSilo automatisch beim System Login &amp;starten.</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1693,14 +1693,14 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
         <translation>&amp;Netzwerk</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting AeriumX.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting WealthSilo.</source>
         <translation>Die Sprache der Benutzeroberflächekann hier gesetzt werden. Diese Einstellung wird nach einem Neustart realisiert.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/aeriumx-project/aeriumx-project-translations</source>
+https://www.transifex.com/wealthsilo-project/wealthsilo-project-translations</source>
         <translation>Sprache fehlt oder ist unvollständig? Helfe mit und trage zur Übersetzung hier bei:
-https://www.transifex.com/aeriumx-project/aeriumx-project-translations</translation>
+https://www.transifex.com/wealthsilo-project/wealthsilo-project-translations</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1723,8 +1723,8 @@ https://www.transifex.com/aeriumx-project/aeriumx-project-translations</translat
         <translation>Bevorzugte automatisierte zATR Stückelung </translation>
     </message>
     <message>
-        <source>Connect to the AeriumX network through a SOCKS5 proxy.</source>
-        <translation>Durch einen SOCKS5 Proxy mit dem AeriumX Netzwerk verbinden.</translation>
+        <source>Connect to the WealthSilo network through a SOCKS5 proxy.</source>
+        <translation>Durch einen SOCKS5 Proxy mit dem WealthSilo Netzwerk verbinden.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1882,8 +1882,8 @@ https://www.transifex.com/aeriumx-project/aeriumx-project-translations</translat
         <translation>Erarbeiteter Betrag der noch nicht gereift ist</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the AeriumX network after a connection is established, but this process has not completed yet.</source>
-        <translation>Die angezeigte Information ist möglicherweise nicht mehr aktuell. Ihre Wallet synchronisiert sich automatisch mit dem AeriumX-Netzwerk, nachdem eine Verbindung hergestellt wurde. Aber dieser Vorgang ist noch nicht abgeschlossen.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the WealthSilo network after a connection is established, but this process has not completed yet.</source>
+        <translation>Die angezeigte Information ist möglicherweise nicht mehr aktuell. Ihre Wallet synchronisiert sich automatisch mit dem WealthSilo-Netzwerk, nachdem eine Verbindung hergestellt wurde. Aber dieser Vorgang ist noch nicht abgeschlossen.</translation>
     </message>
     <message>
         <source>Unconfirmed transactions to watch-only addresses</source>
@@ -1969,12 +1969,12 @@ https://www.transifex.com/aeriumx-project/aeriumx-project-translations</translat
         <translation>Zahlungsaufforderungadresse %1</translation>
     </message>
     <message>
-        <source>Cannot start aeriumx: click-to-pay handler</source>
-        <translation>Kann AeriumX nicht starten: click-to-pay Handler</translation>
+        <source>Cannot start wealthsilo: click-to-pay handler</source>
+        <translation>Kann WealthSilo nicht starten: click-to-pay Handler</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid AeriumX address or malformed URI parameters.</source>
-        <translation>URI kann nicht analysiert werden! Dies kann durch eine ungültige AeriumX-Adresse oder fehlerhafte URI-Parameter verursacht sein.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid WealthSilo address or malformed URI parameters.</source>
+        <translation>URI kann nicht analysiert werden! Dies kann durch eine ungültige WealthSilo-Adresse oder fehlerhafte URI-Parameter verursacht sein.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -2067,8 +2067,8 @@ https://www.transifex.com/aeriumx-project/aeriumx-project-translations</translat
         <translation>Zerocoin Handlungen:</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the AeriumX network after a connection is established, but this process has not completed yet.</source>
-        <translation>Die angezeigte Information ist möglicherweise nicht mehr aktuell. Ihre Wallet synchronisiert sich automatisch mit dem AeriumX-Netzwerk, nachdem eine Verbindung hergestellt wurde. Aber dieser Vorgang ist noch nicht abgeschlossen.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the WealthSilo network after a connection is established, but this process has not completed yet.</source>
+        <translation>Die angezeigte Information ist möglicherweise nicht mehr aktuell. Ihre Wallet synchronisiert sich automatisch mit dem WealthSilo-Netzwerk, nachdem eine Verbindung hergestellt wurde. Aber dieser Vorgang ist noch nicht abgeschlossen.</translation>
     </message>
     <message>
         <source>Enter an amount of ATR to convert to zATR</source>
@@ -2171,8 +2171,8 @@ https://www.transifex.com/aeriumx-project/aeriumx-project-translations</translat
         <translation>E&amp;mpfänger:</translation>
     </message>
     <message>
-        <source>The AeriumX address to send the payment to. Creates local payment to yourself when empty.</source>
-        <translation>Die AeriumX-Adresse, an die die Zahlung gesenden wird. Erstelle Sie eine lokale Zahlung an sich selbst, wenn sie leer ist.</translation>
+        <source>The WealthSilo address to send the payment to. Creates local payment to yourself when empty.</source>
+        <translation>Die WealthSilo-Adresse, an die die Zahlung gesenden wird. Erstelle Sie eine lokale Zahlung an sich selbst, wenn sie leer ist.</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2437,8 +2437,8 @@ Bitte haben Sie Geduld...</translation>
         <translation>Keine "Pay To"-Adresse zur Verfügung. Erstelle lokale Zahlung</translation>
     </message>
     <message>
-        <source>Invalid AeriumX Address</source>
-        <translation>Ungültige AeriumX-Adresse </translation>
+        <source>Invalid WealthSilo Address</source>
+        <translation>Ungültige WealthSilo-Adresse </translation>
     </message>
     <message>
         <source>Invalid Send Amount</source>
@@ -2528,8 +2528,8 @@ Bitte haben Sie Geduld...</translation>
         <translation>Betrag</translation>
     </message>
     <message>
-        <source>Enter a AeriumX address (e.g. %1)</source>
-        <translation>AeriumX-Adresse eingeben (z.B. %1)</translation>
+        <source>Enter a WealthSilo address (e.g. %1)</source>
+        <translation>WealthSilo-Adresse eingeben (z.B. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2666,8 +2666,8 @@ Bitte haben Sie Geduld...</translation>
         <translation>Block chain</translation>
     </message>
     <message>
-        <source>Open the AeriumX debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Öffne AeriumX-Debug-Protokolldatei aus dem aktuellen Datenverzeichnis. Dies kann für einige Protokolldateien einige Sekunden dauern.</translation>
+        <source>Open the WealthSilo debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Öffne WealthSilo-Debug-Protokolldatei aus dem aktuellen Datenverzeichnis. Dies kann für einige Protokolldateien einige Sekunden dauern.</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -2834,8 +2834,8 @@ Bitte haben Sie Geduld...</translation>
         <translation>Out:</translation>
     </message>
     <message>
-        <source>Welcome to the AeriumX RPC console.</source>
-        <translation>Willkommen in der AeriumX RPC Konsole.</translation>
+        <source>Welcome to the WealthSilo RPC console.</source>
+        <translation>Willkommen in der WealthSilo RPC Konsole.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -2905,12 +2905,12 @@ Bitte haben Sie Geduld...</translation>
         <translation>Ein optionales Etikett, das mit der neuen Empfangsadresse verknüpft werden soll.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the AeriumX network.</source>
-        <translation>Eine optionale Nachricht anhängen an die Zahlungsaufforderung, die bei der Eröffnung der Anforderung angezeigt wird. Hinweis: Die Nachricht wird nicht mit der Zahlung über das AeriumX-Netzwerk gesendet.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the WealthSilo network.</source>
+        <translation>Eine optionale Nachricht anhängen an die Zahlungsaufforderung, die bei der Eröffnung der Anforderung angezeigt wird. Hinweis: Die Nachricht wird nicht mit der Zahlung über das WealthSilo-Netzwerk gesendet.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the AeriumX network.</source>
-        <translation>Eine optionale Nachricht anhängen an die Zahlungsaufforderung, die bei der Eröffnung der Anforderung angezeigt wird.&lt;br&gt;Hinweis: Die Nachricht wird nicht mit der Zahlung über das AeriumX-Netzwerk gesendet.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the WealthSilo network.</source>
+        <translation>Eine optionale Nachricht anhängen an die Zahlungsaufforderung, die bei der Eröffnung der Anforderung angezeigt wird.&lt;br&gt;Hinweis: Die Nachricht wird nicht mit der Zahlung über das WealthSilo-Netzwerk gesendet.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -3194,8 +3194,8 @@ Bitte haben Sie Geduld...</translation>
         <translation>Wenn die kundenspezifische Gebühr auf 1000 uATRs eingestellt ist und die Transaktion nur 250 Bytes beträgt, dann zahlt man "pro Kilobyte" nur 250 uATRs an Gebühr,&lt;br /&gt;während man "insgesamt mindestens" 1000 uATRs bezahlt. Für Transaktionen, die größer sind als ein Kilobyte, bezahlen sie mit Kilobyte.</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for AeriumX transactions than the network can process.</source>
-        <translation>Nur die minimale Gebühr zu zahlen ist nur gut, solange es weniger Transaktionsvolumen als Platz in den Blocken ist.&lt;br /&gt;Aber sein Sie sich bewusst, dass dies am Ende in einer niemals bestätigende Transaktion endet, sobald es mehr Nachfrage nach AeriumX-Transaktionen gibt, als das Netzwerk verarbeiten kann.</translation>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for WealthSilo transactions than the network can process.</source>
+        <translation>Nur die minimale Gebühr zu zahlen ist nur gut, solange es weniger Transaktionsvolumen als Platz in den Blocken ist.&lt;br /&gt;Aber sein Sie sich bewusst, dass dies am Ende in einer niemals bestätigende Transaktion endet, sobald es mehr Nachfrage nach WealthSilo-Transaktionen gibt, als das Netzwerk verarbeiten kann.</translation>
     </message>
     <message>
         <source>normal</source>
@@ -3302,8 +3302,8 @@ Bitte haben Sie Geduld...</translation>
         <translation>anonyme Mittel</translation>
     </message>
     <message>
-        <source>Warning: Invalid AeriumX address</source>
-        <translation>Warnung: Ungültige AeriumX-Adresse</translation>
+        <source>Warning: Invalid WealthSilo address</source>
+        <translation>Warnung: Ungültige WealthSilo-Adresse</translation>
     </message>
     <message>
         <source>any available funds (not recommended)</source>
@@ -3409,8 +3409,8 @@ Bitte haben Sie Geduld...</translation>
         <translation>E&amp;mpfänger:</translation>
     </message>
     <message>
-        <source>The AeriumX address to send the payment to</source>
-        <translation>AeriumX-Adresse, an die überwiesen werden soll</translation>
+        <source>The WealthSilo address to send the payment to</source>
+        <translation>WealthSilo-Adresse, an die überwiesen werden soll</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -3449,8 +3449,8 @@ Bitte haben Sie Geduld...</translation>
         <translation>Nachricht:</translation>
     </message>
     <message>
-        <source>A message that was attached to the AeriumX: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the AeriumX network.</source>
-        <translation>Eine an die AeriumX-URI angefügte Nachricht, die zusammen mit der Transaktion gespeichert wird. Hinweis: Diese Nachricht wird nicht über das AeriumX-Netzwerk gesendet.</translation>
+        <source>A message that was attached to the WealthSilo: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the WealthSilo network.</source>
+        <translation>Eine an die WealthSilo-URI angefügte Nachricht, die zusammen mit der Transaktion gespeichert wird. Hinweis: Diese Nachricht wird nicht über das WealthSilo-Netzwerk gesendet.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>
@@ -3476,8 +3476,8 @@ Bitte haben Sie Geduld...</translation>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>AeriumX Core is shutting down...</source>
-        <translation>AeriumX Core wird beendet...</translation>
+        <source>WealthSilo Core is shutting down...</source>
+        <translation>WealthSilo Core wird beendet...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -3499,8 +3499,8 @@ Bitte haben Sie Geduld...</translation>
         <translation>Sie können Nachrichten mit Ihren Adressen signieren, um zu beweisen, dass Sie sie besitzen. Sein Sie vorsichtig nichts nebulöses zu unterschreiben, da Phishing-Angriffe versuchen können, Sie dazu zu bringen, Ihre Identität zu denen zu untergeben. Unterschreiben Sie nur ganz detaillierte Aussagen, denen Sie zustimmen.</translation>
     </message>
     <message>
-        <source>The AeriumX address to sign the message with</source>
-        <translation>AeriumX Adresse mit welcher die Nachricht signiert werden soll</translation>
+        <source>The WealthSilo address to sign the message with</source>
+        <translation>WealthSilo Adresse mit welcher die Nachricht signiert werden soll</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -3531,16 +3531,16 @@ Bitte haben Sie Geduld...</translation>
         <translation>Kopiert die aktuelle Signatur in den Zwischenspeicher</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this AeriumX address</source>
-        <translation>Signiere die Nachricht um zu Beweisen, dass du diese AeriumX Adresse besitzt</translation>
+        <source>Sign the message to prove you own this WealthSilo address</source>
+        <translation>Signiere die Nachricht um zu Beweisen, dass du diese WealthSilo Adresse besitzt</translation>
     </message>
     <message>
-        <source>The AeriumX address the message was signed with</source>
-        <translation>Die AeriumX Adresse mit welcher die Nachricht signiert wurde.</translation>
+        <source>The WealthSilo address the message was signed with</source>
+        <translation>Die WealthSilo Adresse mit welcher die Nachricht signiert wurde.</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified AeriumX address</source>
-        <translation>Überprüfen Sie die Nachricht, um sicherzustellen, dass sie mit der angegebenen AeriumX-Adresse signiert wurde.</translation>
+        <source>Verify the message to ensure it was signed with the specified WealthSilo address</source>
+        <translation>Überprüfen Sie die Nachricht, um sicherzustellen, dass sie mit der angegebenen WealthSilo-Adresse signiert wurde.</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -3626,8 +3626,8 @@ Bitte haben Sie Geduld...</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>AeriumX Core</source>
-        <translation>AeriumX Core</translation>
+        <source>WealthSilo Core</source>
+        <translation>WealthSilo Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -3642,8 +3642,8 @@ Bitte haben Sie Geduld...</translation>
         <translation>Die Dash Core Entwickler</translation>
     </message>
     <message>
-        <source>The AeriumX Core developers</source>
-        <translation>Die AeriumX Core Entwickler</translation>
+        <source>The WealthSilo Core developers</source>
+        <translation>Die WealthSilo Core Entwickler</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -4305,7 +4305,7 @@ Bitte haben Sie Geduld...</translation>
     </message>
 </context>
 <context>
-    <name>aeriumx-core</name>
+    <name>wealthsilo-core</name>
     <message>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation>(1 = behalte Tx-Meta-Daten z.B. Betrag, Besitzer und Zahlungsanforderungsinformationen, 2 = verwerfe Tx-Meta-Daten)</translation>
@@ -4323,8 +4323,8 @@ Bitte haben Sie Geduld...</translation>
         <translation>Der berechnete Akkumulator-Checkpoint ist nicht das, was vom Blockindex aufgezeichnet wurde</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. AeriumX Core is probably already running.</source>
-        <translation>Kann keine Sperre für das Datenverzeichnis %s erhalten. AeriumX Core läuft wahrscheinlich bereits.</translation>
+        <source>Cannot obtain a lock on data directory %s. WealthSilo Core is probably already running.</source>
+        <translation>Kann keine Sperre für das Datenverzeichnis %s erhalten. WealthSilo Core läuft wahrscheinlich bereits.</translation>
     </message>
     <message>
         <source>Create new files with system default permissions, instead of umask 077 (only effective with disabled wallet functionality)</source>
@@ -4335,8 +4335,8 @@ Bitte haben Sie Geduld...</translation>
         <translation>Lösche alle Wallet-Transaktionen und stelle nur diese Teile der Blockchain wieder her durch -neuscan beim Start</translation>
     </message>
     <message>
-        <source>Disable all AeriumX specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
-        <translation>Deaktiviere alle AeriumX-spezifischen Funktionen (Masternodes, Verschleierung, SwiftTX, Budgetplanung) (0-1, default: %u)</translation>
+        <source>Disable all WealthSilo specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
+        <translation>Deaktiviere alle WealthSilo-spezifischen Funktionen (Masternodes, Verschleierung, SwiftTX, Budgetplanung) (0-1, default: %u)</translation>
     </message>
     <message>
         <source>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</source>
@@ -4459,8 +4459,8 @@ Bitte haben Sie Geduld...</translation>
         <translation>Copyright (C) 2015-%i The PIVX Core Developers</translation>
     </message>
     <message>
-        <source>Copyright (C) 2018-%i The AeriumX Core Developers</source>
-        <translation>Copyright (C) 2018-%i The AeriumX Core Developers</translation>
+        <source>Copyright (C) 2018-%i The WealthSilo Core Developers</source>
+        <translation>Copyright (C) 2018-%i The WealthSilo Core Developers</translation>
     </message>
     <message>
         <source>Error</source>
@@ -4495,8 +4495,8 @@ Bitte haben Sie Geduld...</translation>
         <translation>Hinweis</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. AeriumX Core is shutting down.</source>
-        <translation>Initialisierung Sanity-Check fehlgeschlagen. AeriumX Core schaltet ab.</translation>
+        <source>Initialization sanity check failed. WealthSilo Core is shutting down.</source>
+        <translation>Initialisierung Sanity-Check fehlgeschlagen. WealthSilo Core schaltet ab.</translation>
     </message>
     <message>
         <source>Input is not valid.</source>
@@ -4787,8 +4787,8 @@ Bitte haben Sie Geduld...</translation>
         <translation>Wallet gesperrt.</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart AeriumX Core to complete</source>
-        <translation>Wallet musste neu geschrieben werden: Bitte AeriumX Core neu starten</translation>
+        <source>Wallet needed to be rewritten: restart WealthSilo Core to complete</source>
+        <translation>Wallet musste neu geschrieben werden: Bitte WealthSilo Core neu starten</translation>
     </message>
     <message>
         <source>Wallet options:</source>

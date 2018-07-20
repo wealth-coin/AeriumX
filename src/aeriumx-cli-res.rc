@@ -16,14 +16,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "AeriumX"
-            VALUE "FileDescription",    "AeriumX-cli (OSS RPC client for AeriumX)"
+            VALUE "CompanyName",        "WealthSilo"
+            VALUE "FileDescription",    "WealthSilo-cli (OSS RPC client for WealthSilo)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "aeriumx-cli"
+            VALUE "InternalName",       "wealthsilo-cli"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "aeriumx-cli.exe"
-            VALUE "ProductName",        "AeriumX-cli"
+            VALUE "OriginalFilename",   "wealthsilo-cli.exe"
+            VALUE "ProductName",        "WealthSilo-cli"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

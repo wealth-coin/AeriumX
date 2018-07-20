@@ -62,11 +62,11 @@
         <translation>Ontvangstadressen</translation>
     </message>
     <message>
-        <source>These are your AeriumX addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your WealthSilo addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Dit zijn uw AeriumXadressen om betalingen mee te verzenden. Controleer altijd zowel het bedrag als het ontvangstadres voor het verzenden.</translation>
     </message>
     <message>
-        <source>These are your AeriumX addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your WealthSilo addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>Dit zijn uw AeriumXadressen waarop betalingen kunnen worden ontvangen. Het wordt aangeraden om een nieuw ontvangstadres voor elke transactie te gebruiken.</translation>
     </message>
     <message>
@@ -172,8 +172,8 @@
         <translation>Bevestig versleuteling van de portemonnee</translation>
     </message>
     <message>
-        <source>AeriumX will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ATRs from being stolen by malware infecting your computer.</source>
-        <translation>AeriumX zal nu afsluiten om het versleutelingsproces te voltooien. Onthoud dat het versleutelen van uw portemonnee u niet volledig kan beschermen: Malware kan uw computer infecteren en uw ATRs stelen.</translation>
+        <source>WealthSilo will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ATRs from being stolen by malware infecting your computer.</source>
+        <translation>WealthSilo zal nu afsluiten om het versleutelingsproces te voltooien. Onthoud dat het versleutelen van uw portemonnee u niet volledig kan beschermen: Malware kan uw computer infecteren en uw ATRs stelen.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -235,16 +235,16 @@
         <translation>&amp;BIP 38 Versleuteling</translation>
     </message>
     <message>
-        <source>Enter a AeriumX Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Voer een AeriumX adres in dat u wilt versleutelen met BIP 38. Voer een wachtwoord in, in het middelste veld. Druk op versleutelen om de versleutelde geheime sleutel te berekenen.</translation>
+        <source>Enter a WealthSilo Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Voer een WealthSilo adres in dat u wilt versleutelen met BIP 38. Voer een wachtwoord in, in het middelste veld. Druk op versleutelen om de versleutelde geheime sleutel te berekenen.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Adres:</translation>
     </message>
     <message>
-        <source>The AeriumX address to sign the message with</source>
-        <translation>Het AeriumX adres om het bericht met te ondertekenen</translation>
+        <source>The WealthSilo address to sign the message with</source>
+        <translation>Het WealthSilo adres om het bericht met te ondertekenen</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -275,8 +275,8 @@
         <translation>Kopieer de huidige handtekening naar het systeemklembord</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this AeriumX address</source>
-        <translation>Onderteken het bericht om te bewijzen dat u het AeriumX adres bezit</translation>
+        <source>Sign the message to prove you own this WealthSilo address</source>
+        <translation>Onderteken het bericht om te bewijzen dat u het WealthSilo adres bezit</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -299,12 +299,12 @@
         <translation>Voer de BIP 38 versleutelde geheime sleutel in. Voer het wachtwoord in, in het middelste veld. Druk op Ontsleutelen Sleutel om de geheime sleutel te berekenen.  Nadat de geheime sleutel is ontsleuteld, zal het klikken op 'Adres Importeren' de geheime sleutel toevoegen aan de portemonnee.</translation>
     </message>
     <message>
-        <source>The AeriumX address the message was signed with</source>
-        <translation>Het AeriumX adres waarmee het bericht was ondertekend</translation>
+        <source>The WealthSilo address the message was signed with</source>
+        <translation>Het WealthSilo adres waarmee het bericht was ondertekend</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified AeriumX address</source>
-        <translation>Controleer een bericht om te verifiëren dat het ondertekend is door het gespecificeerde AeriumX adres</translation>
+        <source>Verify the message to ensure it was signed with the specified WealthSilo address</source>
+        <translation>Controleer een bericht om te verifiëren dat het ondertekend is door het gespecificeerde WealthSilo adres</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -594,16 +594,16 @@
         <translation>Tabblad werkbalk</translation>
     </message>
     <message>
-        <source>AeriumX Core</source>
-        <translation>AeriumX Kern</translation>
+        <source>WealthSilo Core</source>
+        <translation>WealthSilo Kern</translation>
     </message>
     <message>
-        <source>Send coins to a AeriumX address</source>
-        <translation>Verstuur munten naar een AeriumX adres</translation>
+        <source>Send coins to a WealthSilo address</source>
+        <translation>Verstuur munten naar een WealthSilo adres</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and aeriumx: URIs)</source>
-        <translation>Vraag betaling aan (genereert QR-codes en AeriumX: URI's)</translation>
+        <source>Request payments (generates QR codes and wealthsilo: URIs)</source>
+        <translation>Vraag betaling aan (genereert QR-codes en WealthSilo: URI's)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -614,24 +614,24 @@
         <translation>Bekijk masternodes</translation>
     </message>
     <message>
-        <source>&amp;About AeriumX Core</source>
-        <translation>&amp;Over AeriumX Kern</translation>
+        <source>&amp;About WealthSilo Core</source>
+        <translation>&amp;Over WealthSilo Kern</translation>
     </message>
     <message>
-        <source>Show information about AeriumX Core</source>
-        <translation>Toon informatie over AeriumX Kern</translation>
+        <source>Show information about WealthSilo Core</source>
+        <translation>Toon informatie over WealthSilo Kern</translation>
     </message>
     <message>
-        <source>Modify configuration options for AeriumX</source>
-        <translation>Wijzig AeriumX configuratie opties</translation>
+        <source>Modify configuration options for WealthSilo</source>
+        <translation>Wijzig WealthSilo configuratie opties</translation>
     </message>
     <message>
-        <source>Sign messages with your AeriumX addresses to prove you own them</source>
-        <translation>Onderteken berichten met uw AeriumX adressen om te bewijzen dat u deze adressen bezit</translation>
+        <source>Sign messages with your WealthSilo addresses to prove you own them</source>
+        <translation>Onderteken berichten met uw WealthSilo adressen om te bewijzen dat u deze adressen bezit</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified AeriumX addresses</source>
-        <translation>Controleer berichten om te verifiëren dat deze ondertekend zijn met de gespecificeerde AeriumX adressen</translation>
+        <source>Verify messages to ensure they were signed with specified WealthSilo addresses</source>
+        <translation>Controleer berichten om te verifiëren dat deze ondertekend zijn met de gespecificeerde WealthSilo adressen</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -662,8 +662,8 @@
         <translation>Open Masternode configuratiebestand</translation>
     </message>
     <message>
-        <source>Open a AeriumX: URI or payment request</source>
-        <translation>Open een AeriumX: URI of betaalverzoek</translation>
+        <source>Open a WealthSilo: URI or payment request</source>
+        <translation>Open een WealthSilo: URI of betaalverzoek</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -674,12 +674,12 @@
         <translation>Block verkenner venster</translation>
     </message>
     <message>
-        <source>AeriumX Core client</source>
-        <translation>AeriumX Core client</translation>
+        <source>WealthSilo Core client</source>
+        <translation>WealthSilo Core client</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to AeriumX network</source>
-        <translation><numerusform>%n actieve verbinding(en) naar het AeriumX netwerk</numerusform><numerusform>%n actieve verbinding(en) naar het AeriumX netwerk</numerusform></translation>
+        <source>%n active connection(s) to WealthSilo network</source>
+        <translation><numerusform>%n actieve verbinding(en) naar het WealthSilo netwerk</numerusform><numerusform>%n actieve verbinding(en) naar het WealthSilo netwerk</numerusform></translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -825,8 +825,8 @@ MultiSend: %1</translation>
         <translation>TextLabel</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (aeriumx.conf).</source>
-        <translation>Niet alle transacties worden getoond. Om alle transacties te bekijken moet u txindex=1 instellen in het configuratie bestand (aeriumx.conf).</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (wealthsilo.conf).</source>
+        <translation>Niet alle transacties worden getoond. Om alle transacties te bekijken moet u txindex=1 instellen in het configuratie bestand (wealthsilo.conf).</translation>
     </message>
 </context>
 <context>
@@ -1042,8 +1042,8 @@ MultiSend: %1</translation>
         <translation>Wijzig verzendadres</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid AeriumX address.</source>
-        <translation>Het ingevoerde adres: "%1" is geen geldig AeriumX adres.</translation>
+        <source>The entered address "%1" is not a valid WealthSilo address.</source>
+        <translation>Het ingevoerde adres: "%1" is geen geldig WealthSilo adres.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1072,16 +1072,16 @@ MultiSend: %1</translation>
         <translation>versie</translation>
     </message>
     <message>
-        <source>AeriumX Core</source>
-        <translation>AeriumX Kern</translation>
+        <source>WealthSilo Core</source>
+        <translation>WealthSilo Kern</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About AeriumX Core</source>
-        <translation>Over AeriumX Core</translation>
+        <source>About WealthSilo Core</source>
+        <translation>Over WealthSilo Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1111,16 +1111,16 @@ MultiSend: %1</translation>
         <translation>Welkom</translation>
     </message>
     <message>
-        <source>Welcome to AeriumX Core.</source>
-        <translation>Welkom bij AeriumX Core</translation>
+        <source>Welcome to WealthSilo Core.</source>
+        <translation>Welkom bij WealthSilo Core</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
         <translation>Gebruik de standaard datafolder </translation>
     </message>
     <message>
-        <source>AeriumX Core</source>
-        <translation>AeriumX Kern</translation>
+        <source>WealthSilo Core</source>
+        <translation>WealthSilo Kern</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1336,20 +1336,20 @@ MultiSend: %1</translation>
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically start AeriumX after logging in to the system.</source>
-        <translation>AeriumX automatisch opstarten na inloggen op het systeem.</translation>
+        <source>Automatically start WealthSilo after logging in to the system.</source>
+        <translation>WealthSilo automatisch opstarten na inloggen op het systeem.</translation>
     </message>
     <message>
-        <source>&amp;Start AeriumX on system login</source>
-        <translation>&amp;AeriumX starten bij systeemlogin</translation>
+        <source>&amp;Start WealthSilo on system login</source>
+        <translation>&amp;WealthSilo starten bij systeemlogin</translation>
     </message>
     <message>
         <source>&amp;Network</source>
         <translation>&amp;Netwerk</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting AeriumX.</source>
-        <translation>De gebruikersinterface taal kan hier ingesteld worden. Deze instelling zal uitgevoerd na herstart van AeriumX.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting WealthSilo.</source>
+        <translation>De gebruikersinterface taal kan hier ingesteld worden. Deze instelling zal uitgevoerd na herstart van WealthSilo.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1619,8 +1619,8 @@ MultiSend: %1</translation>
         <translation>Hoeveelheid</translation>
     </message>
     <message>
-        <source>Enter a AeriumX address (e.g. %1)</source>
-        <translation>Voer een AeriumX adres in (b.v. %1)</translation>
+        <source>Enter a WealthSilo address (e.g. %1)</source>
+        <translation>Voer een WealthSilo adres in (b.v. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1821,8 +1821,8 @@ MultiSend: %1</translation>
         <translation>Uit:</translation>
     </message>
     <message>
-        <source>Welcome to the AeriumX RPC console.</source>
-        <translation>Welkom bij de AeriumX RPC console.</translation>
+        <source>Welcome to the WealthSilo RPC console.</source>
+        <translation>Welkom bij de WealthSilo RPC console.</translation>
     </message>
     <message>
         <source>%1 B</source>
@@ -2121,8 +2121,8 @@ MultiSend: %1</translation>
         <translation>anonieme financiën</translation>
     </message>
     <message>
-        <source>Warning: Invalid AeriumX address</source>
-        <translation>Waarschuwing: Ongeldig AeriumX adres</translation>
+        <source>Warning: Invalid WealthSilo address</source>
+        <translation>Waarschuwing: Ongeldig WealthSilo adres</translation>
     </message>
     <message>
         <source>any available funds (not recommended)</source>
@@ -2176,8 +2176,8 @@ MultiSend: %1</translation>
         <translation>Betaal &amp;Naar:</translation>
     </message>
     <message>
-        <source>The AeriumX address to send the payment to</source>
-        <translation>Het AeriumX adres om de betaling naar te verzenden</translation>
+        <source>The WealthSilo address to send the payment to</source>
+        <translation>Het WealthSilo adres om de betaling naar te verzenden</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2231,8 +2231,8 @@ MultiSend: %1</translation>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>AeriumX Core is shutting down...</source>
-        <translation>AeriumX Core is aan het afsluiten...</translation>
+        <source>WealthSilo Core is shutting down...</source>
+        <translation>WealthSilo Core is aan het afsluiten...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -2250,8 +2250,8 @@ MultiSend: %1</translation>
         <translation>&amp;Onderteken Bericht</translation>
     </message>
     <message>
-        <source>The AeriumX address to sign the message with</source>
-        <translation>Het AeriumX adres om het bericht met te ondertekenen</translation>
+        <source>The WealthSilo address to sign the message with</source>
+        <translation>Het WealthSilo adres om het bericht met te ondertekenen</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2282,16 +2282,16 @@ MultiSend: %1</translation>
         <translation>Kopieer de huidige handtekening naar het systeemklembord</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this AeriumX address</source>
-        <translation>Onderteken het bericht om te bewijzen dat u het AeriumX adres bezit</translation>
+        <source>Sign the message to prove you own this WealthSilo address</source>
+        <translation>Onderteken het bericht om te bewijzen dat u het WealthSilo adres bezit</translation>
     </message>
     <message>
-        <source>The AeriumX address the message was signed with</source>
-        <translation>Het AeriumX adres waarmee het bericht was ondertekend</translation>
+        <source>The WealthSilo address the message was signed with</source>
+        <translation>Het WealthSilo adres waarmee het bericht was ondertekend</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified AeriumX address</source>
-        <translation>Controleer een bericht om te verifiëren dat het ondertekend is door het gespecificeerde AeriumX adres</translation>
+        <source>Verify the message to ensure it was signed with the specified WealthSilo address</source>
+        <translation>Controleer een bericht om te verifiëren dat het ondertekend is door het gespecificeerde WealthSilo adres</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2361,8 +2361,8 @@ MultiSend: %1</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>AeriumX Core</source>
-        <translation>AeriumX Kern</translation>
+        <source>WealthSilo Core</source>
+        <translation>WealthSilo Kern</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -2377,8 +2377,8 @@ MultiSend: %1</translation>
         <translation>De Dash Core ontwikkelaars</translation>
     </message>
     <message>
-        <source>The AeriumX Core developers</source>
-        <translation>De AeriumX Core ontwikkelaars</translation>
+        <source>The WealthSilo Core developers</source>
+        <translation>De WealthSilo Core ontwikkelaars</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -2764,7 +2764,7 @@ MultiSend: %1</translation>
     </message>
 </context>
 <context>
-    <name>aeriumx-core</name>
+    <name>wealthsilo-core</name>
     <message>
         <source>(default: %s)</source>
         <translation>(standaard: %s)</translation>
@@ -2806,8 +2806,8 @@ MultiSend: %1</translation>
         <translation>Copyright (C) 2015-%i PIVX Ontwikkelaars</translation>
     </message>
     <message>
-        <source>Copyright (C) 2018-%i The AeriumX Core Developers</source>
-        <translation>Copyright (C) 2018-%i The AeriumX Core Developers</translation>
+        <source>Copyright (C) 2018-%i The WealthSilo Core Developers</source>
+        <translation>Copyright (C) 2018-%i The WealthSilo Core Developers</translation>
     </message>
     <message>
         <source>Debugging/Testing options:</source>

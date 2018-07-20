@@ -62,12 +62,12 @@
         <translation>Prijímacia adresa</translation>
     </message>
     <message>
-        <source>These are your AeriumX addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Toto sú vaše AeriumX adresy na odosielanie platieb. Pred odoslaním vždy skontrolujte výšku a adresu prijemcu.</translation>
+        <source>These are your WealthSilo addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Toto sú vaše WealthSilo adresy na odosielanie platieb. Pred odoslaním vždy skontrolujte výšku a adresu prijemcu.</translation>
     </message>
     <message>
-        <source>These are your AeriumX addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Toto sú vaše AeriumX adresy na prijímanie platieb. Pre každú transakciu sa odporúča použiť novú prijímaciu adresu.</translation>
+        <source>These are your WealthSilo addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Toto sú vaše WealthSilo adresy na prijímanie platieb. Pre každú transakciu sa odporúča použiť novú prijímaciu adresu.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,8 +176,8 @@
         <translation>Potvrďte šifrovanie peňaženky</translation>
     </message>
     <message>
-        <source>AeriumX will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ATRs from being stolen by malware infecting your computer.</source>
-        <translation>AeriumX sa teraz ukončí, aby dokončil proces šifrovania. Nezabudnite, že šifrovanie peňaženky nemôže úplne ochrániť vaše ATR pred odcudzením škodlivým softvérom, ktorý infikuje váš počítač.</translation>
+        <source>WealthSilo will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ATRs from being stolen by malware infecting your computer.</source>
+        <translation>WealthSilo sa teraz ukončí, aby dokončil proces šifrovania. Nezabudnite, že šifrovanie peňaženky nemôže úplne ochrániť vaše ATR pred odcudzením škodlivým softvérom, ktorý infikuje váš počítač.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -239,16 +239,16 @@
         <translation>BIP 38 Šifrovanie</translation>
     </message>
     <message>
-        <source>Enter a AeriumX Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Zadajte adresu AeriumX, ktorú chcete zašifrovať pomocou BIP 38. Zadajte prístupovú frázu do stredného poľa. Stlačte šifrovanie na výpočet šifrovaného privátneho kľúča.</translation>
+        <source>Enter a WealthSilo Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Zadajte adresu WealthSilo, ktorú chcete zašifrovať pomocou BIP 38. Zadajte prístupovú frázu do stredného poľa. Stlačte šifrovanie na výpočet šifrovaného privátneho kľúča.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Adresa:</translation>
     </message>
     <message>
-        <source>The AeriumX address to sign the message with</source>
-        <translation>Adresa AeriumX, ktorou chcete správu podpísať</translation>
+        <source>The WealthSilo address to sign the message with</source>
+        <translation>Adresa WealthSilo, ktorou chcete správu podpísať</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -279,8 +279,8 @@
         <translation>Skopírujte aktuálny podpis do schránky</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this AeriumX address</source>
-        <translation>Podpíšte správu, aby ste preukázali, že ste vlastníkom tejto AeriumX adresy</translation>
+        <source>Sign the message to prove you own this WealthSilo address</source>
+        <translation>Podpíšte správu, aby ste preukázali, že ste vlastníkom tejto WealthSilo adresy</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -303,12 +303,12 @@
         <translation>Zadajte súkromný kľúč zašifrovaný BIP 38. Zadajte prístupovú frázu do stredného poľa. Kliknite na Dešifrovať kľúč, ak chcete vypočítať privátny kľúč. Po dešifrovaní kľúča pridáte do peňaženky tento súkromný kľúč kliknutím na položku 'Importovať adresu'.</translation>
     </message>
     <message>
-        <source>The AeriumX address the message was signed with</source>
-        <translation>AeriumX adresa, ktorou bola správa podpísaná</translation>
+        <source>The WealthSilo address the message was signed with</source>
+        <translation>WealthSilo adresa, ktorou bola správa podpísaná</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified AeriumX address</source>
-        <translation>Skontrolujte správu, aby ste sa uistili, že bola podpísaná zadanou AeriumX adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified WealthSilo address</source>
+        <translation>Skontrolujte správu, aby ste sa uistili, že bola podpísaná zadanou WealthSilo adresou</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -598,16 +598,16 @@
         <translation>Panel nástrojov Záložky</translation>
     </message>
     <message>
-        <source>AeriumX Core</source>
-        <translation>AeriumX Core</translation>
+        <source>WealthSilo Core</source>
+        <translation>WealthSilo Core</translation>
     </message>
     <message>
-        <source>Send coins to a AeriumX address</source>
-        <translation>Odoslať mince na adresu AeriumX</translation>
+        <source>Send coins to a WealthSilo address</source>
+        <translation>Odoslať mince na adresu WealthSilo</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and aeriumx: URIs)</source>
-        <translation>Vyžiadať platby (generuje QR kódy a aeriumx: identifikátory URI)</translation>
+        <source>Request payments (generates QR codes and wealthsilo: URIs)</source>
+        <translation>Vyžiadať platby (generuje QR kódy a wealthsilo: identifikátory URI)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -618,24 +618,24 @@
         <translation>Prezrieť masternody</translation>
     </message>
     <message>
-        <source>&amp;About AeriumX Core</source>
-        <translation>O AeriumX Core</translation>
+        <source>&amp;About WealthSilo Core</source>
+        <translation>O WealthSilo Core</translation>
     </message>
     <message>
-        <source>Show information about AeriumX Core</source>
-        <translation>Zobraziť informácie o AeriumX Core</translation>
+        <source>Show information about WealthSilo Core</source>
+        <translation>Zobraziť informácie o WealthSilo Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for AeriumX</source>
-        <translation>Zmeňte možnosti konfigurácie pre AeriumX</translation>
+        <source>Modify configuration options for WealthSilo</source>
+        <translation>Zmeňte možnosti konfigurácie pre WealthSilo</translation>
     </message>
     <message>
-        <source>Sign messages with your AeriumX addresses to prove you own them</source>
-        <translation>Podpíšte správy pomocou adresy AeriumX, aby ste preukázali, že ich vlastníte</translation>
+        <source>Sign messages with your WealthSilo addresses to prove you own them</source>
+        <translation>Podpíšte správy pomocou adresy WealthSilo, aby ste preukázali, že ich vlastníte</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified AeriumX addresses</source>
-        <translation>Overte správy, aby sa zabezpečilo, že boli podpísané zadanými AeriumX adresami</translation>
+        <source>Verify messages to ensure they were signed with specified WealthSilo addresses</source>
+        <translation>Overte správy, aby sa zabezpečilo, že boli podpísané zadanými WealthSilo adresami</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -666,8 +666,8 @@
         <translation>Otvoriť konfiguračný súbor masternodu</translation>
     </message>
     <message>
-        <source>Open a AeriumX: URI or payment request</source>
-        <translation>Otvorte AeriumX: URI alebo žiadosť o platbu</translation>
+        <source>Open a WealthSilo: URI or payment request</source>
+        <translation>Otvorte WealthSilo: URI alebo žiadosť o platbu</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -678,12 +678,12 @@
         <translation>Okno blockchain prehliadača</translation>
     </message>
     <message>
-        <source>Show the AeriumX Core help message to get a list with possible AeriumX command-line options</source>
-        <translation>Zobraziť pomocnú správu programu AeriumX Core a získajte zoznam možností príkazového riadka AeriumX</translation>
+        <source>Show the WealthSilo Core help message to get a list with possible WealthSilo command-line options</source>
+        <translation>Zobraziť pomocnú správu programu WealthSilo Core a získajte zoznam možností príkazového riadka WealthSilo</translation>
     </message>
     <message>
-        <source>AeriumX Core client</source>
-        <translation>AeriumX Core klient</translation>
+        <source>WealthSilo Core client</source>
+        <translation>WealthSilo Core klient</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -813,8 +813,8 @@ MultiSend: %1</translation>
         <translation>TextLabel</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (aeriumx.conf).</source>
-        <translation>Nie všetky transakcie sa zobrazia. Ak chcete zobraziť všetky transakcie, musíte v konfiguračnom súbore (aeriumx.conf) nastaviť txindex = 1.</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (wealthsilo.conf).</source>
+        <translation>Nie všetky transakcie sa zobrazia. Ak chcete zobraziť všetky transakcie, musíte v konfiguračnom súbore (wealthsilo.conf) nastaviť txindex = 1.</translation>
     </message>
 </context>
 <context>
@@ -908,15 +908,15 @@ MultiSend: %1</translation>
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>AeriumX Core</source>
-        <translation>AeriumX Core</translation>
+        <source>WealthSilo Core</source>
+        <translation>WealthSilo Core</translation>
     </message>
     </context>
 <context>
     <name>Intro</name>
     <message>
-        <source>AeriumX Core</source>
-        <translation>AeriumX Core</translation>
+        <source>WealthSilo Core</source>
+        <translation>WealthSilo Core</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1140,8 +1140,8 @@ MultiSend: %1</translation>
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The AeriumX address to sign the message with</source>
-        <translation>Adresa AeriumX, ktorou chcete správu podpísať</translation>
+        <source>The WealthSilo address to sign the message with</source>
+        <translation>Adresa WealthSilo, ktorou chcete správu podpísať</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1164,16 +1164,16 @@ MultiSend: %1</translation>
         <translation>Skopírujte aktuálny podpis do schránky</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this AeriumX address</source>
-        <translation>Podpíšte správu, aby ste preukázali, že ste vlastníkom tejto AeriumX adresy</translation>
+        <source>Sign the message to prove you own this WealthSilo address</source>
+        <translation>Podpíšte správu, aby ste preukázali, že ste vlastníkom tejto WealthSilo adresy</translation>
     </message>
     <message>
-        <source>The AeriumX address the message was signed with</source>
-        <translation>AeriumX adresa, ktorou bola správa podpísaná</translation>
+        <source>The WealthSilo address the message was signed with</source>
+        <translation>WealthSilo adresa, ktorou bola správa podpísaná</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified AeriumX address</source>
-        <translation>Skontrolujte správu, aby ste sa uistili, že bola podpísaná zadanou AeriumX adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified WealthSilo address</source>
+        <translation>Skontrolujte správu, aby ste sa uistili, že bola podpísaná zadanou WealthSilo adresou</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -1211,8 +1211,8 @@ MultiSend: %1</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>AeriumX Core</source>
-        <translation>AeriumX Core</translation>
+        <source>WealthSilo Core</source>
+        <translation>WealthSilo Core</translation>
     </message>
     </context>
 <context>
@@ -1310,7 +1310,7 @@ MultiSend: %1</translation>
     <name>ZATRControlDialog</name>
     </context>
 <context>
-    <name>aeriumx-core</name>
+    <name>wealthsilo-core</name>
     <message>
         <source>Error</source>
         <translation>Chyba</translation>

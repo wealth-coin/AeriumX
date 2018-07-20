@@ -10,10 +10,10 @@
 
 /**
  * Name of client reported in the 'version' message. Report the same name
- * for both aeriumxd and aeriumx-qt, to make it harder for attackers to
+ * for both aeriumxd and wealthsilo-qt, to make it harder for attackers to
  * target servers or GUI users specifically.
  */
-const std::string CLIENT_NAME("AeriumX Core");
+const std::string CLIENT_NAME("WealthSilo Core");
 
 /**
  * Client version number

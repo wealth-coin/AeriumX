@@ -1,18 +1,18 @@
 [Unit]
-Description=AeriumX's distributed currency daemon
+Description=WealthSilo's distributed currency daemon
 After=network.target
 
 [Service]
-User=aeriumx
-Group=aeriumx
+User=wealthsilo
+Group=wealthsilo
 
 Type=forking
 PIDFile=/var/lib/aeriumxd/aeriumxd.pid
 
 ExecStart=/usr/bin/aeriumxd -daemon -pid=/var/lib/aeriumxd/aeriumxd.pid \
-          -conf=/etc/aeriumx/aeriumx.conf -datadir=/var/lib/aeriumxd
+          -conf=/etc/wealthsilo/wealthsilo.conf -datadir=/var/lib/aeriumxd
 
-ExecStop=-/usr/bin/aeriumx-cli -conf=/etc/aeriumx/aeriumx.conf \
+ExecStop=-/usr/bin/wealthsilo-cli -conf=/etc/wealthsilo/wealthsilo.conf \
          -datadir=/var/lib/aeriumxd stop
 
 Restart=always

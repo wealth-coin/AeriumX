@@ -14,7 +14,7 @@
 #define BITCOIN_UTIL_H
 
 #if defined(HAVE_CONFIG_H)
-#include "config/aeriumx-config.h"
+#include "config/wealthsilo-config.h"
 #endif
 
 #include "compat.h"
@@ -30,7 +30,7 @@
 #include <boost/filesystem/path.hpp>
 #include <boost/thread/exceptions.hpp>
 
-//AeriumX only features
+//WealthSilo only features
 
 extern bool fMasterNode;
 extern bool fLiteMode;
@@ -213,7 +213,7 @@ void RenameThread(const char* name);
 template <typename Callable>
 void TraceThread(const char* name, Callable func)
 {
-    std::string s = strprintf("aeriumx-%s", name);
+    std::string s = strprintf("wealthsilo-%s", name);
     RenameThread(s.c_str());
     try {
         LogPrintf("%s thread start\n", name);

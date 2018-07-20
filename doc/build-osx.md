@@ -44,8 +44,8 @@ Instructions: Homebrew
 
 1. Clone the github tree to get the source code and go into the directory.
 
-        git clone https://github.com/AeriumX-Project/AeriumX.git
-        cd AeriumX
+        git clone https://github.com/WealthSilo-Project/WealthSilo.git
+        cd WealthSilo
 
 2.  Build aeriumxd:
 
@@ -69,7 +69,7 @@ Download Qt Creator from http://www.qt.io/download/. Download the "community edi
 1. Make sure you installed everything through homebrew mentioned above
 2. Do a proper ./configure --with-gui=qt5 --enable-debug
 3. In Qt Creator do "New Project" -> Import Project -> Import Existing Project
-4. Enter "aeriumx-qt" as project name, enter src/qt as location
+4. Enter "wealthsilo-qt" as project name, enter src/qt as location
 5. Leave the file selection as it is
 6. Confirm the "summary page"
 7. In the "Projects" tab select "Manage Kits..."
@@ -81,9 +81,9 @@ Creating a release build
 ------------------------
 You can ignore this section if you are building `aeriumxd` for your own use.
 
-aeriumxd/aeriumx-cli binaries are not included in the aeriumx-Qt.app bundle.
+aeriumxd/wealthsilo-cli binaries are not included in the wealthsilo-Qt.app bundle.
 
-If you are building `aeriumxd` or `aeriumx-qt` for others, your build machine should be set up
+If you are building `aeriumxd` or `wealthsilo-qt` for others, your build machine should be set up
 as follows for maximum compatibility:
 
 All dependencies should be compiled with these flags:
@@ -92,7 +92,7 @@ All dependencies should be compiled with these flags:
  -arch x86_64
  -isysroot $(xcode-select --print-path)/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk
 
-Once dependencies are compiled, see release-process.md for how the AeriumX-Qt.app
+Once dependencies are compiled, see release-process.md for how the WealthSilo-Qt.app
 bundle is packaged and signed to create the .dmg disk image that is distributed.
 
 Running
@@ -104,18 +104,18 @@ directory. We have to first create the RPC configuration file, though.
 Run `./aeriumxd` to get the filename where it should be put, or just try these
 commands:
 
-    echo -e "rpcuser=aeriumxrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/AeriumX/aeriumx.conf"
-    chmod 600 "/Users/${USER}/Library/Application Support/AeriumX/aeriumx.conf"
+    echo -e "rpcuser=aeriumxrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/WealthSilo/wealthsilo.conf"
+    chmod 600 "/Users/${USER}/Library/Application Support/WealthSilo/wealthsilo.conf"
 
 The next time you run it, it will start downloading the blockchain, but it won't
 output anything while it's doing this. This process may take several hours;
 you can monitor its process by looking at the debug.log file, like this:
 
-    tail -f $HOME/Library/Application\ Support/AeriumX/debug.log
+    tail -f $HOME/Library/Application\ Support/WealthSilo/debug.log
 
 Other commands:
 -------
 
-    ./aeriumxd -daemon # to start the aeriumx daemon.
-    ./aeriumx-cli --help  # for a list of command-line options.
-    ./aeriumx-cli help    # When the daemon is running, to get a list of RPC commands
+    ./aeriumxd -daemon # to start the wealthsilo daemon.
+    ./wealthsilo-cli --help  # for a list of command-line options.
+    ./wealthsilo-cli help    # When the daemon is running, to get a list of RPC commands

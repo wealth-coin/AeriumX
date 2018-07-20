@@ -16,8 +16,8 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "AeriumX"
-            VALUE "FileDescription",    "aeriumxd (OSS daemon/client for AeriumX)"
+            VALUE "CompanyName",        "WealthSilo"
+            VALUE "FileDescription",    "aeriumxd (OSS daemon/client for WealthSilo)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
             VALUE "InternalName",       "aeriumxd"
             VALUE "LegalCopyright",     COPYRIGHT_STR
