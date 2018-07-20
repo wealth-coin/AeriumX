@@ -8,7 +8,7 @@
  * @license    This project is released under the MIT license.
  **/
 // Copyright (c) 2015-2017 The PIVX developers	
-// Copyright (c) 2015-2017 The AeriumX developers
+// Copyright (c) 2018 The WealthSilo developers
 
 #include "denomination_functions.h"
 
