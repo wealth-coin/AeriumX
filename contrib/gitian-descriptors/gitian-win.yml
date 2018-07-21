@@ -22,8 +22,8 @@ packages:
 - "ca-certificates"
 - "python"
 remotes:
-- "url": "https://github.com/insta-cash/wealthsilo"
-  "dir": "wealthsilo"
+- "url": "https://github.com/wealth-coin/Wealth.Silo.git"
+  "dir": "Wealth.Silo"
 files: []
 script: |
   WRAP_DIR=$HOME/wrapped

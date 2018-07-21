@@ -1,5 +1,5 @@
 ---
-name: "wealthsilo-linux-1.1"
+name: "wealthsilo-linux-1.0"
 enable_cache: true
 suites:
 - "trusty"
@@ -29,8 +29,8 @@ packages:
 - "python"
 reference_datetime: "2015-06-01 00:00:00"
 remotes:
-- "url": "https://github.com/insta-cash/wealthsilo"
-  "dir": "wealthsilo"
+- "url": "https://github.com/wealth-coin/Wealth.Silo.git"
+  "dir": "Wealth.Silo"
 files: []
 script: |
 
