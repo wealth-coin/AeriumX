@@ -110,7 +110,7 @@ public:
         pchMessageStart[2] = 0xfd;
         pchMessageStart[3] = 0xe9;
         vAlertPubKey = ParseHex("02acda05fc4c1a40fc1ddab042d4dd3b22c4e5a8a191399060764d172973651edc");
-        nDefaultPort = 35407;
+        nDefaultPort = 45595;
         bnProofOfWorkLimit = ~uint256(0) >> 20; // WealthSilo starting difficulty is 1 / 2^12
         nSubsidyHalvingInterval = 210000;
         nMaxReorganizationDepth = 100;
@@ -156,7 +156,7 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime = 1527890521;
+        genesis.nTime = 1532190915;
         genesis.nBits = 0x1e0ffff0;
         genesis.nNonce = 3201230;
 
@@ -169,7 +169,7 @@ public:
         vSeeds.push_back(CDNSSeedData("185.52.2.37", "185.52.2.37"));
 		vSeeds.push_back(CDNSSeedData("185.52.3.82", "185.52.3.82"));
 		vSeeds.push_back(CDNSSeedData("81.4.101.224", "81.4.101.224"));
-		vSeeds.push_back(CDNSSeedData("185.52.2.99", "185.52.2.99"));
+		vSeeds.push_back(CDNSSeedData("81.4.101.56", "81.4.101.56"));
 		//vSeeds.push_back(CDNSSeedData("", ""));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 23);
@@ -234,7 +234,7 @@ public:
         pchMessageStart[2] = 0x65;
         pchMessageStart[3] = 0xba;
         vAlertPubKey = ParseHex("000010e83b2703ccf322f7dbd62dd5855ac7c10bd055814ce121ba32607d573b8810c02c0582aed05b4deb9c4b77b26d92428c61256cd42774babea0a073b2ed0c9");
-        nDefaultPort = 35417;
+        nDefaultPort = 45585;
         nEnforceBlockUpgradeMajority = 51;
         nRejectBlockOutdatedMajority = 75;
         nToCheckBlockUpgradeMajority = 100;
