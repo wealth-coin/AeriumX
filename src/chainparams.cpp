@@ -106,8 +106,8 @@ public:
          * a large 4-byte int at any alignment.
          */
         pchMessageStart[0] = 0x90;
-        pchMessageStart[1] = 0xc4;
-        pchMessageStart[2] = 0xfd;
+        pchMessageStart[1] = 0xa4;
+        pchMessageStart[2] = 0xed;
         pchMessageStart[3] = 0xe9;
         vAlertPubKey = ParseHex("02acda05fc4c1a40fc1ddab042d4dd3b22c4e5a8a191399060764d172973651edc");
         nDefaultPort = 45595;
@@ -119,21 +119,21 @@ public:
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 0;
         nTargetTimespan = 1 * 60; // WealthSilo: 1 day
-        nTargetSpacing = 1 * 60;  // WealthSilo: 1 minute
+        nTargetSpacing = 2 * 60;  // WealthSilo: 2 minute
         nMaturity = 10;
         nMasternodeCountDrift = 20;
-        nMaxMoneyOut = 100000000 * COIN;
+        nMaxMoneyOut = 6000000 * COIN;
 
         /** Height or Time Based Activations **/
-        nLastPOWBlock = 312481;
+        nLastPOWBlock = 200;
         nModifierUpdateBlock = 0;
-        nZerocoinStartHeight = 312482;
+        nZerocoinStartHeight = 201;
         nZerocoinStartTime = 1515434000; // October 17, 2017 4:30:00 AM
-        nBlockEnforceSerialRange = 312484; //Enforce serial range starting this block
-        nBlockRecalculateAccumulators = 312485; //Trigger a recalculation of accumulators
-        nBlockFirstFraudulent = 312483; //First block that bad serials emerged
-        nBlockLastGoodCheckpoint = 312485; //Last valid accumulator checkpoint
-        nBlockEnforceInvalidUTXO = 312481; //Start enforcing the invalid UTXO's
+        nBlockEnforceSerialRange = 1; //Enforce serial range starting this block
+        nBlockRecalculateAccumulators = ~1; //Trigger a recalculation of accumulators
+        nBlockFirstFraudulent = ~1; //First block that bad serials emerged
+        nBlockLastGoodCheckpoint = ~1; //Last valid accumulator checkpoint
+        nBlockEnforceInvalidUTXO = 1; //Start enforcing the invalid UTXO's
 
 
         /**        * Build the genesis block. Note that the output of the genesis coinbase cannot
@@ -158,7 +158,7 @@ public:
         genesis.nVersion = 1;
         genesis.nTime = 1532190915;
         genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 3201230;
+        genesis.nNonce = 0;
 
         hashGenesisBlock = genesis.GetHash();
         assert(hashGenesisBlock == uint256("0x00000d678dad8967cf06bbae41ee9ebf06762981e69e406466a5acc151098f1b"));
@@ -172,8 +172,8 @@ public:
 		vSeeds.push_back(CDNSSeedData("81.4.101.56", "81.4.101.56"));
 		//vSeeds.push_back(CDNSSeedData("", ""));
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 23);
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 83);
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 73);
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 135);
 		base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, (23+128));	
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x02)(0x2D)(0x25)(0x33).convert_to_container<std::vector<unsigned char> >();
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x02)(0x21)(0x31)(0x2B).convert_to_container<std::vector<unsigned char> >();
@@ -182,7 +182,7 @@ public:
 
         //convertSeed6(vFixedSeeds, pnSeed6_main, ARRAYLEN(pnSeed6_main));
 
-        fMiningRequiresPeers = true;
+        fMiningRequiresPeers = false;
         fAllowMinDifficultyBlocks = false;
         fDefaultConsistencyChecks = false;
         fRequireStandard = true;
@@ -194,7 +194,7 @@ public:
         nPoolMaxTransactions = 3;
         strSporkKey = "02acda05fc4c1a40fc1ddab042d4dd3b22c4e5a8a191399060764d172973651edc";
         strObfuscationPoolDummyAddress = "A87q2gC9j6nNrnzCsg4aY6bHMLsT9nUhEw";
-        nStartMasternodePayments = 1403728576; //Wed, 25 Jun 2014 20:36:16 GMT
+        nStartMasternodePayments = 1532252115; //Sun, 26 Jul 2018 6:36:16 GMT
 
         /** Zerocoin */
         zerocoinModulus = "25195908475657893494027183240048398571429282126204032027777137836043662020707595556264018525880784"
@@ -230,8 +230,8 @@ public:
         networkID = CBaseChainParams::TESTNET;
         strNetworkID = "test";
         pchMessageStart[0] = 0x45;
-        pchMessageStart[1] = 0x76;
-        pchMessageStart[2] = 0x65;
+        pchMessageStart[1] = 0x46;
+        pchMessageStart[2] = 0xa5;
         pchMessageStart[3] = 0xba;
         vAlertPubKey = ParseHex("000010e83b2703ccf322f7dbd62dd5855ac7c10bd055814ce121ba32607d573b8810c02c0582aed05b4deb9c4b77b26d92428c61256cd42774babea0a073b2ed0c9");
         nDefaultPort = 45585;
@@ -241,7 +241,7 @@ public:
         nMinerThreads = 0;
         nTargetTimespan = 1 * 60; // WealthSilo: 1 day
         nTargetSpacing = 1 * 60;  // WealthSilo: 1 minute
-        nLastPOWBlock = 200;
+        nLastPOWBlock = 1;
         nMaturity = 15;
         nMasternodeCountDrift = 4;
         nModifierUpdateBlock = 51197; //approx Mon, 17 Apr 2017 04:00:00 GMT
