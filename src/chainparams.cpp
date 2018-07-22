@@ -162,6 +162,10 @@ public:
 
     //test checkpoint data
         hashGenesisBlock = genesis.GetHash();
+        printf("nT = %u \n", block.nTime);
+        printf("nN = %u \n", block.nNonce);
+        printf("MR = %s\n", block.hashMerkleRoot.ToString().c_str());
+        printf("GB = %s\n",hashGenesisBlock.ToString().c_str());
         assert(hashGenesisBlock == uint256("0x0"));
         assert(genesis.hashMerkleRoot == uint256("0x0"));
 
