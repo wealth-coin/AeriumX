@@ -282,16 +282,16 @@
 #define LT_OBJDIR ".libs/"
 
 /* Define to the address where bug reports for this package should be sent. */
-#define PACKAGE_BUGREPORT "www.tenup.io"
+#define PACKAGE_BUGREPORT "www.wealthsilo.io"
 
 /* Define to the full name of this package. */
-#define PACKAGE_NAME "Tenup Core"
+#define PACKAGE_NAME "WealthSilo Core"
 
 /* Define to the full name and version of this package. */
-#define PACKAGE_STRING "Tenup Core 1.1.0"
+#define PACKAGE_STRING "WealthSilo Core 1.0.0"
 
 /* Define to the one symbol short name of this package. */
-#define PACKAGE_TARNAME "tenup"
+#define PACKAGE_TARNAME "wealthsilo"
 
 /* Define to the home page for this package. */
 #define PACKAGE_URL ""
