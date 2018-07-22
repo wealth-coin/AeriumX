@@ -153,14 +153,14 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime = 1532259670;
+        genesis.nTime = 1532276243;
         genesis.nBits = 0x1e0ffff0;
         genesis.nNonce = 0;
 
     //test checkpoint data
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x00000d678dad8967cf06bbae41ee9ebf06762981e69e406466a5acc151098f1b"));
-        assert(genesis.hashMerkleRoot == uint256("0xe4cfeea4b73dc8337b61ce1a12c1c04014c90e74968dab5d74ef3ad3336e981a"));
+        assert(hashGenesisBlock == uint256("0x0"));
+        assert(genesis.hashMerkleRoot == uint256("0x0"));
 
 
         vSeeds.push_back(CDNSSeedData("81.4.101.233", "81.4.101.233"));
