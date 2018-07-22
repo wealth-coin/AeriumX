@@ -153,64 +153,64 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime = 1532254212;
+        genesis.nTime = 1532259670;
         genesis.nBits = 0x1e0ffff0;
         genesis.nNonce = 0;
 
            //Premine checkpoints data
-+   
-+    bool CheckProofOfWork(uint256 hash, unsigned int nBits)
-+    {
-+    bool fNegative;
-+    bool fOverflow;
-+    uint256 bnTarget;
-+
-+    bnTarget.SetCompact(nBits, &fNegative, &fOverflow);
-+
-+    // Check range
-+    if (fNegative || bnTarget == 0 || fOverflow || bnTarget > bnProofOfWorkLimit)
-+        return error("CheckProofOfWork() : nBits below minimum work");
-+
-+    // Check proof of work matches claimed amount
-+    if (hash > bnTarget)
-+        return error("CheckProofOfWork() : hash doesn't match nBits");
-+
-+    return true;
-+    }
-+
-+    void checkData(CBlock block, uint256 hash) {
-+
-+        if (block.GetHash() != hash)
-+        {
-+            printf("check blocks...\n");
-+            uint256 thash;
-+            block.nNonce = 0;
-+
-+            while(true)
-+            {
-+                thash = block.GetHash();
-+                if (CheckProofOfWork(thash, block.nBits))
-+                    break;
-+                if ((block.nNonce & 0xFFF) == 0)
-+                {
-+                    printf("nonce %08X: hash = %s (target not matched)\n", block.nNonce, thash.ToString().c_str());
-+                    //break;
-+                }
-+                ++block.nNonce;
-+                if (block.nNonce == 0)
-+                {
-+                    printf("NONCE WRAPPED, incrementing time\n");
-+                    ++block.nTime;
-+                }
-+            }
-+            printf("nT = %u \n", block.nTime);
-+            printf("nN = %u \n", block.nNonce);
-+            printf("GH = %s\n", block.GetHash().ToString().c_str());
-+            printf("MR = %s\n", block.hashMerkleRoot.ToString().c_str());
-+         }
-+    }
-+
-+    //test checkpoint data
+  
+    bool CheckProofOfWork(uint256 hash, unsigned int nBits)
+   {
+    bool fNegative;
+    bool fOverflow;
+    uint256 bnTarget;
+
+    bnTarget.SetCompact(nBits, &fNegative, &fOverflow);
+
+    // Check range
+    if (fNegative || bnTarget == 0 || fOverflow || bnTarget > bnProofOfWorkLimit)
+        return error("CheckProofOfWork() : nBits below minimum work");
+
+    // Check proof of work matches claimed amount
+    if (hash > bnTarget)
+        return error("CheckProofOfWork() : hash doesn't match nBits");
+
+    return true;
+    }
+
+    void checkData(CBlock block, uint256 hash) {
+
+        if (block.GetHash() != hash)
+        {
+            printf("check blocks...\n");
+            uint256 thash;
+            block.nNonce = 0;
+
+            while(true)
+            {
+                thash = block.GetHash();
+                if (CheckProofOfWork(thash, block.nBits))
+                    break;
+                if ((block.nNonce & 0xFFF) == 0)
+                {
+                    printf("nonce %08X: hash = %s (target not matched)\n", block.nNonce, thash.ToString().c_str());
+                    //break;
+                }
+                ++block.nNonce;
+                if (block.nNonce == 0)
+                {
+                    printf("NONCE WRAPPED, incrementing time\n");
+                    ++block.nTime;
+                }
+            }
+            printf("nT = %u \n", block.nTime);
+            printf("nN = %u \n", block.nNonce);
+            printf("GH = %s\n", block.GetHash().ToString().c_str());
+            printf("MR = %s\n", block.hashMerkleRoot.ToString().c_str());
+         }
+    }
+
+    //test checkpoint data
         hashGenesisBlock = genesis.GetHash();
         assert(hashGenesisBlock == uint256("0x00000d678dad8967cf06bbae41ee9ebf06762981e69e406466a5acc151098f1b"));
         assert(genesis.hashMerkleRoot == uint256("0xe4cfeea4b73dc8337b61ce1a12c1c04014c90e74968dab5d74ef3ad3336e981a"));
@@ -245,7 +245,7 @@ public:
         nPoolMaxTransactions = 3;
         strSporkKey = "02acda05fc4c1a40fc1ddab042d4dd3b22c4e5a8a191399060764d172973651edc";
         strObfuscationPoolDummyAddress = "A87q2gC9j6nNrnzCsg4aY6bHMLsT9nUhEw";
-        nStartMasternodePayments = 1532252115; //Sun, 26 Jul 2018 6:36:16 GMT
+        nStartMasternodePayments = 1532266870; //Sun, 26 Jul 2018 6:36:16 GMT
 
         /** Zerocoin */
         zerocoinModulus = "25195908475657893494027183240048398571429282126204032027777137836043662020707595556264018525880784"
