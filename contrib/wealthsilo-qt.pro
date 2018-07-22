@@ -450,7 +450,6 @@ SOURCES += src/activemasternode.cpp \
            src/crypto/sha256.cpp \
            src/crypto/sha512.cpp \
            src/crypto/sph_whirlpool.c \
-		   src/crypto/md_helper.c \
            src/crypto/sph_haval.c \
            src/crypto/sph_blake.c \
 		   src/crypto/sph_bmw.c \
