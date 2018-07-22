@@ -2120,10 +2120,12 @@ double ConvertBitsToDouble(unsigned int nBits)
 int64_t GetBlockValue(int nHeight)
 {
     int64_t nSubsidy = 0;
-
+//9 JUN zee comit
     if (Params().NetworkID() == CBaseChainParams::TESTNET) {
         if (nHeight < 200 && nHeight > 0)
-            return 250000 * COIN;
+            return 0;
+        else
+            return 50 * COIN;
     }
 
     // Don't sync this code, it's specified by WEALTH

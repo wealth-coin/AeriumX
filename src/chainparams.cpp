@@ -55,17 +55,14 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (0, uint256("0x00000d678dad8967cf06bbae41ee9ebf06762981e69e406466a5acc151098f1b"))
-	(1, uint256("0x000004bdfff5705bf5c282dad3f745d38fc53fc510653a263125043080920d4f"))
-	(2, uint256("0x000003a63e84036b60b6a20f2d869661206587275c1b0aeea9f2856da54cda60"))
-	(3, uint256("0x00000bfc64bc487c6fc45da6aa68cf09e307f7df169735dd95d8273aa54d8b70"));
+    ();
 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1518649586, // * UNIX timestamp of last checkpoint block
-    9133,       // * total number of transactions between genesis and last checkpoint
+    1532250612, // * UNIX timestamp of last checkpoint block
+    1,       // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
-    2880        // * estimated number of transactions per day after checkpoint*/
+    10000        // * estimated number of transactions per day after checkpoint*/
 };
 
 static Checkpoints::MapCheckpoints mapCheckpointsTestnet =
@@ -156,10 +153,64 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime = 1532190915;
+        genesis.nTime = 1532254212;
         genesis.nBits = 0x1e0ffff0;
         genesis.nNonce = 0;
 
+           //Premine checkpoints data
++   
++    bool CheckProofOfWork(uint256 hash, unsigned int nBits)
++    {
++    bool fNegative;
++    bool fOverflow;
++    uint256 bnTarget;
++
++    bnTarget.SetCompact(nBits, &fNegative, &fOverflow);
++
++    // Check range
++    if (fNegative || bnTarget == 0 || fOverflow || bnTarget > bnProofOfWorkLimit)
++        return error("CheckProofOfWork() : nBits below minimum work");
++
++    // Check proof of work matches claimed amount
++    if (hash > bnTarget)
++        return error("CheckProofOfWork() : hash doesn't match nBits");
++
++    return true;
++    }
++
++    void checkData(CBlock block, uint256 hash) {
++
++        if (block.GetHash() != hash)
++        {
++            printf("check blocks...\n");
++            uint256 thash;
++            block.nNonce = 0;
++
++            while(true)
++            {
++                thash = block.GetHash();
++                if (CheckProofOfWork(thash, block.nBits))
++                    break;
++                if ((block.nNonce & 0xFFF) == 0)
++                {
++                    printf("nonce %08X: hash = %s (target not matched)\n", block.nNonce, thash.ToString().c_str());
++                    //break;
++                }
++                ++block.nNonce;
++                if (block.nNonce == 0)
++                {
++                    printf("NONCE WRAPPED, incrementing time\n");
++                    ++block.nTime;
++                }
++            }
++            printf("nT = %u \n", block.nTime);
++            printf("nN = %u \n", block.nNonce);
++            printf("GH = %s\n", block.GetHash().ToString().c_str());
++            printf("MR = %s\n", block.hashMerkleRoot.ToString().c_str());
++         }
++    }
++
++    //test checkpoint data
         hashGenesisBlock = genesis.GetHash();
         assert(hashGenesisBlock == uint256("0x00000d678dad8967cf06bbae41ee9ebf06762981e69e406466a5acc151098f1b"));
         assert(genesis.hashMerkleRoot == uint256("0xe4cfeea4b73dc8337b61ce1a12c1c04014c90e74968dab5d74ef3ad3336e981a"));
@@ -187,7 +238,7 @@ public:
         fDefaultConsistencyChecks = false;
         fRequireStandard = true;
         fMineBlocksOnDemand = false;
-        fSkipProofOfWorkCheck = false;
+        fSkipProofOfWorkCheck = true;//false
         fTestnetToBeDeprecatedFieldRPC = false;
         fHeadersFirstSyncingActive = false;
 

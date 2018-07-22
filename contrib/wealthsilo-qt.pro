@@ -463,6 +463,7 @@ SOURCES += src/activemasternode.cpp \
 		   src/crypto/sph_simd.c \
 		   src/crypto/sph_echo.c \
 		   src/crypto/sph_hamsi.c \
+           src/crypto/sph_hamsi_helper.c \
 		   src/crypto/sph_fugue.c \
 		   src/crypto/sph_shabal.c \
 		   src/crypto/gost_streebog.c \
