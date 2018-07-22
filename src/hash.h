@@ -30,8 +30,6 @@
 #include "crypto/sph_hamsi.h"
 #include "crypto/sph_fugue.h"
 #include "crypto/sph_shabal.h"
-#include "crypto/sph_whirlpool.h"
-#include "crypto/sph_haval.h"
 #include "crypto/gost_streebog.h"
 
 
@@ -92,8 +90,6 @@ GLOBAL sph_echo256_context      z_echo;
 GLOBAL sph_hamsi256_context     z_hamsi;
 GLOBAL sph_fugue256_context     z_fugue;
 GLOBAL sph_shabal256_context    z_shabal;
-GLOBAL sph_whirlpool_context    z_whirlpool;
-GLOBAL sph_haval256_5_context   z_haval;
 GLOBAL sph_gost512_context      z_gost;
 
 #define fillz() do { \
@@ -111,8 +107,6 @@ GLOBAL sph_gost512_context      z_gost;
     sph_hamsi256_init(&z_hamsi); \
     sph_fugue256_init(&z_fugue); \
     sph_shabal256_init(&z_shabal); \
-    sph_whirlpool_init(&z_whirlpool); \
-    sph_haval256_5_init(&z_haval); \
 	sph_gost512_init(&z_gost); \
 } while (0) 
 
@@ -126,8 +120,6 @@ GLOBAL sph_gost512_context      z_gost;
 #define ZHAMSI (memcpy(&ctx_hamsi, &z_hamsi, sizeof(z_hamsi)))
 #define ZFUGUE (memcpy(&ctx_fugue, &z_fugue, sizeof(z_fugue)))
 #define ZSHABAL (memcpy(&ctx_shabal, &z_shabal, sizeof(z_shabal)))
-#define ZWHIRLPOOL (memcpy(&ctx_whirlpool, &z_whirlpool, sizeof(z_whirlpool)))
-#define ZHAVAL (memcpy(&ctx_haval, &z_haval, sizeof(z_haval)))
 #define ZGOST (memcpy(&ctx_gost, &z_gost, sizeof(z_gost)))
 
 /* ----------- Bitcoin Hash ------------------------------------------------- */
@@ -331,8 +323,6 @@ inline uint256 Aergo(const T1 pbegin, const T1 pend)
     sph_hamsi512_context      ctx_hamsi;
     sph_fugue512_context      ctx_fugue;
     sph_shabal512_context     ctx_shabal;
-    sph_whirlpool_context     ctx_whirlpool;
-    sph_haval256_5_context    ctx_haval;
 	sph_gost512_context      ctx_gost;
 	static unsigned char pblank[1];
 	
@@ -359,9 +349,6 @@ inline uint256 Aergo(const T1 pbegin, const T1 pend)
 	sph_bmw512(&ctx_bmw, static_cast<const void*>(&hash), 64);
 	sph_bmw512_close(&ctx_bmw, static_cast<void*>(&hash));
 	
-	sph_whirlpool_init(&ctx_whirlpool);
-	sph_whirlpool(&ctx_whirlpool, static_cast<const void*>(&hash), 64);
-	sph_whirlpool_close(&ctx_whirlpool, static_cast<void*>(&hash));
 
 	sph_groestl512_init(&ctx_groestl);
 	sph_groestl512(&ctx_groestl, static_cast<const void*>(&hash), 64);
@@ -423,9 +410,6 @@ inline uint256 Aergo(const T1 pbegin, const T1 pend)
 	sph_shabal512(&ctx_shabal, static_cast<const void*>(&hash), 64);
 	sph_shabal512_close(&ctx_shabal, static_cast<void*>(&hash));
 
-	sph_haval256_5_init(&ctx_haval);
-	sph_haval256_5(&ctx_haval,(const void*) static_cast<const void*>(&hash), 64);
-	sph_haval256_5_close(&ctx_haval, static_cast<void*>(&hash));
 
 	sph_shavite512_init(&ctx_shavite);
 	sph_shavite512(&ctx_shavite, static_cast<const void*>(&hash), 64);
