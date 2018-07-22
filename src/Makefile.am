@@ -294,6 +294,7 @@ crypto_libbitcoin_crypto_a_SOURCES = \
   crypto/sph_hamsi_helper.c \
   crypto/sph_fugue.c \
   crypto/sph_shabal.c \
+  crypto/md_helper.c \
   crypto/sph_whirlpool.c \
   crypto/sph_haval.c \
   crypto/gost_streebog.c \
