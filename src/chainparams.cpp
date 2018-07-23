@@ -147,27 +147,23 @@ public:
         txNew.vin.resize(1);
         txNew.vout.resize(1);
         txNew.vin[0].scriptSig = CScript() << 486604799 << CScriptNum(4) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
-        txNew.vout[0].nValue = 0 * COIN;
+        txNew.vout[0].nValue = 1 * COIN;
         txNew.vout[0].scriptPubKey = CScript() << ParseHex("04c10e83b2703ccf322f7dbd62dd5855ac7c10bd055814ce121ba32607d573b8810c02c0582aed05b4deb9c4b77b26d92428c61256cd42774babea0a073b2ed0c9") << OP_CHECKSIG;
         genesis.vtx.push_back(txNew);
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime = 1532276243;
+        genesis.nTime = 1532365044;
         genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 0;
+        genesis.nNonce = 2258171;
 
 
         
 
-    //test checkpoint data
+
         hashGenesisBlock = genesis.GetHash();
-        printf("nT = %u \n", block.nTime);
-        printf("nN = %u \n", block.nNonce);
-        printf("MR = %s\n", block.hashMerkleRoot.ToString().c_str());
-        printf("GB = %s\n",hashGenesisBlock.ToString().c_str());
-        assert(hashGenesisBlock == uint256("0x0"));
-        assert(genesis.hashMerkleRoot == uint256("0x0"));
+        assert(hashGenesisBlock == uint256("0xa452de9e849e4b27c7b23f172f8b4a986737e9d1e3e860a4d4772f4058a5f5f5"));
+        assert(genesis.hashMerkleRoot == uint256("0x61de9ed43682e9071aea163740e55863a4c88c1d49d6a9d2153762aea2524370"));
 
 
         vSeeds.push_back(CDNSSeedData("81.4.101.233", "81.4.101.233"));
@@ -199,7 +195,7 @@ public:
         nPoolMaxTransactions = 3;
         strSporkKey = "02acda05fc4c1a40fc1ddab042d4dd3b22c4e5a8a191399060764d172973651edc";
         strObfuscationPoolDummyAddress = "A87q2gC9j6nNrnzCsg4aY6bHMLsT9nUhEw";
-        nStartMasternodePayments = 1532266870; //Sun, 26 Jul 2018 6:36:16 GMT
+        nStartMasternodePayments = 1532375963; //Sun, 26 Jul 2018 6:36:16 GMT
 
         /** Zerocoin */
         zerocoinModulus = "25195908475657893494027183240048398571429282126204032027777137836043662020707595556264018525880784"
@@ -344,7 +340,7 @@ public:
         nPoolMaxTransactions = 2;
         strSporkKey = "030389c95f061c86b01a4e8aad299ebf46e8f7fd7a407a9b93e8c7898b5dc76d88";
         strObfuscationPoolDummyAddress = "y57cqfGRkekRyDRNeJiLtYVEbvhXrNbmox";
-        nStartMasternodePayments = 1420837558; //Fri, 09 Jan 2015 21:05:58 GMT
+        nStartMasternodePayments = 1532375963; //Fri, 09 Jan 2015 21:05:58 GMT
         nBudget_Fee_Confirmations = 3; // Number of confirmations for the finalization fee. We have to make this very short
                                        // here because we only have a 8 block finalization window on testnet
     }
