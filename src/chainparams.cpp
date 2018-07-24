@@ -11,7 +11,6 @@
 #include "random.h"
 #include "util.h"
 #include "utilstrencodings.h"
-
 #include <assert.h>
 
 #include <boost/assign/list_of.hpp>
@@ -55,29 +54,29 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (0, uint256("0x00000b27ba12ade51082061148482cf1db3463d701d89be109ebe67080c5953c"));
+    (0, uint256("0x000003797b15e338594a03acd735af7911e7d0bb5bcbaf5ae970f0f82df6dd72"));
 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1532250612, // * UNIX timestamp of last checkpoint block
+    1532365044, // * UNIX timestamp of last checkpoint block
     1,       // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     10000        // * estimated number of transactions per day after checkpoint*/
 };
 
 static Checkpoints::MapCheckpoints mapCheckpointsTestnet =
-    boost::assign::map_list_of(0, uint256("0x00000b27ba12ade51082061148482cf1db3463d701d89be109ebe67080c5953c"));
+    boost::assign::map_list_of(0, uint256("0x000003797b15e338594a03acd735af7911e7d0bb5bcbaf5ae970f0f82df6dd72"));
 static const Checkpoints::CCheckpointData dataTestnet = {
     &mapCheckpointsTestnet,
-    1740710,
+    1532365644,
     0,
     250};
 
 static Checkpoints::MapCheckpoints mapCheckpointsRegtest =
-    boost::assign::map_list_of(0, uint256("0x00000b27ba12ade51082061148482cf1db3463d701d89be109ebe67080c5953c"));
+    boost::assign::map_list_of(0, uint256("0x000003797b15e338594a03acd735af7911e7d0bb5bcbaf5ae970f0f82df6dd72"));
 static const Checkpoints::CCheckpointData dataRegtest = {
     &mapCheckpointsRegtest,
-    1454124731,
+    1532365044,
     0,
     100};
 
@@ -155,14 +154,11 @@ public:
         genesis.nVersion = 1;
         genesis.nTime = 1532365044;
         genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 2258171;
-
-
-        
+        genesis.nNonce = 1871636;
 
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0xa452de9e849e4b27c7b23f172f8b4a986737e9d1e3e860a4d4772f4058a5f5f5"));
+        assert(hashGenesisBlock == uint256("0x000003797b15e338594a03acd735af7911e7d0bb5bcbaf5ae970f0f82df6dd72"));
         assert(genesis.hashMerkleRoot == uint256("0x61de9ed43682e9071aea163740e55863a4c88c1d49d6a9d2153762aea2524370"));
 
 
@@ -195,7 +191,7 @@ public:
         nPoolMaxTransactions = 3;
         strSporkKey = "02acda05fc4c1a40fc1ddab042d4dd3b22c4e5a8a191399060764d172973651edc";
         strObfuscationPoolDummyAddress = "A87q2gC9j6nNrnzCsg4aY6bHMLsT9nUhEw";
-        nStartMasternodePayments = 1532422810; //Sun, 26 Jul 2018 6:36:16 GMT
+        nStartMasternodePayments = 1532432778; //Sun, 26 Jul 2018 6:36:16 GMT
 
         /** Zerocoin */
         zerocoinModulus = "25195908475657893494027183240048398571429282126204032027777137836043662020707595556264018525880784"
