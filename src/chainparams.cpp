@@ -125,7 +125,7 @@ public:
         nLastPOWBlock = 200;
         nModifierUpdateBlock = 0;
         nZerocoinStartHeight = 201;
-        nZerocoinStartTime = 1515434000; // October 17, 2017 4:30:00 AM
+        nZerocoinStartTime = 1532403990; // October 17, 2017 4:30:00 AM
         nBlockEnforceSerialRange = 1; //Enforce serial range starting this block
         nBlockRecalculateAccumulators = ~1; //Trigger a recalculation of accumulators
         nBlockFirstFraudulent = ~1; //First block that bad serials emerged
@@ -195,7 +195,7 @@ public:
         nPoolMaxTransactions = 3;
         strSporkKey = "02acda05fc4c1a40fc1ddab042d4dd3b22c4e5a8a191399060764d172973651edc";
         strObfuscationPoolDummyAddress = "A87q2gC9j6nNrnzCsg4aY6bHMLsT9nUhEw";
-        nStartMasternodePayments = 1532375963; //Sun, 26 Jul 2018 6:36:16 GMT
+        nStartMasternodePayments = 1532422810; //Sun, 26 Jul 2018 6:36:16 GMT
 
         /** Zerocoin */
         zerocoinModulus = "25195908475657893494027183240048398571429282126204032027777137836043662020707595556264018525880784"
