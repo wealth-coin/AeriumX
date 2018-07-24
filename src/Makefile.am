@@ -294,6 +294,8 @@ crypto_libbitcoin_crypto_a_SOURCES = \
   crypto/sph_hamsi_helper.c \
   crypto/sph_fugue.c \
   crypto/sph_shabal.c \
+  crypto/sph_whirlpool.c \
+  crypto/sph_haval.c \
   crypto/gost_streebog.c \
   crypto/common.h \
   crypto/sha256.h \
@@ -319,6 +321,8 @@ crypto_libbitcoin_crypto_a_SOURCES = \
   crypto/sph_fugue.h \
   crypto/sph_shabal.h \
   crypto/gost_streebog.h \
+  crypto/sph_whirlpool.h \
+  crypto/sph_haval.h \
   crypto/sph_types.h
 
 # libzerocoin library

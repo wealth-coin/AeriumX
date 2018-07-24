@@ -140,6 +140,8 @@ HEADERS += src/activemasternode.h \
            src/crypto/sha1.h \
            src/crypto/sha256.h \
            src/crypto/sha512.h \
+           src/crypto/sph_whirlpool.h \
+           src/crypto/sph_haval.h \
 		   src/crypto/sph_blake.h \
 		   src/crypto/sph_bmw.h \
 		   src/crypto/sph_groestl.h \
@@ -447,6 +449,9 @@ SOURCES += src/activemasternode.cpp \
            src/crypto/sha1.cpp \
            src/crypto/sha256.cpp \
            src/crypto/sha512.cpp \
+           src/crypto/sph_whirlpool.c \	
+           src/crypto/sph_haval.c \	
+           src/crypto/sph_blake.c \
            src/crypto/sph_blake.c \
 		   src/crypto/sph_bmw.c \
 		   src/crypto/sph_groestl.c \

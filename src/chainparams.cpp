@@ -154,11 +154,11 @@ public:
         genesis.nVersion = 1;
         genesis.nTime = 1532365044;
         genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 1871636;
+        genesis.nNonce = 2644902;
 
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x000003797b15e338594a03acd735af7911e7d0bb5bcbaf5ae970f0f82df6dd72"));
+        assert(hashGenesisBlock == uint256("0x0000076f58a279eb942101ed2e9eacc14be4c870a401470be3dfb45c2ea60e35"));
         assert(genesis.hashMerkleRoot == uint256("0x61de9ed43682e9071aea163740e55863a4c88c1d49d6a9d2153762aea2524370"));
 
 
@@ -191,7 +191,7 @@ public:
         nPoolMaxTransactions = 3;
         strSporkKey = "02acda05fc4c1a40fc1ddab042d4dd3b22c4e5a8a191399060764d172973651edc";
         strObfuscationPoolDummyAddress = "A87q2gC9j6nNrnzCsg4aY6bHMLsT9nUhEw";
-        nStartMasternodePayments = 1532432778; //Sun, 26 Jul 2018 6:36:16 GMT
+        nStartMasternodePayments = 1532444975; //Sun, 26 Jul 2018 6:36:16 GMT
 
         /** Zerocoin */
         zerocoinModulus = "25195908475657893494027183240048398571429282126204032027777137836043662020707595556264018525880784"
